@@ -1,0 +1,4 @@
+VAR
+	CNC_FMU1 : CNC_FMU := (0);
+	CNC_FMUView_0 : CNC_FMUView := (0);
+END_VAR

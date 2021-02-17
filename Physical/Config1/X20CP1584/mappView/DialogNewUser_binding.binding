@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="DialogNewUser_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.ConfirmPasswordOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="ImageListConfirmPassword" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.NewPasswordOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="ImageListNewPassword" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.UserNameOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="ImageListNewUsername" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:DialogNewUserConfirmEnabled" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="ButtonConfirm" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:NewUserPasswordHint" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="TextOutputPasswordHint" attribute="value" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:NewUserRoleIndex" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="DropDownBoxPickNewRole" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.ConfirmPassword" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="PasswordNewConfirm" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.NewPassword" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="PasswordNew" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.UserName" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="TextInputNewUsername" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:NewUserPasswordOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="TextOutputPasswordMatch" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

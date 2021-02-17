@@ -1,0 +1,11 @@
+#Ignore those files and folders
+/Binaries
+
+/Diagnosis
+
+/Temp
+
+/*.set
+/*.isopen
+
+debug.log

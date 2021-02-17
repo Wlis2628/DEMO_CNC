@@ -1,0 +1,4 @@
+VAR
+	gSvgStringArray : ARRAY[0..999] OF STRING[500];
+	gSvgStringArrayIndex : UINT;
+END_VAR

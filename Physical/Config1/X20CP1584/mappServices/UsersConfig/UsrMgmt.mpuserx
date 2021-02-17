@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="UserMgmtX" Type="mpuserx">
+    <Group ID="Mgr">
+      <Property ID="PasswordLength" Value="4" />
+    </Group>
+    <Group ID="ServerSettings">
+      <Selector ID="Server">
+        <Group ID="AdditionalUserData">
+          <Property ID="[0]" Value="mail" />
+          <Property ID="[1]" Value="telephoneNumber" />
+        </Group>
+      </Selector>
+    </Group>
+    <Group ID="Users">
+      <Group ID="DefUser#1">
+        <Property ID="id" Value="administrator" />
+      </Group>
+      <Group ID="DefUser#2">
+        <Property ID="id" Value="Anonymous" />
+      </Group>
+      <Group ID="DefUser#3">
+        <Property ID="id" Value="operator" />
+      </Group>
+    </Group>
+    <Group ID="Groups">
+      <Group ID="DefGroup#1">
+        <Property ID="id" Value="Administrator" />
+        <Property ID="level" Value="100" />
+        <Property ID="admin" Value="TRUE" />
+        <Group ID="rights">
+          <Property ID="[0]" Value="FullAccess" />
+        </Group>
+      </Group>
+      <Group ID="DefGroup#2">
+        <Property ID="id" Value="Everyone" />
+        <Group ID="rights">
+          <Property ID="[0]" Value="ViewOnly" />
+        </Group>
+      </Group>
+      <Group ID="DefGroup#3">
+        <Property ID="id" Value="Operator" />
+        <Property ID="level" Value="50" />
+        <Property ID="admin" Value="TRUE" />
+        <Group ID="rights">
+          <Property ID="[0]" Value="FullAccess" />
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

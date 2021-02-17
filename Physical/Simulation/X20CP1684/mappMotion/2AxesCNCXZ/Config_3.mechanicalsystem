@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="MechSys_2AxCNCXZ" Type="mechanicalsystem">
+    <Selector ID="Type" Value="2AxesCNC">
+      <Selector ID="Subtype" Value="2AxesCNCXZ">
+        <Selector ID="CoordinatesNames" Value="Default">
+          <Property ID="XCoordinateName" Value="X" />
+          <Property ID="ZCoordinateName" Value="Z" />
+        </Selector>
+        <Selector ID="WireFrameModel" Value="Standard">
+          <Selector ID="FlangeToTcp" Value="ConnectionLine">
+            <Property ID="Distance" Value="0.0" />
+          </Selector>
+        </Selector>
+        <Group ID="JointAxesPositionLimits">
+          <Selector ID="JointAxis[1]" Value="UseAxisLimits" />
+          <Selector ID="JointAxis[2]" Value="UseAxisLimits" />
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
+</Configuration>

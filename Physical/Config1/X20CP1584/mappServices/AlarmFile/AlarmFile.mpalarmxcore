@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmXFile" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="MotionPadError" />
+        <Property ID="Code" Value="4" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gMotionPadError" />
+            <Selector ID="LowLimitEnable" Value="Static" />
+            <Selector ID="HighLimitEnable" Value="Static" />
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="FileNotSaved" />
+        <Property ID="Code" Value="5" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="USBConnectionFailure" />
+        <Property ID="Message" Value="USB Connection Failure" />
+        <Property ID="Code" Value="100" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="FTPServerNotConnected" />
+        <Property ID="Message" Value="FTP server not connected" />
+        <Property ID="Code" Value="101" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="FTPServerDisconnected" />
+        <Property ID="Message" Value="FTP server disconnected" />
+        <Property ID="Code" Value="102" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="FOpenAlarm" />
+        <Property ID="Message" Value="Error in opening file" />
+        <Property ID="Code" Value="104" />
+      </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="FCreateAlarm" />
+        <Property ID="Message" Value="Error in creation of new file" />
+        <Property ID="Severity" Value="105" />
+      </Group>
+      <Group ID="[7]">
+        <Property ID="Name" Value="FCloseAlarm" />
+        <Property ID="Message" Value="Error in closing the file" />
+        <Property ID="Severity" Value="107" />
+      </Group>
+      <Group ID="[8]">
+        <Property ID="Name" Value="FWriteAlarm" />
+        <Property ID="Message" Value="Error in writing to the file" />
+        <Property ID="Severity" Value="108" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

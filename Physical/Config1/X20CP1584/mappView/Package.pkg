@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Package SubType="mappViewControl" PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Visualizat.vis</Object>
+    <Object Type="File">MainPage_binding.binding</Object>
+    <Object Type="File">GraphicTextEditor_binding.binding</Object>
+    <Object Type="File">Diagnostics_binding.binding</Object>
+    <Object Type="File">Users_binding.binding</Object>
+    <Object Type="File">Parameters_binding.binding</Object>
+    <Object Type="File">Alarms_binding.binding</Object>
+    <Object Type="File">Settings_bindings.binding</Object>
+    <Object Type="File">MainPage_eventbinding.eventbinding</Object>
+    <Object Type="File">GraphicTextEditor_eventbinding.eventbinding</Object>
+    <Object Type="File">Diagnostics_eventbinding.eventbinding</Object>
+    <Object Type="File">Parameters_eventbinding.eventbinding</Object>
+    <Object Type="File">Users_eventbinding.eventbinding</Object>
+    <Object Type="File">Alarms_eventbinding.eventbinding</Object>
+    <Object Type="File">Settings_eventbinding.eventbinding</Object>
+    <Object Type="File">Navigation.nav</Object>
+    <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="File">DialogNewUser_eventbinding.eventbinding</Object>
+    <Object Type="File">DialogNewUser_binding.binding</Object>
+    <Object Type="File">DialogEditUser_binding.binding</Object>
+    <Object Type="File">NavigationContent.eventbinding</Object>
+    <Object Type="File">MainPageContent.eventbinding</Object>
+    <Object Type="File">DialogRemoveUser_eventbinding.eventbinding</Object>
+    <Object Type="File">DialogRemoveUser_binding.binding</Object>
+    <Object Type="File">DialogUserError_binding.binding</Object>
+    <Object Type="File">DialogUserError_eventbinding.eventbinding</Object>
+    <Object Type="File">DialogEditUser_eventbinding.eventbinding</Object>
+    <Object Type="File">MoveError1.eventbinding</Object>
+    <Object Type="File">TopContent.eventbinding</Object>
+    <Object Type="File">TopContent_binding.binding</Object>
+  </Objects>
+</Package>

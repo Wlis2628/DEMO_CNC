@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="Parameters_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+  <Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.Load" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.Save" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.Refresh" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.List.StepUp" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.List.StepDown" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton5" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.limit_X_pos" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.limit_Z_pos" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.limit_acc" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.limit_dec" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.set_X_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.set_Z_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.limit_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput8" attribute="value" />
+</Binding>
+
+
+
+
+
+
+
+
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetXPos" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput1" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonRefresh" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton3" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonSave" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton2" attribute="enable" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonLoad" attribute="value" />
+			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetYPos" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetAcc" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput3" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetDec" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput4" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetXVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput5" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetYVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput6" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetVelocityLimit" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput8" attribute="enable" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:UIConnect.New.FileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="TextInput1" attribute="value" />
+</Binding>
+
+
+</Bindings>
+</BindingsSet>

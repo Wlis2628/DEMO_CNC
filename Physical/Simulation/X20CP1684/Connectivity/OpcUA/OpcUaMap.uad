@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="C4.72">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases>
+      <EURanges Id="2">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">420</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="3">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">520</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gManualContr" />
+        <Variable Name="MpCnc2Axis_0">
+          <Variable Name="MpLink" />
+          <Variable Name="Enable" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="Parameters" />
+          <Variable Name="Update" />
+          <Variable Name="Override" />
+          <Variable Name="RapidOverride" />
+          <Variable Name="FeedrateOverride" />
+          <Variable Name="Power" />
+          <Variable Name="Home" />
+          <Variable Name="MoveProgram" />
+          <Variable Name="Interrupt" />
+          <Variable Name="Continue" />
+          <Variable Name="Stop" />
+          <Variable Name="Jog" />
+          <Variable Name="MoveBlock" />
+          <Variable Name="SingleStep" />
+          <Variable Name="Active" />
+          <Variable Name="Error" />
+          <Variable Name="StatusID" />
+          <Variable Name="UpdateDone" />
+          <Variable Name="X" />
+          <Variable Name="Y" />
+          <Variable Name="PathVelocity" />
+          <Variable Name="CommandBusy" />
+          <Variable Name="CommandAborted" />
+          <Variable Name="PowerOn" />
+          <Variable Name="IsHomed" />
+          <Variable Name="MoveActive" />
+          <Variable Name="MoveInterrupted" />
+          <Variable Name="InMotion" />
+          <Variable Name="MoveDone" />
+          <Variable Name="Stopped" />
+          <Variable Name="SingleStepActive" />
+          <Variable Name="Info" />
+          <Variable Name="Internal" />
+        </Variable>
+        <Variable Name="gUploadedImage" />
+        <Variable Name="gActiveTool" />
+        <Variable Name="CncParameters" />
+        <Variable Name="gSvgStringArray" />
+        <Variable Name="gParameter">
+          <Variable Name="limit_X_pos" />
+          <Variable Name="limit_Z_pos" />
+          <Variable Name="limit_acc" />
+          <Variable Name="limit_vel" />
+          <Variable Name="limit_dec" />
+          <Variable Name="set_Z_vel" />
+          <Variable Name="set_X_vel" />
+        </Variable>
+        <Variable Name="CncName" />
+        <Variable Name="MoveMachine" />
+        <Variable Name="gStartValueChanging" />
+        <Variable Name="ButtonEnable" />
+        <Variable Name="MpCnc2Axis_0">
+          <Variable Name="ErrorReset" />
+          <Variable Name="Stop" />
+        </Variable>
+        <Variable Name="gMotionPadError" />
+        <Variable Name="CncPosX" />
+        <Variable Name="CncPosY" />
+        <Variable Name="gAlarmActive" />
+        <Variable Name="MpAxisBasicX">
+          <Variable Name="Position" />
+          <Variable Name="ErrorReset" />
+        </Variable>
+        <Variable Name="MpAxisBasicY">
+          <Variable Name="Position" />
+          <Variable Name="ErrorReset" />
+        </Variable>
+        <Variable Name="MpBasicParametersX">
+          <Variable Name="Position" />
+        </Variable>
+        <Variable Name="MpBasicParametersY">
+          <Variable Name="Position" />
+        </Variable>
+        <Variable Name="gMsgBox" />
+        <Variable Name="gShowMsgBox" />
+        <Variable Name="gMoveAbsoluteX" />
+        <Variable Name="gMoveAbsoluteY" />
+        <Variable Name="gMsgBox2" />
+        <Variable Name="gMsgBox3" />
+        <Variable Name="gMsgBox4" />
+      </GlobalVariables>
+      <Task Name="UsrMgmtP">
+        <Variable Name="MpUserXLogin_0" />
+        <Variable Name="MpUserXLoginUI_0">
+          <Variable Name="MpLink">
+            <Variable Name="Internal" />
+          </Variable>
+          <Variable Name="Enable" />
+          <Variable Name="ErrorReset" />
+          <Variable Name="UIConnect">
+            <Variable Name="Status" />
+            <Variable Name="CurrentUser" />
+            <Variable Name="Language" />
+            <Variable Name="DisplayUnit" />
+            <Variable Name="LoggedIn" />
+            <Variable Name="UserLevel" />
+            <Variable Name="Login">
+              <Variable Name="Login" />
+              <Variable Name="Logout" />
+              <Variable Name="UserName" />
+              <Variable Name="Password" />
+            </Variable>
+            <Variable Name="ChangePassword">
+              <Variable Name="ShowDialog" />
+              <Variable Name="Dialog" />
+            </Variable>
+            <Variable Name="MessageBox">
+              <Variable Name="LayerStatus" />
+              <Variable Name="Type" />
+              <Variable Name="ErrorNumber" />
+              <Variable Name="Confirm" />
+              <Variable Name="Cancel" />
+            </Variable>
+            <Variable Name="DefaultLayerStatus" />
+          </Variable>
+          <Variable Name="Active" />
+          <Variable Name="Error" />
+          <Variable Name="StatusID" />
+          <Variable Name="Info">
+            <Variable Name="Diag" />
+          </Variable>
+          <Variable Name="Internal">
+            <Variable Name="pObject" />
+            <Variable Name="pInstance" />
+            <Variable Name="State" />
+          </Variable>
+        </Variable>
+        <Variable Name="MpUserXLoginUIConnect0">
+          <Variable Name="Status" />
+          <Variable Name="CurrentUser" />
+          <Variable Name="Language" />
+          <Variable Name="DisplayUnit" />
+          <Variable Name="LoggedIn" />
+          <Variable Name="UserLevel" />
+          <Variable Name="Login">
+            <Variable Name="Login" />
+            <Variable Name="Logout" />
+            <Variable Name="UserName" />
+            <Variable Name="Password" />
+          </Variable>
+          <Variable Name="ChangePassword">
+            <Variable Name="ShowDialog" />
+            <Variable Name="Dialog">
+              <Variable Name="OldPassword" />
+              <Variable Name="NewPassword" />
+              <Variable Name="ConfirmPassword" />
+              <Variable Name="LayerStatus" />
+              <Variable Name="Confirm" />
+              <Variable Name="Cancel" />
+              <Variable Name="CriteriaNotMet" />
+              <Variable Name="NewPasswordOk" />
+              <Variable Name="ConfirmPasswordOk" />
+            </Variable>
+          </Variable>
+          <Variable Name="MessageBox">
+            <Variable Name="LayerStatus" />
+            <Variable Name="Type" />
+            <Variable Name="ErrorNumber" />
+            <Variable Name="Confirm" />
+            <Variable Name="Cancel" />
+          </Variable>
+          <Variable Name="DefaultLayerStatus" />
+        </Variable>
+        <Variable Name="MpUserXManagerUI_0" />
+        <Variable Name="MpUserXMgrUIConnect_0">
+          <Variable Name="User">
+            <Variable Name="List">
+              <Variable Name="UserNames" EnableArrayElements="True" />
+              <Variable Name="UserOptions" />
+              <Variable Name="MaxSelection" />
+              <Variable Name="SelectedIndex" />
+              <Variable Name="PageUp" />
+              <Variable Name="StepUp" />
+              <Variable Name="PageDown" />
+              <Variable Name="StepDown" />
+              <Variable Name="RangeStart" />
+              <Variable Name="RangeEnd" />
+            </Variable>
+            <Variable Name="Info">
+              <Variable Name="UserName" />
+              <Variable Name="FullName" />
+              <Variable Name="Roles" />
+              <Variable Name="Locked" />
+              <Variable Name="Expired" />
+              <Variable Name="RemainingAttempts" />
+              <Variable Name="Language" />
+              <Variable Name="DisplayUnit" />
+              <Variable Name="Creation" />
+              <Variable Name="FirstLogin" />
+              <Variable Name="LastLogin" />
+              <Variable Name="PasswordExpired" />
+              <Variable Name="AdditionalData" />
+            </Variable>
+            <Variable Name="Create">
+              <Variable Name="ShowDialog" />
+              <Variable Name="Lock" />
+              <Variable Name="Dialog">
+                <Variable Name="LayerStatus" />
+                <Variable Name="UserName" />
+                <Variable Name="FullName" />
+                <Variable Name="Roles" />
+                <Variable Name="RoleOption" />
+                <Variable Name="NewPassword" />
+                <Variable Name="ConfirmPassword" />
+                <Variable Name="Language" />
+                <Variable Name="DisplayUnit" />
+                <Variable Name="CriteriaNotMet" />
+                <Variable Name="NewPasswordOk" />
+                <Variable Name="ConfirmPasswordOk" />
+                <Variable Name="UserNameOk" />
+                <Variable Name="Confirm" />
+                <Variable Name="Cancel" />
+                <Variable Name="AdditionalData" />
+              </Variable>
+            </Variable>
+            <Variable Name="Edit">
+              <Variable Name="ShowDialog" />
+              <Variable Name="Lock" />
+              <Variable Name="Dialog">
+                <Variable Name="LayerStatus" />
+                <Variable Name="UserName" />
+                <Variable Name="FullName" />
+                <Variable Name="Roles" EnableArrayElements="True" />
+                <Variable Name="RoleOption" />
+                <Variable Name="NewPassword" />
+                <Variable Name="ConfirmPassword" />
+                <Variable Name="Language" />
+                <Variable Name="DisplayUnit" />
+                <Variable Name="CriteriaNotMet" />
+                <Variable Name="NewPasswordOk" />
+                <Variable Name="ConfirmPasswordOk" />
+                <Variable Name="UserNameOk" />
+                <Variable Name="Confirm" />
+                <Variable Name="Cancel" />
+                <Variable Name="AdditionalData" />
+              </Variable>
+            </Variable>
+            <Variable Name="Remove" />
+            <Variable Name="Lock" />
+          </Variable>
+          <Variable Name="MessageBox">
+            <Variable Name="LayerStatus" />
+            <Variable Name="Type" />
+            <Variable Name="ErrorNumber" />
+            <Variable Name="Confirm" />
+            <Variable Name="Cancel" />
+          </Variable>
+          <Variable Name="DefaultLayerStatus" />
+          <Variable Name="Status" />
+          <Variable Name="Role">
+            <Variable Name="List">
+              <Variable Name="Names" />
+              <Variable Name="SelectedIndex" />
+              <Variable Name="MaxSelection" />
+              <Variable Name="PageUp" />
+              <Variable Name="StepUp" />
+              <Variable Name="PageDown" />
+              <Variable Name="StepDown" />
+              <Variable Name="RangeStart" />
+              <Variable Name="RangeEnd" />
+            </Variable>
+            <Variable Name="Info">
+              <Variable Name="Name" />
+              <Variable Name="Index" />
+              <Variable Name="Level" />
+              <Variable Name="Admin" />
+              <Variable Name="AccessRights" />
+            </Variable>
+            <Variable Name="Edit">
+              <Variable Name="ShowDialog" />
+              <Variable Name="Lock" />
+              <Variable Name="Dialog">
+                <Variable Name="LayerStatus" />
+                <Variable Name="Name" />
+                <Variable Name="Index" />
+                <Variable Name="Level" />
+                <Variable Name="LevelLimit" />
+                <Variable Name="Admin" />
+                <Variable Name="AccessRights" />
+                <Variable Name="AccessRightsLimit" />
+                <Variable Name="Confirm" />
+                <Variable Name="Cancel" />
+              </Variable>
+            </Variable>
+            <Variable Name="Create">
+              <Variable Name="ShowDialog" />
+              <Variable Name="Lock" />
+              <Variable Name="Dialog">
+                <Variable Name="LayerStatus" />
+                <Variable Name="Name" />
+                <Variable Name="Level" />
+                <Variable Name="LevelLimit" />
+                <Variable Name="Admin" />
+                <Variable Name="AccessRights" />
+                <Variable Name="AccessRightsLimit" />
+                <Variable Name="Confirm" />
+                <Variable Name="Cancel" />
+              </Variable>
+            </Variable>
+            <Variable Name="Remove" />
+            <Variable Name="SelectList">
+              <Variable Name="Names" />
+              <Variable Name="MaxSelection" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="MpUserXMgrUISetup_0" />
+        <Variable Name="SelectedUser" />
+        <Variable Name="EditButtonEnabled" />
+        <Variable Name="LoginButtonEnabled" />
+        <Variable Name="RemoveButtonEnabled" />
+        <Variable Name="DialogNewUserConfirmEnabled" />
+        <Variable Name="LogoutButtonEnabled" />
+        <Variable Name="NewUserPasswordHint" />
+        <Variable Name="LoggedAs" />
+        <Variable Name="NewUserPasswordOk" />
+        <Variable Name="SelectedUserGroup" />
+        <Variable Name="NewUserRoleIndex" />
+        <Variable Name="DialogEditUserConfirmEnabled" />
+        <Variable Name="EditUserPasswordHint" />
+        <Variable Name="EditUserPasswordOk" />
+        <Variable Name="EditUserRoleIndex" />
+        <Variable Name="NewUserButtonEnabled" />
+        <Variable Name="StringError" />
+        <Variable Name="DateFirstLoginVisible" />
+        <Variable Name="LabelFirstLoginVisible" />
+        <Variable Name="Enable">
+          <Variable Name="ButtonStart" />
+          <Variable Name="ButtonResetErrors" />
+          <Variable Name="ButtonTurnOff" />
+          <Variable Name="ButtonActivateTool" />
+          <Variable Name="ButtonConvert" />
+          <Variable Name="ButonOpenExplorer" />
+          <Variable Name="ButtonSaveGcode" />
+          <Variable Name="ButtonSaveGcodeAs" />
+          <Variable Name="ButtonLoad" />
+          <Variable Name="ButtonSave" />
+          <Variable Name="ButtonRefresh" />
+          <Variable Name="SetXPos" />
+          <Variable Name="SetYPos" />
+          <Variable Name="SetAcc" />
+          <Variable Name="SetDec" />
+          <Variable Name="SetXVelocity" />
+          <Variable Name="SetYVelocity" />
+          <Variable Name="SetVelocityLimit" />
+          <Variable Name="ButtonAcknowledge" />
+          <Variable Name="ButtonAcknowledgeAll" />
+          <Variable Name="ButtonDelete" />
+          <Variable Name="ButtonCreate" />
+          <Variable Name="TextInputCreate" />
+        </Variable>
+      </Task>
+      <Task Name="Initiation" />
+      <Task Name="ManualCont">
+        <Variable Name="PosX" EURangesId="3" />
+        <Variable Name="PosY" EURangesId="2" />
+        <Variable Name="GoDown" />
+        <Variable Name="GoLeft" />
+        <Variable Name="GoRight" />
+        <Variable Name="GoUp" />
+        <Variable Name="pointString" />
+      </Task>
+      <Task Name="live_draw">
+        <Variable Name="cmdDraw" />
+        <Variable Name="readX" />
+        <Variable Name="readY" />
+        <Variable Name="cmdClear" />
+        <Variable Name="cmdBack" />
+        <Variable Name="curShape" />
+        <Variable Name="InfoString" />
+      </Task>
+      <Task Name="Initiation" />
+      <Task Name="ManualCont" />
+      <Task Name="Recipe">
+        <Variable Name="UIConnect">
+          <Variable Name="Recipe">
+            <Variable Name="Load" />
+            <Variable Name="Save" />
+            <Variable Name="Refresh" />
+            <Variable Name="List">
+              <Variable Name="StepUp" />
+              <Variable Name="StepDown" />
+              <Variable Name="Names" />
+              <Variable Name="SelectedIndex" />
+              <Variable Name="MaxSelection" />
+              <Variable Name="PageUp" />
+              <Variable Name="PageDown" />
+              <Variable Name="RangeStart" />
+              <Variable Name="RangeEnd" />
+              <Variable Name="Sizes" />
+              <Variable Name="LastModified" />
+            </Variable>
+            <Variable Name="Filter" />
+            <Variable Name="SortOrder" />
+            <Variable Name="UpdateNotification" />
+            <Variable Name="Delete" />
+            <Variable Name="Rename" />
+            <Variable Name="NewFileName" />
+            <Variable Name="Header" />
+          </Variable>
+          <Variable Name="New">
+            <Variable Name="FileName" />
+            <Variable Name="Create" />
+          </Variable>
+          <Variable Name="MessageBox">
+            <Variable Name="LayerStatus" />
+            <Variable Name="Type" />
+            <Variable Name="Confirm" />
+            <Variable Name="Cancel" />
+          </Variable>
+          <Variable Name="DefaultLayerStatus" />
+          <Variable Name="Status" />
+        </Variable>
+        <Variable Name="MpRecipeUI_0">
+          <Variable Name="ErrorReset" />
+          <Variable Name="Error" />
+          <Variable Name="UIConnect">
+            <Variable Name="New">
+              <Variable Name="FileName" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="MpRecipeRegPar_0" />
+        <Variable Name="MpRecipeXml_0" />
+        <Variable Name="UISetup" />
+        <Variable Name="i" />
+        <Variable Name="j" />
+        <Variable Name="k" />
+        <Variable Name="nextAddr" />
+        <Variable Name="TempLine" />
+        <Variable Name="DataProvider0" />
+        <Variable Name="CreatingRecipe" />
+      </Task>
+      <Task Name="ManualCont">
+        <Variable Name="PosX" />
+        <Variable Name="PosY" />
+        <Variable Name="AccessToChange" />
+      </Task>
+      <Task Name="RuchZGCode">
+        <Variable Name="DialogErrorVisible" />
+      </Task>
+      <Task Name="svg_to_gco">
+        <Variable Name="cmdConvert" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

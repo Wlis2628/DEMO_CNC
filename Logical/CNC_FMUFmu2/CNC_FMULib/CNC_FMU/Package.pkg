@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">CNC_FMU.c</Object>
+    <Object Type="File">CNC_FMU.scn</Object>
+    <Object Type="File">CNC_FMUFmiSceneView.c</Object>
+    <Object Type="File">CNC_FMUImpl.c</Object>
+    <Object Type="File">fmuTemplate.h</Object>
+    <Object Type="Package">CADdata</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="sys_lib" />
+  </Dependencies>
+</Package>

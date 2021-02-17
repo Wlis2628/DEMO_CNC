@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ndef:Navigation id="Navigation" xmlns:ndef="http://www.br-automation.com/iat2015/navigationDefinition/v2">
+  <NavigationPaths>
+    <NavigationPath refId="MainPage">
+      <Destination refId="GraphicTextEditor" index="0" />
+      <Destination refId="Diagnostics" index="1" />
+    </NavigationPath>
+  </NavigationPaths>
+</ndef:Navigation>

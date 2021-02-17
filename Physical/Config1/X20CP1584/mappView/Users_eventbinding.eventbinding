@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="Users_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		
+		
+		
+		
+		<!--ERRORS-->
+		<EventBinding id="Users.Error">
+			<Source xsi:type="opcUa.Event" refId="::UsrMgmtP:MpUserXLoginUIConnect0.MessageBox.LayerStatus" event="ValueChanged" />
+			<EventHandler condition="newValue &lt; 0.5 AND oldValue &gt; 0.5" >
+			<Action>
+				<Target xsi:type="clientSystem.Action">
+					<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserError" headerText="Error" />
+				</Target>
+			</Action>
+		</EventHandler>
+		</EventBinding>
+		
+		<!--LOGGING IN-->
+		<EventBinding id="Users.ButtonLogin.Click">
+			<Source contentRefId="Users" widgetRefId="ButtonLogin" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXLoginUIConnect0.Login.Login" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--LOGGING OUT-->
+		<EventBinding id="Users.ButtonLogout.Click">
+			<Source contentRefId="Users" widgetRefId="ButtonLogout" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXLoginUIConnect0.Login.Logout" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		
+		<!--OPENINIG NEW USER DIALOG-->
+		<EventBinding id="Users.ButtonNewUser.Click">
+			<Source contentRefId="Users" widgetRefId="ButtonNewUser" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.ShowDialog" >
+								<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="clientSystem.Action">
+								<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="NewUser" headerText="New user" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="4">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.UserName" >
+								<Method xsi:type="opcUa.NodeAction.SetValueString" value="" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="5">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.ConfirmPassword" >
+								<Method xsi:type="opcUa.NodeAction.SetValueString" value="" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--OPENINIG EDIT USER DIALOG-->
+		<EventBinding id="Users.ButtonEditUser.Click">
+			<Source contentRefId="Users" widgetRefId="ButtonEditUser" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.ShowDialog" >
+								<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="clientSystem.Action">
+								<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogEditUser" headerText="Edit user" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+		
+		<!--OPENINIG REMOVE USER DIALOG-->
+		<EventBinding id="Users.ButtonRemoveUser.Click">
+			<Source contentRefId="Users" widgetRefId="ButtonRemoveUser" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Sequence>
+					<Step order="0">
+						<Action>
+							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Remove" >
+								<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
+							</Target>
+						</Action>
+					</Step>
+					<Step order="1">
+						<Action>
+							<Target xsi:type="clientSystem.Action">
+								<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogRemoveUser" headerText="Remove user" />
+							</Target>
+						</Action>
+					</Step>
+				</Sequence>
+			</EventHandler>
+		</EventBinding>
+
+	</Bindings>
+</EventBindingSet>

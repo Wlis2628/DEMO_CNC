@@ -1,0 +1,13 @@
+VAR
+	PosY : INT;
+	PosX : INT;
+	GoDown : BOOL;
+	GoRight : BOOL;
+	GoLeft : BOOL;
+	GoUp : BOOL;
+	pointStrX : STRING[80];
+	pointStrY : STRING[80];
+	strHelp : STRING[80];
+	pointString : STRING[120];
+	GetThere : BOOL;
+END_VAR

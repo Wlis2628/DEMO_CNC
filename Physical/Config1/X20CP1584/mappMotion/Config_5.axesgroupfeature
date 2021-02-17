@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="Feature_MFunctions" Type="axesgroupfeature">
+    <Selector ID="Type" Value="MFunctions">
+      <Selector ID="ModalDataBehaviour" Value="UseAxesGroupSettings" />
+      <Group ID="MFunction[1]">
+        <Selector ID="IndexType" Value="Single">
+          <Property ID="Index" Value="50" />
+        </Selector>
+        <Selector ID="Blocking" Value="Enabled" />
+        <Selector ID="Output" Value="Before" />
+        <Selector ID="InSimulation" Value="NotUsed" />
+        <Property ID="PvMapping" Value="::RuchZGCode:toolUp" />
+        <Property ID="Counter" />
+      </Group>
+      <Group ID="MFunction[2]">
+        <Selector ID="IndexType" Value="Single">
+          <Property ID="Index" Value="60" />
+        </Selector>
+        <Selector ID="Blocking" Value="Enabled" />
+        <Selector ID="Output" Value="Before" />
+        <Selector ID="InSimulation" Value="NotUsed" />
+        <Property ID="PvMapping" Value="::RuchZGCode:toolDown" />
+        <Property ID="Counter" />
+      </Group>
+    </Selector>
+  </Element>
+</Configuration>

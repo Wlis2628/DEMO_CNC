@@ -1,0 +1,16 @@
+VAR
+	i : UINT;
+	j : UINT;
+	k : INT;
+	MpRecipeRegPar_0 : MpRecipeRegPar;
+	MpRecipeUI_0 : MpRecipeUI;
+	MpRecipeXml_0 : MpRecipeXml;
+	nextAddr : UDINT;
+	TempLine : ARRAY[0..4] OF STRING[80];
+	UIConnect : MpRecipeUIConnectType := (Recipe:=(SortOrder:=mpRECIPE_UI_SORT_DATE_ASCENDING));
+	UISetup : MpRecipeUISetupType := (RecipeListSize:=5);
+	DataProvider0 : ARRAY[0..4] OF STRING[100];
+	input : BOOL;
+	TP_01 : TP;
+	CreatingRecipe : BOOL;
+END_VAR

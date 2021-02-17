@@ -1,0 +1,7 @@
+VAR
+	MpAlarmXHistoryGlobal : MpAlarmXHistory;
+	MpAlarmXCoreGeneral : MpAlarmXCore;
+	MpAlarmXCoreGlobal : MpAlarmXCore;
+	MpAlarmXCoreCnc : MpAlarmXCore;
+	MpAlarmXCoreFile : MpAlarmXCore;
+END_VAR

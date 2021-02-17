@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="GraphicTextEditor_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+    
+		<!--
+		<EventBinding>
+		<Source xsi:type="" event="" />
+		<EventHandler>
+		<Action>
+		<Target xsi:type="">
+		<Method xsi:type="" />
+		</Target>
+		</Action>
+		</EventHandler>
+		</EventBinding>
+		-->
+		<!-- **********************************************************
+		* source templates => copy them to your EventBinding Source
+		* change elements to your requirements
+		* for further possible Events refer to help system
+		********************************************************** -->
+		<!--<Source xsi:type="opcUa.Event" refId="::Program:boolVariableEvent" event="ValueChanged" />-->
+
+		<!--<Source xsi:type="session.Event" refId="sessionVariable" event="ValueChanged" />-->
+
+		<!--<Source xsi:type="widgets.brease.Button.Event" contentRefId="Content1" widgetRefId="Button1" event="Click" />-->
+
+		<!-- **********************************************************
+		* target templates => copy them to your EventBinding Action
+		* change elements to your requirements 
+		* for further possible Actions refer to help system
+		********************************************************** -->
+		<!--<Target xsi:type="opcUa.NodeAction" refId="::Program:Variable1" >
+		<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="37.1" />
+		</Target>-->
+
+		<!--<Target xsi:type="session.VariableAction" refId="Variable1" >
+		<Method xsi:type="session.VariableAction.SetValueNumber" value="4.8" />
+		</Target>-->
+
+		<!--<Target xsi:type="clientSystem.Action">
+		<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="dialog1" mode="modal" />
+		</Target>-->
+
+		<!--<Target xsi:type="clientSystem.Action">
+		<Method xsi:type="clientSystem.Action.Navigate" pageId="Page1" />
+		</Target>-->
+
+		<!--<Target xsi:type="widgets.brease.Button.Action" contentRefId="Content1" widgetRefId="Button1" >
+		<Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+		</Target>-->
+
+		<!--<Target xsi:type="clientSystem.Action">
+		<Method xsi:type="clientSystem.Action.ShowMessageBox" type="OKCancel" message="Messagetext" header="Warning!" icon="Warning"  />
+		</Target>
+		<Result>
+		<ResultHandler condition="result = 4">
+				
+		</ResultHandler>
+		</Result>-->
+
+		<EventBinding id="GraphicTextEditor.OpenExplorer.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="OpenExplorer" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="GraphicTextEditor" widgetRefId="MotionPad" >                                                            
+						<Method xsi:type="widgets.brease.MotionPad.Action.OpenFileExplorer" /> 
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		<EventBinding id="GraphicTextEditor.SaveFileAs.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="SaveFileAs" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="GraphicTextEditor" widgetRefId="MotionPad" >                                                    
+						<Method xsi:type="widgets.brease.MotionPad.Action.SaveAs" />   
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		
+		<EventBinding id="GraphicTextEditor.SaveFile.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="SaveFile" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="GraphicTextEditor" widgetRefId="MotionPad" >                                                    
+						<Method xsi:type="widgets.brease.MotionPad.Action.Save" />   
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="ContentAlarmPage.PaperDraw.Click">
+			<Source xsi:type="widgets.brease.Paper.Event" contentRefId="GraphicTextEditor" widgetRefId="PaperDraw" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:readX">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=x" />
+				
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler>
+				<Action>
+				
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:readY">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=y" />
+					</Target> 
+				</Action>
+			</EventHandler>
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:cmdDraw">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+				
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.LineButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="LineButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:curShape">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.CircleButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="CircleButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:curShape">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.RectButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="RectButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:curShape">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="2" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.StarButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="StarButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:curShape">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="3" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.ArcButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="ArcButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:curShape">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.ClearButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="ClearButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:cmdClear">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.BackButton.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="BackButton" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:cmdBack">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.SendTo.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="SendTo" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<!--<Operand name="name1" datatype="ANY_STRING">-->
+			<EventHandler>
+				<Action>
+					<ReadTarget xsi:type="widgets.brease.MotionPad.ReadAction" contentRefId="GraphicTextEditor"  widgetRefId="MotionPad" >
+						<Method xsi:type="widgets.brease.MotionPad.Action.GetCurrentFileOpened" />
+					</ReadTarget>
+					<!--</Operand>-->
+					<Result>
+						<ResultHandler>
+							
+							<Parallel>
+								<Action>
+									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:CncName" >
+										<Method xsi:type="opcUa.NodeAction.SetValueString" value="=result" />
+									</Target>
+								</Action>
+								<Action>
+									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MoveMachine" >
+										<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1"  />
+									</Target>
+								</Action>
+							</Parallel>
+						</ResultHandler>
+					</Result>
+				</Action>
+			</EventHandler>
+
+		</EventBinding>
+		<EventBinding>
+			<Source xsi:type="opcUa.Event" refId="::RuchZGCode:DialogErrorVisible" event="ValueChanged" />
+
+			<EventHandler condition="newValue">
+				<Action>
+					<Target xsi:type="clientSystem.Action" >
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="MoveError1" mode="modal" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="NOT newValue">
+				<Action>
+					<Target xsi:type="clientSystem.Action" >
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="MoveError1" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+			
+		<EventBinding id="GraphicTextEditor.BackButton1.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="BackButton1" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::svg_to_gco:cmdConvert">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+
+		<EventBinding id="GraphicTextEditor.MotionPad.OnError">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="MotionPad" xsi:type="widgets.brease.MotionPad.Event" event="OnError" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gMotionPadError">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=result" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+	
+		<EventBinding>
+			<Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gMsgBox" event="ValueChanged" />
+			<EventHandler condition="newValue">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ShowMessageBox"
+							type="OK"
+							message="Shape outside drawing field!"
+							header="Warning"
+						icon="Warning"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gMsgBox2" event="ValueChanged" />
+			<EventHandler condition="newValue">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ShowMessageBox"
+							type="OK"
+							message="Radius can not be equal to 0!"
+							header="Warning"
+						icon="Warning"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+		<EventBinding>
+			<Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gMsgBox3" event="ValueChanged" />
+			<EventHandler condition="newValue">
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.ShowMessageBox"
+							type="OK"
+							message="Distance can not be equal to 0!"
+							header="Warning"
+						icon="Warning"/>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		
+
+		
+	</Bindings>
+</EventBindingSet>

@@ -1,0 +1,47 @@
+VAR
+	j : UINT;
+	i : UINT;
+	svgString : STRING[500];
+	labelString : STRING[80];
+	flag1 : BOOL;
+	buff : STRING[80];
+	xory : BOOL;
+	strDevice : STRING[80];
+	strFile : STRING[80];
+	FCreate : FileCreate;
+	FClose : FileClose;
+	cncString : STRING[100000];
+	FWrite : FileWrite;
+	cmdFile : BOOL;
+	FOpen : FileOpen;
+	byStep : INT;
+	bOK : BOOL;
+	byErrorLevel : INT;
+	dwIdent : UDINT;
+	wStatus : UINT;
+	wError : UINT;
+	strHelp : STRING[80];
+	Xstr : STRING[80];
+	Ystr : STRING[80];
+	Fstr : STRING[80] := '2000';
+	cmdConvert : BOOL;
+	firstMove : BOOL;
+	prevXstr : STRING[80];
+	prevYstr : STRING[80];
+END_VAR
+VAR RETAIN
+	fileIndex : INT;
+END_VAR
+VAR
+	strNum : STRING[80];
+	k : INT;
+	Rstr : STRING[80];
+	Xstr2 : STRING[80];
+	Ystr2 : STRING[80];
+	fileFlag : BOOL;
+	Xscale : REAL;
+	Yscale : REAL;
+	Rscale : REAL;
+	Y2scale : REAL;
+	X2scale : REAL;
+END_VAR

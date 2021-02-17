@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Library Version="5.12.2" SubType="Binary" Description="User management based on user role system" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpUserX.typ</File>
+    <File>MpUserXError.typ</File>
+    <File>MpUserXAlarm.typ</File>
+    <File>MpUserX.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpBase" FromVersion="5.12.0" ToVersion="5.12.9" />
+  </Dependencies>
+</Library>

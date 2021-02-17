@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="DialogEditUser_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.Dialog.NewPassword" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="PasswordEdit" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:EditUserRoleIndex" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="DropDownBoxEditRole" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:EditUserPasswordHint" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="TextOutputPasswordHintEdit" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:DialogEditUserConfirmEnabled" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="ButtonConfirmEdit" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.Dialog.UserName" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="TextOutputEditingUser" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.Dialog.ConfirmPassword" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="PasswordEditConfirm" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.Dialog.ConfirmPasswordOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="ImageListEditConfirmPassword" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.Dialog.NewPasswordOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="ImageListEditPassword" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UsrMgmtP:EditUserPasswordOk" attribute="value" />
+<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="TextOutputPasswordMatchEdit" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

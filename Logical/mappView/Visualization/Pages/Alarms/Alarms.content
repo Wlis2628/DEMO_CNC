@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="Alarms" height="800" width="1450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory1" top="420" left="20" width="1400" height="340" zIndex="3" borderStyle="solid" borderWidth="5px" borderColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" cornerRadius="10px" cellBorderColor="rgba(255, 255, 255, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem1" zIndex="0" columnType="code" text="Code" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem2" width="250" zIndex="1" columnType="name" text="Name" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem3" width="300" zIndex="2" text="Message" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem4" zIndex="3" columnType="timestamp" text="Time" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem5" zIndex="4" columnType="old state" text="Old state" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem6" zIndex="5" columnType="new state" text="New state" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="40" left="20" width="1180" height="340" zIndex="4" borderStyle="solid" borderWidth="5px" borderColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" backColorEvenRow="rgba(255, 255, 255, 1)" cornerRadius="10px" cellBorderColor="rgba(255, 255, 255, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem1" zIndex="0" columnType="code" text="Code" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem2" width="250" zIndex="1" columnType="name" text="Name" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem3" width="300" zIndex="2" text="Message" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem4" zIndex="3" columnType="timestamp" text="Time" />
+        <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItem5" zIndex="4" columnType="state" text="State" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeButton" top="219" left="1240" width="160" height="58" zIndex="5" multiLine="true" text="$IAT/Acknowledge" wordWrap="true" cornerRadius="5px" fontSize="18px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeAllButton" top="300" left="1240" width="160" height="60" zIndex="6" multiLine="true" text="$IAT/AcknowledgeAll" wordWrap="true" cornerRadius="5px" fontSize="18px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="200" left="1220" width="260" height="182" zIndex="2" borderStyle="solid" borderWidth="5px" cornerRadius="10px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" style="Solid_Orange" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="10" left="1350" width="90" height="70" zIndex="7" image="Media/SymbolLib/Alarm/Alarm.svg" imageColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="40" left="-140" width="1340" height="340" zIndex="1" borderStyle="solid" borderWidth="0px" cornerRadius="10px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" style="Solid_Orange" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="420" left="55" width="1524" height="340" zIndex="0" borderStyle="solid" borderWidth="0px" cornerRadius="10px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" style="Solid_Orange" />
+  </Widgets>
+</Content>

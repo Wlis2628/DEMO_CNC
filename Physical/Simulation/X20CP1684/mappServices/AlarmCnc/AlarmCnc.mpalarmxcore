@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmXCnc" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="AxisXOver" />
+        <Property ID="Message" Value="Axis X over preprogrammed area" />
+        <Property ID="Code" Value="2" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gParameter.limit_X_pos" />
+            <Selector ID="LowLimitEnable" Value="Static" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="521" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="AxisZOver" />
+        <Property ID="Message" Value="Axis Z over preprogrammed area" />
+        <Property ID="Code" Value="3" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gParameter.limit_Z_pos" />
+            <Selector ID="LowLimitEnable" Value="Static" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="421" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="VelocityLimitX" />
+        <Property ID="Message" Value="Current velocity of axis X is higher then limit" />
+        <Property ID="Code" Value="7" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gParameter.set_X_vel" />
+            <Selector ID="HighLimitEnable" Value="Dynamic">
+              <Property ID="LimitPV" Value="::gParameter.limit_vel" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="VelocityLimitY" />
+        <Property ID="Message" Value="Current velocity of axis Y is higher then limit" />
+        <Property ID="Code" Value="8" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gParameter.set_Z_vel" />
+            <Selector ID="HighLimitEnable" Value="Dynamic">
+              <Property ID="LimitPV" Value="::gParameter.limit_vel" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

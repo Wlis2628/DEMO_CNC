@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="GraphicTextEditor" height="800" width="1450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.MotionPad" id="MotionPad" top="99" left="979" width="461" height="521" zIndex="2" keyboard="true" mpLink="gCncXZ" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Button" id="OpenExplorer" top="640" left="979" width="150" height="65" zIndex="3" multiLine="true" text="$IAT/OpenExplorer" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" fontSize="16px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="SaveFileAs" top="640" left="1150" width="120" height="65" zIndex="4" multiLine="true" text="$IAT/SaveAs" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" fontSize="16px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="SaveFile" top="640" left="1290" width="150" height="65" zIndex="5" multiLine="true" text="$IAT/Save" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" fontSize="16px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Paper" id="PaperDraw" top="80" left="10" width="780" height="630" zIndex="6" maxZoomLevel="100" minZoomLevel="100" backColor="rgba(255, 255, 240, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="LineButton" top="80" left="800" width="120" height="50" zIndex="7" multiLine="true" text="$IAT/Line" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="CircleButton" top="140" left="800" width="120" height="50" zIndex="8" multiLine="true" text="$IAT/Circle" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="RectButton" top="200" left="800" width="120" height="50" zIndex="9" multiLine="true" text="$IAT/Rectangle" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="StarButton" top="260" left="800" width="120" height="50" zIndex="10" multiLine="true" text="$IAT/Star" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="ArcButton" top="320" left="800" width="120" height="50" zIndex="11" multiLine="true" text="$IAT/Arc" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="ClearButton" top="460" left="800" width="120" height="50" zIndex="12" multiLine="true" text="$IAT/Clear" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="BackButton" top="520" left="800" width="120" height="50" zIndex="13" multiLine="true" text="$IAT/Back" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="1360" width="80" height="70" zIndex="18" image="Media/SymbolLib/Edit/Edit.svg" imageColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="80" left="960" width="520" height="705" zIndex="1" backColor="rgba(77, 77, 77, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="SendTo" top="720" left="1100" width="200" height="50" zIndex="19" multiLine="true" text="$IAT/SendToMachine" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" disabledBackColor="rgba(169, 169, 169, 1)" disabledBackGroundGradient="linear-gradient(to bottom, #b3b3b3 100%,#999999 60%,#808080 30%,#737373 10%)" disabledTextColor="rgba(255, 255, 255, 1)" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="20" left="-20" width="960" height="765" zIndex="0" backColor="rgba(77, 77, 77, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="BackButton1" top="660" left="800" width="120" height="50" zIndex="20" multiLine="true" text="$IAT/Convert" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="740" left="60" width="762" zIndex="21" textColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton10" top="735" left="20" width="40" height="40" zIndex="22" borderWidth="5px" cornerRadius="40px" backColor="rgba(140, 140, 140, 1)" disabledBackColor="rgba(0, 255, 0, 1)" borderColor="rgba(255, 255, 255, 1)" checkedBackColor="rgba(255, 0, 0, 1)" disabledCheckedBackColor="rgba(255, 0, 0, 1)" enable="false" />
+  </Widgets>
+</Content>

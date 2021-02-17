@@ -1,0 +1,13 @@
+VAR
+
+
+	toolUp : BOOL;
+	toolDown : BOOL;
+
+	DialogErrorVisible : BOOL;
+
+	MC_BR_MFunction_0 : MC_BR_MFunction;
+	MC_BR_MFunction_1 : MC_BR_MFunction;
+
+
+END_VAR

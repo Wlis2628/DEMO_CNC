@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="Users" height="800" width="1450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Table" id="TableUsers" top="160" left="859" width="300" height="400" zIndex="6" columnWidth="120" rowHeight="35" activeBackColor="rgba(169, 169, 169, 1)" cellBorderColor="rgba(200, 200, 200, 1)" cornerRadius="10px" headerBackColor="rgba(64, 64, 64, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="TableItemUsers" zIndex="0" columnWidth="300" maxLength="120" rowHeight="80" text="Users:" headerFontSize="20px" fontSize="20px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonNewUser" top="239" left="1180" width="160" height="60" zIndex="3" multiLine="true" text="$IAT/NewUser" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" disabledBackColor="rgba(169, 169, 169, 1)" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonEditUser" top="340" left="1180" width="160" height="60" zIndex="24" multiLine="true" text="$IAT/EditUser" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" disabledBackColor="rgba(169, 169, 169, 1)" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonRemoveUser" top="439" left="1180" width="160" height="60" zIndex="35" multiLine="true" text="$IAT/RemoveUser" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" disabledBackColor="rgba(169, 169, 169, 1)" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInputUsername" top="340" left="40" width="300" height="60" zIndex="36" backColor="rgba(192, 192, 192, 1)" borderColor="rgba(255, 255, 255, 1)" activeBackColor="rgba(214, 214, 214, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelUsername" top="300" left="40" width="300" zIndex="7" multiLine="true" text="$IAT/Username" wordWrap="true" textColor="rgba(255, 255, 255, 1)" textAlign="center" fontName="Arial Unicode" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelPassword" top="420" left="72" width="240" zIndex="8" multiLine="true" text="$IAT/Password" wordWrap="true" textColor="rgba(255, 255, 255, 1)" textAlign="center" fontName="Arial Unicode" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonLogin" top="459" left="380" width="140" height="60" zIndex="9" text="Login" borderWidth="7px 7px 3px 3px" cornerRadius="10px" disabledBackColor="rgba(169, 169, 169, 1)" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonLogout" top="459" left="540" width="140" height="60" zIndex="10" text="Logout" borderWidth="7px 7px 3px 3px" cornerRadius="10px" disabledBackColor="rgba(169, 169, 169, 1)" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelUserInfo" top="600" left="1040" width="138" zIndex="11" multiLine="true" text="User info" wordWrap="true" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelLoggedAs" top="621" left="398" width="162" zIndex="12" multiLine="true" text="$IAT/LoogedAs" wordWrap="true" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelSelectedUser" top="635" left="838" width="302" zIndex="13" multiLine="true" text="Currently selected user" wordWrap="true" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputSelectedUser" top="635" left="1120" width="140" zIndex="14" textColor="rgba(255, 255, 255, 1)" textAlign="right" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputLoggedAs" top="620" left="560" width="140" zIndex="15" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="10" left="1350" width="90" height="70" zIndex="1000" image="Media/SymbolLib/User/UserGroup.svg" imageColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelGroup" top="655" left="979" width="100" zIndex="1001" text="Group" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputGroup" top="655" left="1120" width="140" zIndex="1002" textColor="rgba(255, 255, 255, 1)" textAlign="right" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelUserCreation" top="718" left="939" width="261" height="40" zIndex="1003" multiLine="true" text="User creation" wordWrap="true" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelFirstLogin" top="660" left="959" width="141" height="60" zIndex="1004" text="First login" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelLastLogin" top="700" left="959" width="100" zIndex="1005" text="Last login" textColor="rgba(255, 255, 255, 1)" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputuserCreation" top="718" left="1100" height="40" zIndex="1006" format="dd.MM.yyyy HH:mm" textColor="rgba(255, 255, 255, 1)" textAlign="right" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputFirstLogin" top="660" left="1100" height="61" zIndex="1007" format="dd.MM.yyyy HH:mm" textColor="rgba(255, 255, 255, 1)" textAlign="right" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputLastLogin" top="699" left="1100" zIndex="1008" format="dd.MM.yyyy HH:mm" textColor="rgba(255, 255, 255, 1)" textAlign="right" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Password" id="PasswordLogin" top="458" left="40" width="303" height="62" zIndex="1009" backColor="rgba(192, 192, 192, 1)" borderColor="rgba(255, 255, 255, 1)" activeBackColor="rgba(214, 214, 214, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelNoFirstLogin" top="660" left="939" width="381" height="60" zIndex="1010" text="There was no first login" textColor="rgba(255, 255, 255, 1)" textAlign="right" fontName="Arial Unicode" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="200" left="-20" width="738" height="482" zIndex="1" backColor="rgba(77, 77, 77, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="100" left="740" width="820" height="682" zIndex="0" backColor="rgba(77, 77, 77, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="600" left="320" width="108" height="80" zIndex="1011" image="Media/SymbolLib/User/User.svg" imageColor="rgba(255, 255, 255, 1)" />
+  </Widgets>
+</Content>

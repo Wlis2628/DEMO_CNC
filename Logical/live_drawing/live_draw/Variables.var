@@ -1,0 +1,53 @@
+VAR
+	ab : REAL;
+	angle : REAL;
+	bc : REAL;
+	buff : STRING[80];
+	cmdBack : BOOL;
+	cmdClear : BOOL;
+	cmdDraw : BOOL;
+	cmdMirror : BOOL;
+	curShape : shape_enum;
+	distX : UDINT;
+	distY : UDINT;
+	flag1 : BOOL;
+	i : UINT;
+	InfoString : STRING[300];
+	j : INT;
+	labelString : STRING[80];
+	maks : REAL;
+END_VAR
+VAR CONSTANT
+	PI : REAL := 3.141592;
+END_VAR
+VAR
+	pos : INT;
+	prevPrevReadX : UINT;
+	prevPrevReadY : UINT;
+	prevReadX : UINT;
+	prevReadY : UINT;
+	radius : REAL;
+	readX : UINT;
+	readY : UINT;
+	shapeString : STRING[500];
+	smallRadius : REAL;
+	stage : INT;
+	strHelp : STRING[80];
+	strPrevX : STRING[80];
+	strPrevY : STRING[80];
+	strRadius : STRING[80];
+	strX : STRING[80];
+	strY : STRING[80];
+	svgString : STRING[160];
+	svgStringArray : ARRAY[0..999] OF STRING[500];
+	svgStringArrayIndex : UINT;
+	x : REAL;
+	xory : BOOL;
+	Xreal : REAL;
+	Xstr : STRING[80];
+	Xstr2 : STRING[80];
+	y : REAL;
+	Yreal : REAL;
+	Ystr : STRING[80];
+	Ystr2 : STRING[80];
+END_VAR
