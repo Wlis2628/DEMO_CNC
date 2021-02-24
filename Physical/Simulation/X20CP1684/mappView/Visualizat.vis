@@ -8,6 +8,7 @@
 		<Page refId="Users"/>
 		<Page refId="Alarms"/>
 		<Page refId="MainPage"/>
+		<Page refId="Charts"/>
   </Pages>
   <Navigations>
     <Navigation refId="Navigation" />
@@ -78,7 +79,8 @@
     <Theme refId="BuRThemeFlat1"/>
   </Themes>
   <Configurations>
-    <Configuration key="activityCount" value="false" />
+		<Configuration key="activityCount" value="false" />
+		<Configuration key="zoom" value="true" />
 	  <Gestures>
 		  <!--<SystemGesture1 touchPoints="2" />
 		  <SystemGesture2 touchPoints="2" />

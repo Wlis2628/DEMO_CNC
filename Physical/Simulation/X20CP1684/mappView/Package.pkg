@@ -32,5 +32,6 @@
     <Object Type="File">MoveError1.eventbinding</Object>
     <Object Type="File">TopContent.eventbinding</Object>
     <Object Type="File">TopContent_binding.binding</Object>
+    <Object Type="File">MainPageContent.binding</Object>
   </Objects>
 </Package>

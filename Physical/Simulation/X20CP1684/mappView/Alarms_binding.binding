@@ -24,5 +24,9 @@
 <Target xsi:type="brease" contentRefId="Alarms" widgetRefId="AlarmList1" attribute="mpLink" />-->
 
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="mapp" refId="gAlarmXGeneral" attribute="link" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="AlarmList1" attribute="mpLink" />
+</Binding>
 </Bindings>
 </BindingsSet>

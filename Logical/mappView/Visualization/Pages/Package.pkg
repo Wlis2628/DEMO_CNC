@@ -9,5 +9,6 @@
     <Object Type="Package">Parameters</Object>
     <Object Type="Package">Users</Object>
     <Object Type="Package">Alarms</Object>
+    <Object Type="Package">Charts</Object>
   </Objects>
 </Package>

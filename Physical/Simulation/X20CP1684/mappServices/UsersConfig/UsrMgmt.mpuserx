@@ -20,7 +20,7 @@
         <Property ID="id" Value="Anonymous" />
       </Group>
       <Group ID="DefUser#3">
-        <Property ID="id" Value="operator" />
+        <Property ID="id" Value="Operator" />
       </Group>
     </Group>
     <Group ID="Groups">

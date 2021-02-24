@@ -1,18 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="MainPageContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Bindings>
-		<EventBinding id="MainPageContent.BtnActivateTheTool.Click">
-			<Source contentRefId="MainPageContent" widgetRefId="BtnActivateTheTool" xsi:type="widgets.brease.ToggleButton.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gToolActivity" >
-						<Method xsi:type="opcUa.NodeAction.ToggleValueBool"/>
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-
-		<EventBinding id="MainPageContent.BasicSlider1.MouseUp">
+			<EventBinding id="MainPageContent.BasicSlider1.MouseUp">
 			<Source contentRefId="MainPageContent" widgetRefId="BasicSlider1" xsi:type="widgets.brease.BasicSlider.Event" event="MouseUp" />
 			<EventHandler>
 				<Action>

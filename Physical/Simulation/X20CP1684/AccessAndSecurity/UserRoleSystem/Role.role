@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
-  <Element ID="Administrator" Type="Role">
+  <Element ID="administrator" Type="Role">
     <Property ID="RoleID" Value="1" />
   </Element>
   <Element ID="Everyone" Type="Role">
     <Property ID="RoleID" Value="2" />
   </Element>
-  <Element ID="Operator" Type="Role">
+  <Element ID="operator" Type="Role">
     <Property ID="RoleID" Value="3" />
   </Element>
 </Configuration>

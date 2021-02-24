@@ -23,7 +23,6 @@
     <Widget xsi:type="widgets.brease.Button" id="AcknowledgeButton" top="219" left="1240" width="160" height="58" zIndex="5" multiLine="true" text="$IAT/Acknowledge" wordWrap="true" cornerRadius="5px" fontSize="18px" style="MyStyle" />
     <Widget xsi:type="widgets.brease.Button" id="AcknowledgeAllButton" top="300" left="1240" width="160" height="60" zIndex="6" multiLine="true" text="$IAT/AcknowledgeAll" wordWrap="true" cornerRadius="5px" fontSize="18px" style="MyStyle" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="200" left="1220" width="260" height="182" zIndex="2" borderStyle="solid" borderWidth="5px" cornerRadius="10px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" style="Solid_Orange" />
-    <Widget xsi:type="widgets.brease.Image" id="Image1" top="10" left="1350" width="90" height="70" zIndex="7" image="Media/SymbolLib/Alarm/Alarm.svg" imageColor="rgba(255, 255, 255, 1)" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="40" left="-140" width="1340" height="340" zIndex="1" borderStyle="solid" borderWidth="0px" cornerRadius="10px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" style="Solid_Orange" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="420" left="55" width="1524" height="340" zIndex="0" borderStyle="solid" borderWidth="0px" cornerRadius="10px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(77, 77, 77, 1)" style="Solid_Orange" />
   </Widgets>

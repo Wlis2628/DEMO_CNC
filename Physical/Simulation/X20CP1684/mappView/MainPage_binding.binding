@@ -8,20 +8,6 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton3" attribute="value" />
 </Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gLiveDrawing" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton7" attribute="value" />
-</Binding>
-
-
-
-
-
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BtnActivateTheTool1" attribute="value" />
-</Binding>
 
 
 
@@ -29,33 +15,6 @@
 
 
 
-
-
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput1" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput2" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BasicSlider1" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BasicSlider2" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Label10" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Label9" attribute="visible" />
-</Binding>
 
 
 
@@ -76,22 +35,10 @@
 <Source xsi:type="opcUa" refId="::ManualCont:GoUp" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MomentaryPushButton1" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MomentaryPushButton2" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MomentaryPushButton4" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MomentaryPushButton3" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MomentaryPushButton1" attribute="visible" />
-</Binding>
+
+
+
+
 
 
 		<Binding mode="oneWay">
@@ -101,20 +48,14 @@
 
 
 
-	<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
-<Target xsi:type="brease" contentRefId="TopContent" widgetRefId="ToggleButton1" attribute="value" />
-</Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MpCnc2Axis_0.Power" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton8" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gActiveTool" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BtnActivateTheTool" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:MpCnc2Axis_0.Power" attribute="value" />
+			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton8" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			
 <Source xsi:type="opcUa" refId="::live_draw:InfoString" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="TextOutput1" attribute="value" />
 </Binding>
@@ -131,25 +72,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:CncPosY" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericOutput2" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MpCnc2Axis_0.IsHomed" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BtnActivateTheTool1" attribute="visible" />
-</Binding>
+
 
 
 
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MpCnc2Axis_0.MoveActive" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton4" attribute="value" />
-</Binding>
-
-	<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonActivateTool" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BtnActivateTheTool" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="mapp" refId="gAlarmXCoreGlobal" attribute="link" />
-<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="AlarmList1" attribute="mpLink" />
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gAlarmActive" attribute="value" />
@@ -163,7 +92,7 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersY.Position" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BasicSlider2" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
+		<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersY.Position" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput2" attribute="value" />
 </Binding>

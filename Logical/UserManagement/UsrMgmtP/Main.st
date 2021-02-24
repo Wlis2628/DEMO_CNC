@@ -42,7 +42,7 @@ PROGRAM _CYCLIC
 	
 	//ENABLING BUTTONS USER MENU
 	IF MpUserXLoginUIConnect0.UserLevel = 100 THEN
-		IF SelectedUser = "administrator" OR SelectedUser = "Anonymous" OR SelectedUser = "operator" THEN
+		IF SelectedUser = "Administrator" OR SelectedUser = "Anonymous" OR SelectedUser = "Operator" THEN
 			RemoveButtonEnabled := 0;
 			EditButtonEnabled := 0;
 			NewUserButtonEnabled := 1;

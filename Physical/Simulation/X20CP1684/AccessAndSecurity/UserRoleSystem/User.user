@@ -6,18 +6,18 @@
       <Property ID="Role[1]" Value="Everyone" />
     </Group>
   </Element>
-  <Element ID="operator" Type="User">
+  <Element ID="Operator" Type="User">
     <Property ID="UserID" Value="2" />
     <Property ID="Password" Value="dL+RE+q619TxhQjpuOeM8f8ldt5LDNYNgw19JvuQoQK2fk53B1E=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Operator" />
+      <Property ID="Role[1]" Value="operator" />
     </Group>
   </Element>
-  <Element ID="administrator" Type="User">
+  <Element ID="Administrator" Type="User">
     <Property ID="UserID" Value="3" />
     <Property ID="Password" Value="Q60+5S86yOTTP+vV7iYQNqa3Tv7mWBljMLaLibjPTaSuSTW+rM4=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Administrator" />
+      <Property ID="Role[1]" Value="administrator" />
     </Group>
   </Element>
 </Configuration>
