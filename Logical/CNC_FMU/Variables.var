@@ -1,8 +1,0 @@
-VAR
-	MC_ReadActualTorque_0 : MC_ReadActualTorque;
-	MC_ReadActualTorque_1 : MC_ReadActualTorque;
-	CNC_FMU1 : CNC_FMU;
-	CNC_FMUView_0 : CNC_FMUView;
-	MC_BR_WrLoadSimPosition_AcpAx_0 : MC_BR_WrLoadSimPosition_AcpAx;
-	MC_BR_WrLoadSimPosition_AcpAx_1 : MC_BR_WrLoadSimPosition_AcpAx;
-END_VAR

@@ -5,5 +5,13 @@
 <Source xsi:type="opcUa" refId="::UsrMgmtP:LoggedAs" attribute="value" />
 <Target xsi:type="brease" contentRefId="TopContent" widgetRefId="TextOutputLoggedAsTop" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAlarmActive" attribute="value" />
+<Target xsi:type="brease" contentRefId="TopContent" widgetRefId="Label2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAlarmActive" attribute="value" />
+<Target xsi:type="brease" contentRefId="TopContent" widgetRefId="Image5" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

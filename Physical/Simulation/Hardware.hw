@@ -139,10 +139,10 @@
     <Parameter ID="Cyclic8Tolerance" Value="32000" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="CNC_PrgDir" />
-    <Parameter ID="FileDevicePath1" Value="F:\BrAutomation" />
+    <Parameter ID="FileDevicePath1" Value="C:\BrAutomation" />
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="CF" />
-    <Parameter ID="FileDevicePath2" Value="F:\CF" />
+    <Parameter ID="FileDevicePath2" Value="C:\CF" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="administrator" />
     <Parameter ID="FtpUserPassword1" Value="l2ZMc+fWbTiPJddINgK1Z9mRlNrixRAgt7akyTqvwNY=" Description="admin" />

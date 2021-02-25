@@ -14,6 +14,7 @@
     <Navigation refId="Navigation" />
   </Navigations>  
   <BindingsSets>
+		<BindingsSet refId="MainPageContent_binding" />
 		<BindingsSet refId="MainPage_binding" />
 		<BindingsSet refId="GraphicTextEditor_binding" />
 		<BindingsSet refId="Diagnostics_binding" />
@@ -25,6 +26,8 @@
 		<BindingsSet refId="DialogRemoveUser_binding" />
 		<BindingsSet refId="DialogUserError_binding" />
 		<BindingsSet refId="TopContent_binding" />
+		
+		
   </BindingsSets>
   <EventBindingsSets>
 		<EventBindingsSet refId="MainPage_eventbinding" />

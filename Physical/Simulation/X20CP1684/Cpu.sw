@@ -6,7 +6,6 @@
     <Task Name="ManualCont" Source="CNC_Programs.ManualContr.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="live_draw" Source="live_drawing.live_draw.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="RuchZGCode" Source="RuchZGCode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="CNC_FMU" Source="CNC_FMU.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
@@ -15,7 +14,6 @@
   <TaskClass Name="Cyclic#4">
     <Task Name="svg_to_gco" Source="live_drawing.svg_to_gcode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarm" Source="Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="CNC_FMUPrg" Source="CNC_FMUFmu2.CNC_FMUPrg.prg" Memory="UserROM" Language="ANSIC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -100,7 +98,6 @@
     <LibraryObject Name="AsBrStr" Source="Libraries.AsBrStr.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpRecipe" Source="Libraries.MpRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="sys_lib" Source="Libraries.sys_lib.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="CNC_FMULib" Source="CNC_FMUFmu2.CNC_FMULib.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="arcert" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="aseth" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -115,5 +112,6 @@
     <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asepl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="CNC_FMULib" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
