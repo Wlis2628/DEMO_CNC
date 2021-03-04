@@ -47,4 +47,5 @@ VAR
 	MpBasicParametersX : MpAxisBasicParType := (Homing:=(Mode:=mcHOMING_ABSOLUTE));
 	MpBasicParametersY : MpAxisBasicParType := (Homing:=(Mode:=mcHOMING_ABSOLUTE));
 	MpCnc2Axis_0 : MpCnc2Axis;
+	gAutomaticContr : BOOL;
 END_VAR

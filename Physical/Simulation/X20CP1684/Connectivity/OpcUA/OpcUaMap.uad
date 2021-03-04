@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<OpcUaSource FileVersion="7" ArVersion="C4.72">
+<OpcUaSource FileVersion="7" ArVersion="C4.73">
   <Aliases>
     <ACLAliases />
     <EURangeViolationAliases />
@@ -86,13 +86,15 @@
         <Variable Name="CncPosX" />
         <Variable Name="CncPosY" />
         <Variable Name="gAlarmActive" />
-        <Variable Name="MpAxisBasicX">
-          <Variable Name="Position" />
+        <Variable Name="MpAxisBasicX" Historizing="True">
+          <Variable Name="Position" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
           <Variable Name="ErrorReset" />
+          <Variable Name="Velocity" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
         </Variable>
-        <Variable Name="MpAxisBasicY">
-          <Variable Name="Position" />
+        <Variable Name="MpAxisBasicY" Historizing="True">
+          <Variable Name="Position" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
           <Variable Name="ErrorReset" />
+          <Variable Name="Velocity" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
         </Variable>
         <Variable Name="MpBasicParametersX">
           <Variable Name="Position" />
@@ -107,6 +109,7 @@
         <Variable Name="gMsgBox2" />
         <Variable Name="gMsgBox3" />
         <Variable Name="gMsgBox4" />
+        <Variable Name="gAutomaticContr" />
       </GlobalVariables>
       <Task Name="UsrMgmtP">
         <Variable Name="MpUserXLogin_0" />

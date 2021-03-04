@@ -16,6 +16,11 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
+	IF gManualContr THEN
+		gAutomaticContr:=FALSE;
+	ELSE
+		gAutomaticContr:=TRUE;
+	END_IF;
 	
 	
 	IF MpCnc2Axis_0.MoveProgram THEN
@@ -190,8 +195,8 @@ PROGRAM _CYCLIC
 	(* A dot showing the position of the tool*)
 	pointString:='<circle cx="';
 	
-	pointStrX:=REAL_TO_STRING(CncPosX*1.4);
-	pointStrY:=REAL_TO_STRING(CncPosY*1.4);
+	pointStrX:=REAL_TO_STRING(CncPosX*1.2);
+	pointStrY:=REAL_TO_STRING(CncPosY*1.2);
 	
 	strHelp:='" cy="';
 	strcat(ADR(pointString),ADR(pointStrX));

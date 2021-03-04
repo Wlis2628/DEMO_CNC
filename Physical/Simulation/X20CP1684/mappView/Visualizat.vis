@@ -26,7 +26,7 @@
 		<BindingsSet refId="DialogRemoveUser_binding" />
 		<BindingsSet refId="DialogUserError_binding" />
 		<BindingsSet refId="TopContent_binding" />
-		
+		<BindingsSet refId="ChartsContent_binding" />
 		
   </BindingsSets>
   <EventBindingsSets>
@@ -44,6 +44,9 @@
 		<EventBindingsSet refId="DialogUserError_eventbinding" />
 		<EventBindingsSet refId="MoveError1_eventbinding" />
 		<EventBindingsSet refId="TopContent_eventbinding" />
+		<EventBindingsSet refId="ShowGcodeContent_eventbinding" />
+		<EventBindingsSet refId="ChartsContent_eventbinding" />
+				
   </EventBindingsSets>
   <Dialogs>
 		<Dialog refId="NewUser"/>
@@ -52,6 +55,9 @@
 		<Dialog refId="DialogRemoveUser"/>
 		<Dialog refId="DialogUserError"/>
 		<Dialog refId="MoveError1" />
+		<Dialog refId="ShowGcode" />
+		
+		
   </Dialogs>
   <Contents>
 		<Content refId="TopContent" />

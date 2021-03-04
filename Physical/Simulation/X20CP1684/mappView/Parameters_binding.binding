@@ -105,5 +105,75 @@
 </Binding>
 
 
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoRight" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoUp" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoDown" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="ToggleButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoLeft" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton11" attribute="value" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton8" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton9" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput9" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput7" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="ToggleSwitch1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton10" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton11" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.set_Z_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.set_X_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="Button4" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="Button2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="Button1" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

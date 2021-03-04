@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ChartsContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<EventBinding id="ChartsContent.Button3.Click">
+			<Source contentRefId="ChartsContent" widgetRefId="Button3" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>	
+				<Parallel>	
+					<Action>
+						<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.ErrorReset">
+							<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeUI_0.ErrorReset">
+							<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="ChartsContent.Button1.Click">
+			<Source contentRefId="ChartsContent" widgetRefId="Button1" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ShowGcode" headerText="G-code editor" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="ChartsContent.ToggleButton5.Click">
+			<Source contentRefId="ChartsContent" widgetRefId="ToggleButton5" xsi:type="widgets.brease.ToggleButton.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<ReadTarget xsi:type="widgets.brease.MotionPad.ReadAction" contentRefId="GraphicTextEditor"  widgetRefId="MotionPad" >
+						<Method xsi:type="widgets.brease.MotionPad.Action.GetCurrentFileOpened" />
+					</ReadTarget>
+					<!--</Operand>-->
+					<Result>
+						<ResultHandler>
+							<Parallel>
+								<Action>
+									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:CncName" >
+										<Method xsi:type="opcUa.NodeAction.SetValueString" value="=result" />
+									</Target>
+								</Action>
+								<Action>
+									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MoveMachine" >
+										<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1"  />
+									</Target>
+								</Action>
+							</Parallel>
+						</ResultHandler>
+					</Result>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+	</Bindings>
+</EventBindingSet>

@@ -22,5 +22,15 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
+		<EventBinding id="TopContent.Image1.Click">
+			<Source contentRefId="TopContent" widgetRefId="Image1" xsi:type="widgets.brease.Image.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.Navigate" pageId="Users" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
 	</Bindings>
 </EventBindingSet>

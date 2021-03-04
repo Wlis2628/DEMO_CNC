@@ -30,5 +30,49 @@
 <Source xsi:type="mapp" refId="gAlarmXCoreGlobal" attribute="link" />
 <Target xsi:type="brease" contentRefId="Alarms" widgetRefId="AlarmList1" attribute="mpLink" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="ToggleButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoLeft" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="MomentaryPushButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoRight" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="MomentaryPushButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoUp" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="MomentaryPushButton1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="ToggleSwitch1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.set_Z_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="NumericInput6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gParameter.set_X_vel" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="NumericInput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:GoDown" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="MomentaryPushButton3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="Button2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="Button4" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="Button1" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

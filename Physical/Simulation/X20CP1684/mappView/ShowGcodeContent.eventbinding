@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ShowGcodeContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<EventBinding id="ShowGcodeContent.Button1.Click">
+			<Source contentRefId="ShowGcodeContent" widgetRefId="Button1" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+							<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ShowGcode" />
+						</Target>
+					</Action>
+				</EventHandler>
+			</EventBinding>	
+	</Bindings>
+</EventBindingSet>

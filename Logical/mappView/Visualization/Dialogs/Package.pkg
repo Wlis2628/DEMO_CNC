@@ -9,5 +9,6 @@
     <Object Type="Package">RemoveUser</Object>
     <Object Type="Package">UserError</Object>
     <Object Type="Package">MoveError1</Object>
+    <Object Type="Package">ShowGcode</Object>
   </Objects>
 </Package>

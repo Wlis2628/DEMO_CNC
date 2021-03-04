@@ -9,12 +9,12 @@
 		<EventBinding id="Users.Error">
 			<Source xsi:type="opcUa.Event" refId="::UsrMgmtP:MpUserXLoginUIConnect0.MessageBox.LayerStatus" event="ValueChanged" />
 			<EventHandler condition="newValue &lt; 0.5 AND oldValue &gt; 0.5" >
-			<Action>
-				<Target xsi:type="clientSystem.Action">
-					<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserError" headerText="Error" />
-				</Target>
-			</Action>
-		</EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserError" headerText="Error" />
+					</Target>
+				</Action>
+			</EventHandler>
 		</EventBinding>
 		
 		<!--LOGGING IN-->
@@ -126,5 +126,59 @@
 			</EventHandler>
 		</EventBinding>
 
+		<EventBinding id="Users.Button3.Click">
+			<Source contentRefId="Users" widgetRefId="Button3" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>	
+				<Parallel>	
+					<Action>
+						<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.ErrorReset">
+							<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+						</Target>
+					</Action>
+					<Action>
+						<Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeUI_0.ErrorReset">
+							<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+						</Target>
+					</Action>
+				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="Users.Button1.Click">
+			<Source contentRefId="Users" widgetRefId="Button1" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ShowGcode" headerText="G-code editor" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="Users.Button2.Click">
+			<Source contentRefId="Users" widgetRefId="Button2" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<ReadTarget xsi:type="widgets.brease.MotionPad.ReadAction" contentRefId="GraphicTextEditor"  widgetRefId="MotionPad" >
+						<Method xsi:type="widgets.brease.MotionPad.Action.GetCurrentFileOpened" />
+					</ReadTarget>
+					<!--</Operand>-->
+					<Result>
+						<ResultHandler>
+							<Parallel>
+								<Action>
+									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:CncName" >
+										<Method xsi:type="opcUa.NodeAction.SetValueString" value="=result" />
+									</Target>
+								</Action>
+								<Action>
+									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MoveMachine" >
+										<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1"  />
+									</Target>
+								</Action>
+							</Parallel>
+						</ResultHandler>
+					</Result>
+				</Action>
+			</EventHandler>
+		</EventBinding>
 	</Bindings>
 </EventBindingSet>

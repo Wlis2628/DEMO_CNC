@@ -52,7 +52,7 @@
     <Parameter ID="LoopFilter2" Location="DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/LoopFilters" Value="NotUsed" />
     <Parameter ID="LoopFilter3" Location="DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/LoopFilters" Value="NotUsed" />
     <Parameter ID="Mode" Location="DriveConfiguration/Channel[1]/RealAxis/Homing" Value="Absolute" />
-    <Parameter ID="Position" Location="DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="-1352" />
+    <Parameter ID="Position" Location="DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="0" />
     <Parameter ID="RestorePositionVariable" Location="DriveConfiguration/Channel[1]/RealAxis/Homing" Value="" />
     <Parameter ID="Quickstop" Location="DriveConfiguration/Channel[1]/RealAxis/StopReaction" Value="DecelerationLimit" />
     <Parameter ID="DriveError" Location="DriveConfiguration/Channel[1]/RealAxis/StopReaction" Value="DecelerationLimit" />
@@ -94,7 +94,7 @@
     <Parameter ID="LoopFilter2" Location="DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/LoopFilters" Value="NotUsed" />
     <Parameter ID="LoopFilter3" Location="DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/LoopFilters" Value="NotUsed" />
     <Parameter ID="Mode" Location="DriveConfiguration/Channel[1]/RealAxis/Homing" Value="Absolute" />
-    <Parameter ID="Position" Location="DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="-220" />
+    <Parameter ID="Position" Location="DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="0" />
     <Parameter ID="RestorePositionVariable" Location="DriveConfiguration/Channel[1]/RealAxis/Homing" Value="" />
     <Parameter ID="Quickstop" Location="DriveConfiguration/Channel[1]/RealAxis/StopReaction" Value="DecelerationLimit" />
     <Parameter ID="DriveError" Location="DriveConfiguration/Channel[1]/RealAxis/StopReaction" Value="DecelerationLimit" />

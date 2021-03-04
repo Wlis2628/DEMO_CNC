@@ -17,8 +17,7 @@ PROGRAM _CYCLIC
 		
 	CncNameCopy := DELETE(CncName, 12, 0);
 		CncParameters.ProgramName := CncNameCopy;
-		gUploadedImage:=TRUE;
-	MoveMachine := 2;
+		MoveMachine := 2;
 		IF  strcmp(ADR(CncNameCopy),ADR('')) <> 0 THEN
 			MpCnc2Axis_0.MoveProgram := TRUE;
 		END_IF
@@ -26,7 +25,6 @@ PROGRAM _CYCLIC
 	ELSIF MpCnc2Axis_0.MoveDone THEN
 		CncName := '';
 		CncNameCopy := '';
-		gUploadedImage:=FALSE;
 		MpCnc2Axis_0.MoveProgram := FALSE;
 	END_IF
 	
@@ -36,7 +34,6 @@ PROGRAM _CYCLIC
 		DialogErrorVisible := TRUE;
 		MpCnc2Axis_0.Stop := TRUE;
 		MpCnc2Axis_0.MoveProgram := FALSE;
-		
 	END_IF
 	
 
