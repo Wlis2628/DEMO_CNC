@@ -59,5 +59,9 @@
         <Widget xsi:type="widgets.brease.Button" id="Button4" top="151" left="1221" width="200" height="50" zIndex="20" text="Stop" fontSize="25px" style="MyStyle" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="Button5" top="438" left="40" width="180" height="60" zIndex="1014" text="Show" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="576" left="40" width="180" height="131" zIndex="1015" image="Media/br_logo.png" />
+    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBar1" top="540" left="310" width="100" height="203" zIndex="1016" orientation="BottomToTop" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="449" left="280" width="160" height="42" zIndex="1017" fontSize="25px" />
   </Widgets>
 </Content>

@@ -113,5 +113,15 @@
 				</Parallel>
 			</EventHandler>
 		</EventBinding>
+		<EventBinding id="Diagnostics.Button4.Click">
+			<Source contentRefId="Diagnostics" widgetRefId="Button4" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.MoveProgram">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
 	</Bindings>
 </EventBindingSet>

@@ -62,6 +62,7 @@
 		<EventBinding id="GraphicTextEditor.OpenExplorer.Click">
 			<Source contentRefId="GraphicTextEditor" widgetRefId="OpenExplorer" xsi:type="widgets.brease.Button.Event" event="Click" />
 			<EventHandler>
+				
 				<Action>
 					<Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="GraphicTextEditor" widgetRefId="MotionPad" >                                                            
 						<Method xsi:type="widgets.brease.MotionPad.Action.OpenFileExplorer" /> 
@@ -361,6 +362,16 @@
 						</Target>
 					</Action>
 				</Parallel>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.Button4.Click">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="Button4" xsi:type="widgets.brease.Button.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.MoveProgram">
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+					</Target>
+				</Action>
 			</EventHandler>
 		</EventBinding>
 	</Bindings>

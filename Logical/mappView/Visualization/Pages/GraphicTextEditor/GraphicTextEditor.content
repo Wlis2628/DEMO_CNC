@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="GraphicTextEditor" height="800" width="1450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.MotionPad" id="MotionPad" top="99" left="979" width="461" height="521" zIndex="2" keyboard="true" mpLink="gCncXZ" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.MotionPad" id="MotionPad" top="100" left="979" width="461" height="521" zIndex="2" keyboard="true" mpLink="gCncXZ" fontSize="16px" />
     <Widget xsi:type="widgets.brease.Button" id="OpenExplorer" top="640" left="979" width="150" height="65" zIndex="3" multiLine="true" text="$IAT/OpenExplorer" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" fontSize="16px" style="MyStyle" />
     <Widget xsi:type="widgets.brease.Button" id="SaveFileAs" top="640" left="1150" width="120" height="65" zIndex="4" multiLine="true" text="$IAT/SaveAs" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" fontSize="16px" style="MyStyle" />
     <Widget xsi:type="widgets.brease.Button" id="SaveFile" top="640" left="1290" width="150" height="65" zIndex="5" multiLine="true" text="$IAT/Save" wordWrap="true" borderWidth="7px 7px 3px 3px" cornerRadius="10px" fontSize="16px" style="MyStyle" />

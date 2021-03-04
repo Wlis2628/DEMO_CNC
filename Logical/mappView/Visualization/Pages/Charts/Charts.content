@@ -28,7 +28,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA1" top="10" left="20" width="660" height="410" zIndex="0">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="540" textColor="rgba(255, 255, 255, 1)" />
+                  <Element id="yAxis1" max="540" textColor="rgba(255, 255, 255, 1)" min="-10" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" numberOfTicks="7" textColor="rgba(255, 255, 255, 1)" fontSize="15px" />

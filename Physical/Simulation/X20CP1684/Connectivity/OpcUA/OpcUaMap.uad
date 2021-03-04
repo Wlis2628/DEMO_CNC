@@ -17,7 +17,10 @@
         </EURange>
       </EURanges>
     </EURangesAliases>
-    <EngineeringUnitAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="5066068" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="millimetre" Symbol="mm" />
+      <EngineeringUnit Id="2" UnitId="5067859" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre per second" Symbol="m/s" />
+    </EngineeringUnitAliases>
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
@@ -87,14 +90,14 @@
         <Variable Name="CncPosY" />
         <Variable Name="gAlarmActive" />
         <Variable Name="MpAxisBasicX" Historizing="True">
-          <Variable Name="Position" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
+          <Variable Name="Position" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" EngineeringUnitId="1" />
           <Variable Name="ErrorReset" />
-          <Variable Name="Velocity" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
+          <Variable Name="Velocity" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
         </Variable>
         <Variable Name="MpAxisBasicY" Historizing="True">
-          <Variable Name="Position" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
+          <Variable Name="Position" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" EngineeringUnitId="1" />
           <Variable Name="ErrorReset" />
-          <Variable Name="Velocity" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" />
+          <Variable Name="Velocity" Historizing="True" HistoryBufferSize="200" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
         </Variable>
         <Variable Name="MpBasicParametersX">
           <Variable Name="Position" />

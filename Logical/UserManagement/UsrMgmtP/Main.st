@@ -12,18 +12,6 @@ PROGRAM _INIT
 	MpUserXLoginUI_0.Enable := 1;
 	MpUserXLoginUI_0.MpLink := ADR(gUserXLogin);
 	MpUserXLoginUI_0.UIConnect := ADR(MpUserXLoginUIConnect0);
-	
-	EditButtonEnabled := 1;
-	RemoveButtonEnabled := 1;
-	LoginButtonEnabled := 1;
-	LoginButtonEnabled := 1;
-	NewUserButtonEnabled := 1;
-	DialogNewUserConfirmEnabled := 0;
-
-	DialogEditUserConfirmEnabled := 0;
- 	
-	DateFirstLoginVisible := 1;
-	LabelFirstLoginVisible := 0;
 
 END_PROGRAM
 
@@ -31,7 +19,6 @@ PROGRAM _CYCLIC
 	
 	//DISPLAY SELECTED USER
 	SelectedUser := MpUserXMgrUIConnect_0.User.List.UserNames[MpUserXMgrUIConnect_0.User.List.SelectedIndex];
-	
 	
 	//DEFAULT DISPLAY ANONYMOUS
 	IF MpUserXLoginUIConnect0.CurrentUser = "" THEN
@@ -211,12 +198,14 @@ PROGRAM _CYCLIC
 	//EDITING USER ROLE
 	MpUserXMgrUIConnect_0.User.Edit.Dialog.Roles[0] := EditUserRoleIndex + 2;
 	
+	
 	//DIALOG EDIT USER DISPLAY PASSWORD HINT
 	IF MpUserXMgrUIConnect_0.User.Edit.Dialog.CriteriaNotMet = mpUSERX_PASSWORD_CRIT_NONE THEN
 		EditUserPasswordHint := "Password ok";
 	ELSIF MpUserXMgrUIConnect_0.User.Edit.Dialog.CriteriaNotMet = mpUSERX_PASSWORD_CRIT_LENGTH THEN
 		EditUserPasswordHint := "Password too short";
 	END_IF;
+	
 	
 	//DIALOG EDIT USER DISPLAY PASSWORDS MATCH INFO
 	IF MpUserXMgrUIConnect_0.User.Edit.Dialog.NewPasswordOk = 1 AND MpUserXMgrUIConnect_0.User.Edit.Dialog.ConfirmPasswordOk = 1 THEN
@@ -238,6 +227,7 @@ PROGRAM _CYCLIC
 	MpUserXLogin_0();
 	MpUserXLoginUI_0();
 	MpUserXManagerUI_0();
+	
 END_PROGRAM
 
 PROGRAM _EXIT
