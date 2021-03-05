@@ -62,12 +62,12 @@
 		<EventBinding id="GraphicTextEditor.OpenExplorer.Click">
 			<Source contentRefId="GraphicTextEditor" widgetRefId="OpenExplorer" xsi:type="widgets.brease.Button.Event" event="Click" />
 			<EventHandler>
-				
 				<Action>
 					<Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="GraphicTextEditor" widgetRefId="MotionPad" >                                                            
 						<Method xsi:type="widgets.brease.MotionPad.Action.OpenFileExplorer" /> 
 					</Target>
-				</Action>
+					</Action>
+					
 			</EventHandler>
 		</EventBinding>
 		

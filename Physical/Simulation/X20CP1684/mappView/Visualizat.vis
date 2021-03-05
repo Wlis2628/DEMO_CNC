@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="vis_1" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="MainPage" />
+  <StartPage pageRefId="Users" />
   <Pages>
 		<Page refId="GraphicTextEditor"/>
 		<Page refId="Diagnostics"/>
 		<Page refId="Parameters"/>
-		<Page refId="Users"/>
+		<Page refId="MainPage"/>
 		<Page refId="Alarms"/>
 		<Page refId="MainPage"/>
 		<Page refId="Charts"/>

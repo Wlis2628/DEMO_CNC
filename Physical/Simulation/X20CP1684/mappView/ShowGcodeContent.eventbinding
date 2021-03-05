@@ -6,10 +6,20 @@
 			<EventHandler>
 				<Action>
 					<Target xsi:type="clientSystem.Action">
-							<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ShowGcode" />
-						</Target>
-					</Action>
-				</EventHandler>
-			</EventBinding>	
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ShowGcode" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>	
+		<EventBinding id="ShowGcodeContent.MotionPad1.OnError">
+			<Source contentRefId="ShowGcodeContent" widgetRefId="MotionPad1" xsi:type="widgets.brease.MotionPad.Event" event="OnError" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gMotionPadError">
+						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=result" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
 	</Bindings>
 </EventBindingSet>

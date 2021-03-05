@@ -117,18 +117,9 @@
 <Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.Delete" attribute="value" />
 <Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton7" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonDelete" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton7" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonCreate" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton6" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.TextInputCreate" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="TextInput1" attribute="enable" />
-</Binding>
+
+
+
 
 
 

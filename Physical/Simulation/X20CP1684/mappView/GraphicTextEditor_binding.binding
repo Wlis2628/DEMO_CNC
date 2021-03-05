@@ -7,26 +7,11 @@
 			<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="PaperDraw" attribute="svgContent" />
 		</Binding>
  
-	<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MpCnc2Axis_0.Power" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="SendTo" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonConvert" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="BackButton1" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButonOpenExplorer" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="OpenExplorer" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonSaveGcodeAs" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="SaveFileAs" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonSaveGcode" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="SaveFile" attribute="enable" />
-		</Binding>
+	
+
+
+
+
 		
 		
 <Binding mode="twoWay">

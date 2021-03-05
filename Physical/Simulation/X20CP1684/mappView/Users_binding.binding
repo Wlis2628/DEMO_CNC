@@ -6,44 +6,11 @@
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="TableUsers" attribute="selectedRow" />
 </Binding>
 
-
-
-
-
-
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXLoginUIConnect0.Login.UserName" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="TextInputUsername" attribute="value" />
-</Binding>
-
-
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:SelectedUser" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="TextOutputSelectedUser" attribute="value" />
 </Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:EditButtonEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ButtonEditUser" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:RemoveButtonEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ButtonRemoveUser" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:LoginButtonEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ButtonLogin" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:LogoutButtonEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ButtonLogout" attribute="enable" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Info.FirstLogin" attribute="value" />
-			<Target xsi:type="brease" contentRefId="Users" widgetRefId="DateTimeOutputFirstLogin" attribute="value" />
-</Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Info.Creation" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="DateTimeOutputuserCreation" attribute="value" />
@@ -53,32 +20,12 @@
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="DateTimeOutputLastLogin" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:LoggedAs" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="TextOutputLoggedAs" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXLoginUIConnect0.Login.Password" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="PasswordLogin" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:SelectedUserGroup" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="TextOutputGroup" attribute="value" />
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.List.UserNames" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="TableItemUsers" attribute="stringValue" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:NewUserButtonEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ButtonNewUser" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:LabelFirstLoginVisible" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="LabelNoFirstLogin" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:DateFirstLoginVisible" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="DateTimeOutputFirstLogin" attribute="visible" />
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
@@ -123,6 +70,30 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="Button1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UserVisu:Show" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="Image1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UserVisu:NumericInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="ProgressBar1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UserVisu:NumericInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="NumericInput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UserVisu:SliderInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="BasicSlider1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UserVisu:SliderInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="RadialSlider1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::UserVisu:Show" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleButton2" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

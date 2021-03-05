@@ -16,6 +16,12 @@
           <High ValueProvider="Const">520</High>
         </EURange>
       </EURanges>
+      <EURanges Id="4">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
     </EURangesAliases>
     <EngineeringUnitAliases>
       <EngineeringUnit Id="1" UnitId="5066068" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="millimetre" Symbol="mm" />
@@ -341,11 +347,7 @@
         </Variable>
         <Variable Name="MpUserXMgrUISetup_0" />
         <Variable Name="SelectedUser" />
-        <Variable Name="EditButtonEnabled" />
-        <Variable Name="LoginButtonEnabled" />
-        <Variable Name="RemoveButtonEnabled" />
         <Variable Name="DialogNewUserConfirmEnabled" />
-        <Variable Name="LogoutButtonEnabled" />
         <Variable Name="NewUserPasswordHint" />
         <Variable Name="LoggedAs" />
         <Variable Name="NewUserPasswordOk" />
@@ -355,35 +357,9 @@
         <Variable Name="EditUserPasswordHint" />
         <Variable Name="EditUserPasswordOk" />
         <Variable Name="EditUserRoleIndex" />
-        <Variable Name="NewUserButtonEnabled" />
         <Variable Name="StringError" />
         <Variable Name="DateFirstLoginVisible" />
         <Variable Name="LabelFirstLoginVisible" />
-        <Variable Name="Enable">
-          <Variable Name="ButtonStart" />
-          <Variable Name="ButtonResetErrors" />
-          <Variable Name="ButtonTurnOff" />
-          <Variable Name="ButtonActivateTool" />
-          <Variable Name="ButtonConvert" />
-          <Variable Name="ButonOpenExplorer" />
-          <Variable Name="ButtonSaveGcode" />
-          <Variable Name="ButtonSaveGcodeAs" />
-          <Variable Name="ButtonLoad" />
-          <Variable Name="ButtonSave" />
-          <Variable Name="ButtonRefresh" />
-          <Variable Name="SetXPos" />
-          <Variable Name="SetYPos" />
-          <Variable Name="SetAcc" />
-          <Variable Name="SetDec" />
-          <Variable Name="SetXVelocity" />
-          <Variable Name="SetYVelocity" />
-          <Variable Name="SetVelocityLimit" />
-          <Variable Name="ButtonAcknowledge" />
-          <Variable Name="ButtonAcknowledgeAll" />
-          <Variable Name="ButtonDelete" />
-          <Variable Name="ButtonCreate" />
-          <Variable Name="TextInputCreate" />
-        </Variable>
       </Task>
       <Task Name="Initiation" />
       <Task Name="ManualCont">
@@ -476,6 +452,11 @@
       </Task>
       <Task Name="svg_to_gco">
         <Variable Name="cmdConvert" />
+      </Task>
+      <Task Name="UserVisu">
+        <Variable Name="Show" />
+        <Variable Name="NumericInput" EURangesId="4" />
+        <Variable Name="SliderInput" />
       </Task>
     </Module>
   </DefaultView>

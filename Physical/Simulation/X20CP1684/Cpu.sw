@@ -2,24 +2,25 @@
 <?AutomationStudio Version=4.7.2.98?>
 <SwConfiguration CpuAddress="$root" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
-    <Task Name="Initiation" Source="CNC_Programs.InitiationandHoming.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="ManualCont" Source="CNC_Programs.ManualContr.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="live_draw" Source="live_drawing.live_draw.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="RuchZGCode" Source="RuchZGCode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Initiation" Source="Programs.CNC_Programs.InitiationandHoming.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="ManualCont" Source="Programs.CNC_Programs.ManualContr.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="live_draw" Source="Programs.live_drawing.live_draw.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="RuchZGCode" Source="Programs.RuchZGCode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
-    <Task Name="UsrMgmtP" Source="UserManagement.UsrMgmtP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="UsrMgmtP" Source="Programs.UserManagement.UsrMgmtP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#4">
-    <Task Name="svg_to_gco" Source="live_drawing.svg_to_gcode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Alarm" Source="Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="svg_to_gco" Source="Programs.live_drawing.svg_to_gcode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Alarm" Source="Programs.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="UserVisu" Source="UserVisu.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8">
-    <Task Name="Recipe" Source="Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Recipe" Source="Programs.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <DataObjects>
     <DataObject Name="McAcpSys" Source="" Memory="UserROM" Language="Binary" />

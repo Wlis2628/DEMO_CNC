@@ -17,30 +17,6 @@
 			</EventHandler>
 		</EventBinding>
 		
-		<!--LOGGING IN-->
-		<EventBinding id="Users.ButtonLogin.Click">
-			<Source contentRefId="Users" widgetRefId="ButtonLogin" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXLoginUIConnect0.Login.Login" >
-						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		
-		<!--LOGGING OUT-->
-		<EventBinding id="Users.ButtonLogout.Click">
-			<Source contentRefId="Users" widgetRefId="ButtonLogout" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXLoginUIConnect0.Login.Logout" >
-						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		
 		
 		
 		<!--OPENINIG NEW USER DIALOG-->

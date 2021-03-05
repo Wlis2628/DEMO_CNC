@@ -62,18 +62,9 @@
 			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetXPos" attribute="value" />
 			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput1" attribute="enable" />
 		</Binding>
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonRefresh" attribute="value" />
-			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton3" attribute="enable" />
-		</Binding>
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonSave" attribute="value" />
-			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton2" attribute="enable" />
-		</Binding>
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.ButtonLoad" attribute="value" />
-			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton1" attribute="enable" />
-</Binding>
+		
+		
+		
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetYPos" attribute="value" />
 <Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput2" attribute="enable" />
