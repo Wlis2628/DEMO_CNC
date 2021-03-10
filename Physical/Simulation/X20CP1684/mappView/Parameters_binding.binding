@@ -58,37 +58,19 @@
 
 
 
-		<Binding mode="twoWay">
-			<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetXPos" attribute="value" />
-			<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput1" attribute="enable" />
-		</Binding>
 		
 		
 		
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetYPos" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput2" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetAcc" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput3" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetDec" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput4" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetXVelocity" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput5" attribute="enable" />
-</Binding>
+		
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetYVelocity" attribute="value" />
 <Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput6" attribute="enable" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetVelocityLimit" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput8" attribute="enable" />
-</Binding>
+
 
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Recipe:UIConnect.New.FileName" attribute="value" />

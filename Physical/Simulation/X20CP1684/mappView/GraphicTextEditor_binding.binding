@@ -82,5 +82,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="Button2" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="ToggleSwitch1" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

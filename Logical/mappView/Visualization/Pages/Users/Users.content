@@ -23,7 +23,7 @@
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="20" left="780" width="760" height="760" zIndex="0" backColor="rgba(77, 77, 77, 1)" />
     <Widget xsi:type="widgets.brease.Image" id="Image2" top="40" left="400" width="108" height="80" zIndex="1000" image="Media/SymbolLib/User/User.svg" imageColor="rgba(255, 255, 255, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="140" left="400" width="280" height="119" zIndex="1001" multiLine="true" text="Username: administrator, Password: admin;             Username: operator, Password: 1234" wordWrap="true" textColor="rgba(255, 255, 255, 1)" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="280" left="-140" width="900" height="500" zIndex="1002" backColor="rgba(77, 77, 77, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="300" left="-140" width="900" height="480" zIndex="1002" backColor="rgba(77, 77, 77, 1)" />
     <Widget xsi:type="widgets.brease.FlyOut" id="FlyOut1" top="0" left="10" width="1450" height="250" zIndex="1003" docking="bottom" text="FlyOut" buttonWidth="150" buttonCornerRadius="5px 5px 0px 0px" buttonBackColor="rgba(255, 140, 0, 1)" backColor="rgba(64, 64, 64, 1)" textAlign="center" textRotation="horizontal">
       <Widgets>
         <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton1" top="26" left="377" width="50" height="60" zIndex="1" image="Media/SymbolLib/Arrow/ArrowUp.svg" imageColor="rgba(255, 255, 255, 1)" borderWidth="5px 1px 1px 1px" cornerRadius="10px" backColor="rgba(169, 169, 169, 1)" style="MyStyle" />

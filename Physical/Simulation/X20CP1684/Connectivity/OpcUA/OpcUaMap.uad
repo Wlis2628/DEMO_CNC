@@ -1,8 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <OpcUaSource FileVersion="7" ArVersion="C4.73">
   <Aliases>
-    <ACLAliases />
-    <EURangeViolationAliases />
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleId="3" RoleName="Operator" Access="0x015F" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
+        <ACE RoleId="1" RoleName="Administrator" Access="0x015F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleId="3" RoleName="Operator" Access="0x017F" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x017F" />
+        <ACE RoleId="1" RoleName="Administrator" Access="0x017F" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases>
+      <EURangeViolation Id="2" Mode="2" />
+      <EURangeViolation Id="3" Mode="2" AclInherit="2" AclId="2" />
+    </EURangeViolationAliases>
     <EURangesAliases>
       <EURanges Id="2">
         <EURange>
@@ -16,10 +30,40 @@
           <High ValueProvider="Const">520</High>
         </EURange>
       </EURanges>
-      <EURanges Id="4">
+      <EURanges Id="7">
         <EURange>
           <Low ValueProvider="Const">0</Low>
           <High ValueProvider="Const">100</High>
+        </EURange>
+        <EURange Priority="1" RoleId="3">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">50</High>
+        </EURange>
+        <EURange Priority="2" RoleId="1">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+        <EURange Priority="3" RoleId="2">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">0</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="8">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">50</High>
+        </EURange>
+        <EURange Priority="1" RoleId="3">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">50</High>
+        </EURange>
+        <EURange Priority="2" RoleId="1">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+        <EURange Priority="3" RoleId="2">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">0</High>
         </EURange>
       </EURanges>
     </EURangesAliases>
@@ -28,7 +72,7 @@
       <EngineeringUnit Id="2" UnitId="5067859" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre per second" Symbol="m/s" />
     </EngineeringUnitAliases>
   </Aliases>
-  <DefaultView>
+  <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="gManualContr" />
@@ -455,8 +499,8 @@
       </Task>
       <Task Name="UserVisu">
         <Variable Name="Show" />
-        <Variable Name="NumericInput" EURangesId="4" />
-        <Variable Name="SliderInput" />
+        <Variable Name="NumericInput" EURangeViolationId="2" EURangesId="7" />
+        <Variable Name="SliderInput" EURangeViolationId="3" EURangesId="8" />
       </Task>
     </Module>
   </DefaultView>
