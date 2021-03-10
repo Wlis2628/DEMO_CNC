@@ -16,7 +16,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
-	IF gManualContr THEN
+	IF gManualContr OR ButtonEnable=FALSE THEN
 		gAutomaticContr:=FALSE;
 	ELSE
 		gAutomaticContr:=TRUE;

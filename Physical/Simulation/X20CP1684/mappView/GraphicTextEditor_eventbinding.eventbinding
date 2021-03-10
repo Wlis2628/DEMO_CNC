@@ -66,8 +66,7 @@
 					<Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="GraphicTextEditor" widgetRefId="MotionPad" >                                                            
 						<Method xsi:type="widgets.brease.MotionPad.Action.OpenFileExplorer" /> 
 					</Target>
-					</Action>
-					
+				</Action>
 			</EventHandler>
 		</EventBinding>
 		

@@ -100,10 +100,7 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersX.Position" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput1" attribute="value" />
 </Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gUploadedImage" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton2" attribute="value" />
-</Binding>
+
 
 
 	
@@ -137,6 +134,10 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Recipe:UIConnect.Recipe.List.SelectedIndex" attribute="value" />
 <Target xsi:type="brease" contentRefId="Parameters" widgetRefId="ListBox1" attribute="selectedIndex" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton2" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

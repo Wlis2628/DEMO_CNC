@@ -30,5 +30,6 @@
     <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
     <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
     <Object Type="Library" Language="Binary" Description="Web access">MpWebXs</Object>
+    <Object Type="Library" Language="Binary" Description="Text based messaging system">MpTweet</Object>
   </Objects>
 </Package>

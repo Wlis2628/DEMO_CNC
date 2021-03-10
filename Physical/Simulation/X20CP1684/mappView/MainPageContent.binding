@@ -72,5 +72,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Button4" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle4" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="Rectangle5" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>
