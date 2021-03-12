@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="TopContent" height="100" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="0" left="-40" width="1700" zIndex="0" borderStyle="solid" borderWidth="4px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="0" left="-40" width="1700" zIndex="0" borderStyle="solid" borderWidth="5px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(169, 169, 169, 1)" />
     <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputDate" top="60" left="1420" zIndex="1" format="dd.MM.yyyy" textColor="rgba(255, 255, 255, 1)" />
     <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputTime" top="20" left="1430" width="140" height="40" zIndex="2" format="HH:mm" textColor="rgba(255, 255, 255, 1)" fontSize="50px" />
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="958" width="160" zIndex="3" text="Logged in as:" textColor="rgba(255, 255, 255, 1)" fontSize="20px" />

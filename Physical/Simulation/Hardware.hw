@@ -66,7 +66,9 @@
     <Parameter ID="Level" Location="DriveConfiguration/Channel[1]/RealAxis/DigitalInputs/Trigger2" Value="High" />
     <Parameter ID="Input" Location="DriveConfiguration/Channel[1]/RealAxis/DigitalInputs/Quickstop" Value="Trigger2" />
     <Parameter ID="SimulationModeOnPLC" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="SetValueGeneration" />
-    <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="NotUsed" />
+    <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="CompleteControlledSystem" />
+    <Parameter ID="LoadModel" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation/SimulationModeOnACOPOS" Value="OneMassBasedOnMotorParameters" />
+    <Parameter ID="AdditiveLoadParID" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation/SimulationModeOnACOPOS/LoadModel" Value="0" />
   </Module>
   <Module Name="8V1022.00-2a" Type="8V1022.00-2" Version="2.2.0.0">
     <Parameter ID="McAcoposTypeID" Location="DriveConfiguration/Module" Value="AcoposConfig" />
@@ -108,7 +110,9 @@
     <Parameter ID="Level" Location="DriveConfiguration/Channel[1]/RealAxis/DigitalInputs/Trigger2" Value="High" />
     <Parameter ID="Input" Location="DriveConfiguration/Channel[1]/RealAxis/DigitalInputs/Quickstop" Value="Trigger2" />
     <Parameter ID="SimulationModeOnPLC" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="SetValueGeneration" />
-    <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="NotUsed" />
+    <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="CompleteControlledSystem" />
+    <Parameter ID="LoadModel" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation/SimulationModeOnACOPOS" Value="OneMassBasedOnMotorParameters" />
+    <Parameter ID="AdditiveLoadParID" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation/SimulationModeOnACOPOS/LoadModel" Value="0" />
   </Module>
   <Module Name="X20CP1684" Type="X20CP1684" Version="1.1.0.0">
     <Connector Name="IF2">
