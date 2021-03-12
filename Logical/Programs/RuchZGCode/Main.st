@@ -40,8 +40,6 @@ PROGRAM _CYCLIC
 	IF MpCnc2Axis_0.Error = FALSE THEN
 		MpCnc2Axis_0.ErrorReset := FALSE;
 	END_IF
-
-
 	
 	MC_BR_MFunction_0();
 	MC_BR_MFunction_1();

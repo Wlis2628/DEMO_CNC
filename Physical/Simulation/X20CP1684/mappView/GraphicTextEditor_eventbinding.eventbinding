@@ -58,7 +58,7 @@
 				
 		</ResultHandler>
 		</Result>-->
-
+		
 		<EventBinding id="GraphicTextEditor.OpenExplorer.Click">
 			<Source contentRefId="GraphicTextEditor" widgetRefId="OpenExplorer" xsi:type="widgets.brease.Button.Event" event="Click" />
 			<EventHandler>
@@ -69,6 +69,7 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
+
 		
 		
 		<EventBinding id="GraphicTextEditor.SaveFileAs.Click">
@@ -373,5 +374,6 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
+
 	</Bindings>
 </EventBindingSet>

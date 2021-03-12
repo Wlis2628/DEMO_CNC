@@ -21,26 +21,7 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
-		<EventBinding id="MainPageContent.NumericInput1.ValueChanged">
-			<Source contentRefId="MainPageContent" widgetRefId="NumericInput1" xsi:type="widgets.brease.NumericInput.Event" event="ValueChanged" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gMoveAbsoluteX" >
-						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		<EventBinding id="MainPageContent.NumericInput2.ValueChanged">
-			<Source contentRefId="MainPageContent" widgetRefId="NumericInput2" xsi:type="widgets.brease.NumericInput.Event" event="ValueChanged" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gMoveAbsoluteY" >
-						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
+	
 		<EventBinding id="MainPageContent.Button1.Click">
 			<Source contentRefId="MainPageContent" widgetRefId="Button1" xsi:type="widgets.brease.Button.Event" event="Click" />
 			<EventHandler>
@@ -102,6 +83,26 @@
 				<Action>
 					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.MoveProgram">
 						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="MainPageContent.NumericInput7.ValueChanged">
+			<Source contentRefId="MainPageContent" widgetRefId="NumericInput7" xsi:type="widgets.brease.NumericInput.Event" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gMoveAbsoluteX" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="MainPageContent.NumericInput8.ValueChanged">
+			<Source contentRefId="MainPageContent" widgetRefId="NumericInput8" xsi:type="widgets.brease.NumericInput.Event" event="ValueChanged" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gMoveAbsoluteY" >
+						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
 					</Target>
 				</Action>
 			</EventHandler>

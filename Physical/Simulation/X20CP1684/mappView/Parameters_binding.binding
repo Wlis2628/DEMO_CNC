@@ -66,10 +66,7 @@
 
 
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:Enable.SetYVelocity" attribute="value" />
-<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput6" attribute="enable" />
-</Binding>
+
 
 
 <Binding mode="twoWay">

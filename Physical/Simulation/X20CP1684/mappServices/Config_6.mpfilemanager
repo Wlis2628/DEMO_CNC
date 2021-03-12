@@ -14,7 +14,17 @@
           <Property ID="Folder" Value="*" />
           <Group ID="Roles">
             <Group ID="0">
-              <Property ID="Role" Value="" />
+              <Property ID="Role" Value="Administrator" />
+              <Group ID="Rights">
+                <Property ID="Visible" Value="TRUE" />
+                <Property ID="FolderRead" Value="TRUE" />
+                <Property ID="FileRead" Value="TRUE" />
+                <Property ID="FileEdit" Value="TRUE" />
+                <Property ID="FolderEdit" Value="TRUE" />
+              </Group>
+            </Group>
+            <Group ID="1">
+              <Property ID="Role" Value="Operator" />
               <Group ID="Rights">
                 <Property ID="Visible" Value="TRUE" />
                 <Property ID="FolderRead" Value="TRUE" />

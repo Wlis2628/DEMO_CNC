@@ -36,31 +36,6 @@ PROGRAM _CYCLIC
 	//EDITING USER ROLE
 	MpUserXMgrUIConnect_0.User.Edit.Dialog.Roles[0] := EditUserRoleIndex + 2;
 	
-	
-	//DIALOG EDIT USER DISPLAY PASSWORD HINT
-	IF MpUserXMgrUIConnect_0.User.Edit.Dialog.CriteriaNotMet = mpUSERX_PASSWORD_CRIT_NONE THEN
-		EditUserPasswordHint := "Password ok";
-	ELSIF MpUserXMgrUIConnect_0.User.Edit.Dialog.CriteriaNotMet = mpUSERX_PASSWORD_CRIT_LENGTH THEN
-		EditUserPasswordHint := "Password too short";
-	END_IF;
-	
-	
-	//DIALOG EDIT USER DISPLAY PASSWORDS MATCH INFO
-	IF MpUserXMgrUIConnect_0.User.Edit.Dialog.NewPasswordOk = 1 AND MpUserXMgrUIConnect_0.User.Edit.Dialog.ConfirmPasswordOk = 1 THEN
-		EditUserPasswordOk := "Passwords match";
-	ELSE
-		EditUserPasswordOk := "Passwords do not match";
-	END_IF;
-	
-	//ERRORS 
-	IF MpUserXLoginUIConnect0.MessageBox.ErrorNumber = 28673 THEN
-		StringError := "User does not exist.";
-	ELSIF MpUserXLoginUIConnect0.MessageBox.ErrorNumber = 28672 THEN
-		StringError := "Password incorrect.";
-	ELSE
-		StringError := "No errors?";
-	END_IF;
-	
 	//FUNCTION CALL
 	MpUserXLogin_0();
 	MpUserXLoginUI_0();

@@ -12,6 +12,11 @@
         <ACE RoleId="2" RoleName="Everyone" Access="0x017F" />
         <ACE RoleId="1" RoleName="Administrator" Access="0x017F" />
       </ACL>
+      <ACL Id="3">
+        <ACE RoleId="3" RoleName="Operator" Access="0x01FF" />
+        <ACE RoleId="2" RoleName="Everyone" Access="0x01FF" />
+        <ACE RoleId="1" RoleName="Administrator" Access="0x01FF" />
+      </ACL>
     </ACLAliases>
     <EURangeViolationAliases>
       <EURangeViolation Id="2" Mode="2" />
@@ -72,7 +77,7 @@
       <EngineeringUnit Id="2" UnitId="5067859" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="metre per second" Symbol="m/s" />
     </EngineeringUnitAliases>
   </Aliases>
-  <DefaultView AclId="2">
+  <DefaultView AclId="3">
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="gManualContr" />

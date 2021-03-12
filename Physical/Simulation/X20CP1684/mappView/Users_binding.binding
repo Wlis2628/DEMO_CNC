@@ -95,5 +95,29 @@
 <Source xsi:type="opcUa" refId="::UserVisu:Show" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleButton2" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="MomentaryPushButton1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="NumericInput5" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="NumericInput6" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="MomentaryPushButton3" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="MomentaryPushButton4" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="MomentaryPushButton2" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

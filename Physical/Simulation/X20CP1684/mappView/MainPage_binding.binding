@@ -92,21 +92,8 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersY.Position" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="BasicSlider2" attribute="value" />
 </Binding>
-		<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersY.Position" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput2" attribute="value" />
-</Binding>
+
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersX.Position" attribute="value" />
-<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput1" attribute="value" />
-</Binding>
-
-
-
-	
-
-	
-	<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Recipe:UIConnect.New.Create" attribute="value" />
 <Target xsi:type="brease" contentRefId="Parameters" widgetRefId="MomentaryPushButton6" attribute="value" />
 </Binding>
