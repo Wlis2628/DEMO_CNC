@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">fmuTemplate.h</Object>
+    <Object Type="File">MSpltr.c</Object>
+    <Object Type="File">MSpltr.scn</Object>
+    <Object Type="File">MSpltrFmiSceneView.c</Object>
+    <Object Type="File">MSpltrImpl.c</Object>
+    <Object Type="Package">CADdata</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="sys_lib" />
+  </Dependencies>
+</Package>

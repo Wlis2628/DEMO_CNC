@@ -1,3 +1,4 @@
+(*Insert your comment here.*)
 VAR
 	AutoTunePosX : {REDUND_UNREPLICABLE} MC_BR_AutoTunePositionCtrl_AcpAx;
 	AutoTunePosZ : {REDUND_UNREPLICABLE} MC_BR_AutoTunePositionCtrl_AcpAx;
@@ -48,4 +49,13 @@ VAR
 	MpBasicParametersY : MpAxisBasicParType := (Homing:=(Mode:=mcHOMING_ABSOLUTE));
 	MpCnc2Axis_0 : MpCnc2Axis;
 	gAutomaticContr : BOOL;
+END_VAR
+(*FMU variables*)
+VAR
+	MSpltr1 : MSpltr;
+	gTorqueY : LREAL;
+	gTorqueX : LREAL;
+	gPozycjaY : LREAL;
+	gPozycjaX : LREAL;
+	MSpltrView_0 : MSpltrView;
 END_VAR

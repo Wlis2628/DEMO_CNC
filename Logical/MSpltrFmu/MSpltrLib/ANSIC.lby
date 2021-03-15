@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Library SubType="ANSIC" xmlns="http://br-automation.co.at/AS/Library">
+  <Objects>
+    <Object Type="File" Description="Exported data types">Types.typ</Object>
+    <Object Type="File" Description="Exported constants">Constants.var</Object>
+    <Object Type="File" Description="Exported functions and function blocks">MSpltrLib.fun</Object>
+    <Object Type="File">fmi2.cpp</Object>
+    <Object Type="File">fmi2Functions.h</Object>
+    <Object Type="File">fmi2FunctionTypes.h</Object>
+    <Object Type="File">fmi2TypesPlatform.h</Object>
+    <Object Type="Package">MSpltr</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="sys_lib" />
+  </Dependencies>
+</Library>
