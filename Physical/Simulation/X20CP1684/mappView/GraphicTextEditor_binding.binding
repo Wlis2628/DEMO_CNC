@@ -50,14 +50,8 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="MomentaryPushButton1" attribute="enable" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput5" attribute="enable" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput6" attribute="enable" />
-</Binding>
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="MomentaryPushButton3" attribute="enable" />
@@ -89,6 +83,38 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="SendTo" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersX.Position" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersY.Position" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="Rectangle5" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="Rectangle6" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput8" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput7" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput6" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput5" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>

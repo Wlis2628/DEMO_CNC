@@ -129,12 +129,12 @@
 		mouseDownTextColor="#fff" 
 		cornerRadius="0px" 
 		foreColor="#646464" 
-		borderWidth="0px 6px 0px 0px" 
+		borderWidth="0px 5px 0px 0px" 
 		borderColor="#646464" 
 		mouseDownBorderWidth="0px 0px 0px 6px" 
 		mouseDownBorderColor="#646464" 
-		backColor="#FFF" 
-		mouseDownBackColor="#ff8800"  
+		backColor="#FFFFFF" 
+		mouseDownBackColor="#FFFFFF"  
 		disabledBackColor="#d1d1d1" />
 
 		

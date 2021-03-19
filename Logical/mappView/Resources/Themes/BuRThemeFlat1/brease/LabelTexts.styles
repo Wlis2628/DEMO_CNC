@@ -11,7 +11,7 @@
 	
 	<Style id="Title1" xsi:type="widgets.brease.Label" 
 		fontSize="22px" 
-		textColor="#FF8800" 
+		textColor="#000000" 
 		bold="false" 
 		backColor="transparent"
 		borderStyle="none" 
@@ -19,7 +19,7 @@
 	
 	<Style id="Title2" xsi:type="widgets.brease.Label" 
 		fontSize="18px" 
-		textColor="#FF8800" 
+		textColor="#000000" 
 		bold="false" 
 		backColor="transparent" 
 		borderStyle="none" 
@@ -116,7 +116,7 @@
 	<!--login info-->
 
 	<Style id="Output" xsi:type="widgets.brease.LoginInfo" 
-	textColor="#646464"
+	textColor="#000000"
 		borderStyle="solid" 
 		borderWidth="1px" 
 		borderColor="#646464" 

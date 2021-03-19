@@ -1,819 +1,906 @@
-<?xml version='1.0'?>
-<Object objecttypeid = '1' name = 'Scene' visible = '1' mask = '' jointoparent = '0'>
-  <ParID parid = '100' val = '.89363754'/>
-  <ParID parid = '101' val = '.25405765'/>
-  <ParID parid = '102' val = '1.0801374'/>
-  <ParID parid = '103' val = '-.2624109'/>
-  <ParID parid = '104' val = '-.5257633'/>
-  <ParID parid = '105' val = '-.8091437'/>
-  <ParID parid = '106' val = '-.16219257'/>
-  <ParID parid = '107' val = '.850631'/>
-  <ParID parid = '108' val = '-.5001206'/>
-  <ParID parid = '110' val = '.5'/>
-  <ParID parid = '120' val = '1, 1, 1'/>
-  <ParID parid = '140' val = '1, 1, 1'/>
-  <ParID parid = '145' val = ''/>
-  <ParID parid = '146' val = '0'/>
-  <Object objecttypeid = '2' name = 'Light 1' visible = '1' mask = '' jointoparent = '0'>
-    <ParID parid = '100' val = '1500'/>
-    <ParID parid = '101' val = '-3000'/>
-    <ParID parid = '102' val = '-3000'/>
-    <ParID parid = '130' val = '1'/>
-    <ParID parid = '140' val = '1, 1, 1'/>
-    <ParID parid = '150' val = 'FALSE'/>
-  </Object>
-  <Object objecttypeid = '2' name = 'Light 2' visible = '1' mask = '' jointoparent = '0'>
-    <ParID parid = '100' val = '0'/>
-    <ParID parid = '101' val = '0'/>
-    <ParID parid = '102' val = '6000'/>
-    <ParID parid = '130' val = '1'/>
-    <ParID parid = '140' val = '1, 1, 1'/>
-    <ParID parid = '150' val = 'FALSE'/>
-  </Object>
-  <ParID parid = '80' val = 'FALSE'/>
-  <ParID parid = '81' val = '60'/>
-  <ParID parid = '82' val = '1'/>
-  <ParID parid = '90' val = '0'/>
-  <Object objecttypeid = '250' name = 'MapleSim-Geometry' visible = '1' mask = '' jointoparent = '0'>
-    <ParID parid = '100' val = '0'/>
-    <ParID parid = '101' val = '0'/>
-    <ParID parid = '102' val = '0'/>
-    <ParID parid = '103' val = '0'/>
-    <ParID parid = '104' val = '0'/>
-    <ParID parid = '105' val = '0'/>
-    <ParID parid = '106' val = '1'/>
-    <ParID parid = '107' val = '1'/>
-    <ParID parid = '108' val = '1'/>
-    <ParID parid = '124' val = '.1e-5'/>
-    <ParID parid = '125' val = 'TRUE'/>
-    <Object objecttypeid = '250' name = 'CNC.Axis_Y1.CAD.frame_a' visible = '1' mask = '#100:40#102:44' jointoparent = '0'>
-      <ParID parid = '100' val = '217.5048400'/>
-      <ParID parid = '101' val = '-418.2500000'/>
-      <ParID parid = '102' val = '143.9900000'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.Axis_Y1.CAD_1' visible = '1' mask = '#103:48#104:52#105:56' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '-0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_Color_2(3).stl'/>
-        <ParID parid = '130' val = '-397.5048363'/>
-        <ParID parid = '131' val = '418.2499945'/>
-        <ParID parid = '132' val = '-143.9899951'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '1: Gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Axis_Y1.CAD' visible = '1' mask = '#103:48#104:52#105:56' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '-0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_Color_1(3).stl'/>
-        <ParID parid = '130' val = '-397.5048363'/>
-        <ParID parid = '131' val = '418.2499945'/>
-        <ParID parid = '132' val = '-143.9899951'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-    <Object objecttypeid = '250' name = 'CNC.Frame_Y1.CAD.frame_a' visible = '1' mask = '#100:28' jointoparent = '0'>
-      <ParID parid = '100' val = '175.8053151'/>
-      <ParID parid = '101' val = '-655.8012345'/>
-      <ParID parid = '102' val = '223.4337247'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_3' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_4(1).stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '3: gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_2' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_3(1).stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_6' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_7.stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '1: Gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_7' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_8.stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '4: Firebrick'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_4' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_5(1).stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '5: DarkSlateGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_1(1).stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '6: Black'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_5' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_6(1).stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '7: WhiteSmoke'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Y1.CAD_1' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_2(1).stl'/>
-        <ParID parid = '130' val = '-355.8053076'/>
-        <ParID parid = '131' val = '655.8012366'/>
-        <ParID parid = '132' val = '-223.4337181'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-    <Object objecttypeid = '250' name = 'CNC.Frame_Z1.CAD.frame_a' visible = '1' mask = '#100:20#101:24' jointoparent = '0'>
-      <ParID parid = '100' val = '217.5417779'/>
-      <ParID parid = '101' val = '-495.0964544'/>
-      <ParID parid = '102' val = '132.5290849'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Z1.CAD' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_1.stl'/>
-        <ParID parid = '130' val = '-397.5417912'/>
-        <ParID parid = '131' val = '340.0964439'/>
-        <ParID parid = '132' val = '-132.5290799'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '3: gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Z1.CAD_2' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_3.stl'/>
-        <ParID parid = '130' val = '-397.5417912'/>
-        <ParID parid = '131' val = '340.0964439'/>
-        <ParID parid = '132' val = '-132.5290799'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '4: Firebrick'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_Z1.CAD_1' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_2.stl'/>
-        <ParID parid = '130' val = '-397.5417912'/>
-        <ParID parid = '131' val = '340.0964439'/>
-        <ParID parid = '132' val = '-132.5290799'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-    <Object objecttypeid = '250' name = 'CNC.Axis_X1.CAD.frame_a' visible = '1' mask = '' jointoparent = '0'>
-      <ParID parid = '100' val = '475.0000000'/>
-      <ParID parid = '101' val = '-638.0000000'/>
-      <ParID parid = '102' val = '45.00000000'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.Axis_X1.CAD_1' visible = '1' mask = '#104:32#105:36' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_Color_2.stl'/>
-        <ParID parid = '130' val = '-474.9999940'/>
-        <ParID parid = '131' val = '638.0000114'/>
-        <ParID parid = '132' val = '-43.00000146'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '1: Gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Axis_X1.CAD' visible = '1' mask = '#104:32#105:36' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_Color_1.stl'/>
-        <ParID parid = '130' val = '-474.9999940'/>
-        <ParID parid = '131' val = '638.0000114'/>
-        <ParID parid = '132' val = '-43.00000146'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-    <Object objecttypeid = '250' name = 'CNC.Frame_X1.CAD.frame_a' visible = '1' mask = '' jointoparent = '0'>
-      <ParID parid = '100' val = '710.4048029'/>
-      <ParID parid = '101' val = '-534.0610559'/>
-      <ParID parid = '102' val = '-80.77230162'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.Frame_X1.CAD_5' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_6(2).stl'/>
-        <ParID parid = '130' val = '-710.4048133'/>
-        <ParID parid = '131' val = '534.0610743'/>
-        <ParID parid = '132' val = '80.77230304'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '1: Gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_X1.CAD_1' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_2(2).stl'/>
-        <ParID parid = '130' val = '-710.4048133'/>
-        <ParID parid = '131' val = '534.0610743'/>
-        <ParID parid = '132' val = '80.77230304'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '6: Black'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_X1.CAD_4' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_5(2).stl'/>
-        <ParID parid = '130' val = '-710.4048133'/>
-        <ParID parid = '131' val = '534.0610743'/>
-        <ParID parid = '132' val = '80.77230304'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_X1.CAD_2' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_3(2).stl'/>
-        <ParID parid = '130' val = '-710.4048133'/>
-        <ParID parid = '131' val = '534.0610743'/>
-        <ParID parid = '132' val = '80.77230304'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '2: DarkGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_X1.CAD_3' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_4(2).stl'/>
-        <ParID parid = '130' val = '-710.4048133'/>
-        <ParID parid = '131' val = '534.0610743'/>
-        <ParID parid = '132' val = '80.77230304'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '3: gray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Frame_X1.CAD' visible = '1' mask = '' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Frame_Color_1(2).stl'/>
-        <ParID parid = '130' val = '-710.4048133'/>
-        <ParID parid = '131' val = '534.0610743'/>
-        <ParID parid = '132' val = '80.77230304'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '8: LightCyan'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-    <Object objecttypeid = '250' name = 'CNC.&apos;copy of Axis_X_Small_Wheel&apos;.CAD.frame_a' visible = '1' mask = '#101:60#102:64' jointoparent = '0'>
-      <ParID parid = '100' val = '930.7894766'/>
-      <ParID parid = '101' val = '-637.9662243'/>
-      <ParID parid = '102' val = '-109.6194323'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.&apos;copy of Axis_X_Small_Wheel&apos;.CAD' visible = '1' mask = '#104:68#105:72' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_X_Small_Wheel_Color_1.stl'/>
-        <ParID parid = '130' val = '-930.7894707'/>
-        <ParID parid = '131' val = '637.9662156'/>
-        <ParID parid = '132' val = '109.6194312'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '5: DarkSlateGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.&apos;copy of Axis_X_Small_Wheel&apos;.CAD_1' visible = '1' mask = '#104:68#105:72' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_X_Small_Wheel_Color_2.stl'/>
-        <ParID parid = '130' val = '-930.7894707'/>
-        <ParID parid = '131' val = '637.9662156'/>
-        <ParID parid = '132' val = '109.6194312'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '5: DarkSlateGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-    <Object objecttypeid = '250' name = 'CNC.Axis_Y_Small_Wheel1.CAD.frame_a' visible = '1' mask = '#100:0#102:4' jointoparent = '0'>
-      <ParID parid = '100' val = '217.4659668'/>
-      <ParID parid = '101' val = '-840.2894758'/>
-      <ParID parid = '102' val = '284.6524174'/>
-      <ParID parid = '103' val = '0'/>
-      <ParID parid = '104' val = '0'/>
-      <ParID parid = '105' val = '0'/>
-      <ParID parid = '106' val = '1'/>
-      <ParID parid = '107' val = '1'/>
-      <ParID parid = '108' val = '1'/>
-      <ParID parid = '124' val = '.1e-5'/>
-      <ParID parid = '125' val = 'TRUE'/>
-      <Object objecttypeid = '600' name = 'CNC.Axis_Y_Small_Wheel1.CAD' visible = '1' mask = '#103:8#104:12#105:16' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '-0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_Color_1(2).stl'/>
-        <ParID parid = '130' val = '-397.4659741'/>
-        <ParID parid = '131' val = '840.2894735'/>
-        <ParID parid = '132' val = '-284.6524119'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '5: DarkSlateGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-      <Object objecttypeid = '600' name = 'CNC.Axis_Y_Small_Wheel1.CAD_1' visible = '1' mask = '#103:8#104:12#105:16' jointoparent = '1'>
-        <ParID parid = '100' val = '0'/>
-        <ParID parid = '101' val = '0'/>
-        <ParID parid = '102' val = '0'/>
-        <ParID parid = '103' val = '0.'/>
-        <ParID parid = '104' val = '-0.'/>
-        <ParID parid = '105' val = '-0.'/>
-        <ParID parid = '106' val = '1000.0'/>
-        <ParID parid = '107' val = '1000.0'/>
-        <ParID parid = '108' val = '1000.0'/>
-        <ParID parid = '120' val = 'CADdata/Axis_Color_2(2).stl'/>
-        <ParID parid = '130' val = '-397.4659741'/>
-        <ParID parid = '131' val = '840.2894735'/>
-        <ParID parid = '132' val = '-284.6524119'/>
-        <ParID parid = '133' val = '0.'/>
-        <ParID parid = '134' val = '0.'/>
-        <ParID parid = '135' val = '0.'/>
-        <ParID parid = '140' val = '5: DarkSlateGray'/>
-        <ParID parid = '141' val = '1'/>
-        <ParID parid = '150' val = '0'/>
-        <ParID parid = '151' val = '1'/>
-        <ParID parid = '152' val = '.1e-5'/>
-        <ParID parid = '203' val = '0'/>
-        <ParID parid = '204' val = '0'/>
-        <ParID parid = '205' val = '0'/>
-      </Object>
-    </Object>
-  </Object>
+﻿<?xml version="1.0"?>
+<Object objecttypeid="1" name="Scene" visible="1" mask="" binding="" jointoparent="0">
+	<ParID parid="80" val="FALSE"/>
+	<ParID parid="81" val="60"/>
+	<ParID parid="82" val="0.424097"/>
+	<ParID parid="90" val="0"/>
+	<ParID parid="100" val="325.035"/>
+	<ParID parid="101" val="-1023.3"/>
+	<ParID parid="102" val="561.043"/>
+	<ParID parid="103" val="-0.262411"/>
+	<ParID parid="104" val="-0.525763"/>
+	<ParID parid="105" val="-0.809144"/>
+	<ParID parid="106" val="-0.162193"/>
+	<ParID parid="107" val="0.850631"/>
+	<ParID parid="108" val="-0.500121"/>
+	<ParID parid="110" val="0.5"/>
+	<ParID parid="120" val="1,1,1"/>
+	<ParID parid="140" val="0.5,0.5,0.75"/>
+	<ParID parid="145" val=""/>
+	<ParID parid="146" val="0"/>
+	<Object objecttypeid="2" name="Light 1" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="1500"/>
+		<ParID parid="101" val="-3000"/>
+		<ParID parid="102" val="-3000"/>
+		<ParID parid="130" val="1"/>
+		<ParID parid="140" val="1,1,1"/>
+		<ParID parid="150" val="FALSE"/>
+	</Object>
+	<Object objecttypeid="2" name="Light 2" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="0"/>
+		<ParID parid="101" val="0"/>
+		<ParID parid="102" val="6000"/>
+		<ParID parid="130" val="1"/>
+		<ParID parid="140" val="1,1,1"/>
+		<ParID parid="150" val="FALSE"/>
+	</Object>
+	<Object objecttypeid="250" name="MapleSim-Geometry" visible="1" mask="" binding="" jointoparent="0">
+		<ParID parid="100" val="-326.329"/>
+		<ParID parid="101" val="-934.626"/>
+		<ParID parid="102" val="0"/>
+		<ParID parid="103" val="0"/>
+		<ParID parid="104" val="0"/>
+		<ParID parid="105" val="0"/>
+		<ParID parid="106" val="1"/>
+		<ParID parid="107" val="1"/>
+		<ParID parid="108" val="1"/>
+		<ParID parid="124" val="1e-06"/>
+		<ParID parid="125" val="TRUE"/>
+		<Object objecttypeid="250" name="CNC.Axis_Y1.CAD.frame_a" visible="1" mask="#100:40#102:44" binding="" jointoparent="0">
+			<ParID parid="100" val="217.504"/>
+			<ParID parid="101" val="-418.25"/>
+			<ParID parid="102" val="143.99"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.Axis_Y1.CAD_1" visible="1" mask="#103:48#104:52#105:56" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="-0.0116565"/>
+				<ParID parid="105" val="-0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_Color_2(3).stl"/>
+				<ParID parid="130" val="-397.505"/>
+				<ParID parid="131" val="418.25"/>
+				<ParID parid="132" val="-143.99"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="1: Gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Axis_Y1.CAD" visible="1" mask="#103:48#104:52#105:56" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="-0.0116565"/>
+				<ParID parid="105" val="-0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_Color_1(3).stl"/>
+				<ParID parid="130" val="-397.505"/>
+				<ParID parid="131" val="418.25"/>
+				<ParID parid="132" val="-143.99"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="250" name="CNC.Frame_Y1.CAD.frame_a" visible="1" mask="#100:28" binding="" jointoparent="0">
+			<ParID parid="100" val="175.805"/>
+			<ParID parid="101" val="-655.801"/>
+			<ParID parid="102" val="223.434"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_3" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_4(1).stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="3: gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_2" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_3(1).stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_6" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_7.stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="1: Gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_7" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_8.stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="4: Firebrick"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_4" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_5(1).stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="5: DarkSlateGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_1(1).stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="6: Black"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_5" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_6(1).stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="7: WhiteSmoke"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Y1.CAD_1" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_2(1).stl"/>
+				<ParID parid="130" val="-355.805"/>
+				<ParID parid="131" val="655.801"/>
+				<ParID parid="132" val="-223.434"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="250" name="CNC.Frame_Z1.CAD.frame_a" visible="1" mask="#100:20#101:24" binding="" jointoparent="0">
+			<ParID parid="100" val="217.541"/>
+			<ParID parid="101" val="-495.096"/>
+			<ParID parid="102" val="132.529"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.Frame_Z1.CAD" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_1.stl"/>
+				<ParID parid="130" val="-397.542"/>
+				<ParID parid="131" val="340.096"/>
+				<ParID parid="132" val="-132.529"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="3: gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Z1.CAD_2" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_3.stl"/>
+				<ParID parid="130" val="-397.542"/>
+				<ParID parid="131" val="340.096"/>
+				<ParID parid="132" val="-132.529"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="4: Firebrick"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_Z1.CAD_1" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_2.stl"/>
+				<ParID parid="130" val="-397.542"/>
+				<ParID parid="131" val="340.096"/>
+				<ParID parid="132" val="-132.529"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="250" name="CNC.Axis_X1.CAD.frame_a" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="475"/>
+			<ParID parid="101" val="-638"/>
+			<ParID parid="102" val="45"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.Axis_X1.CAD_1" visible="1" mask="#104:32#105:36" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0.0016305"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_Color_2.stl"/>
+				<ParID parid="130" val="-475"/>
+				<ParID parid="131" val="638"/>
+				<ParID parid="132" val="-43"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="1: Gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Axis_X1.CAD" visible="1" mask="#104:32#105:36" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0.0016305"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_Color_1.stl"/>
+				<ParID parid="130" val="-475"/>
+				<ParID parid="131" val="638"/>
+				<ParID parid="132" val="-43"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="250" name="CNC.Frame_X1.CAD.frame_a" visible="1" mask="" binding="" jointoparent="0">
+			<ParID parid="100" val="710.405"/>
+			<ParID parid="101" val="-534.061"/>
+			<ParID parid="102" val="-80.7723"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.Frame_X1.CAD_5" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_6(2).stl"/>
+				<ParID parid="130" val="-710.405"/>
+				<ParID parid="131" val="534.061"/>
+				<ParID parid="132" val="80.7723"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="1: Gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_X1.CAD_1" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_2(2).stl"/>
+				<ParID parid="130" val="-710.405"/>
+				<ParID parid="131" val="534.061"/>
+				<ParID parid="132" val="80.7723"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="6: Black"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_X1.CAD_4" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_5(2).stl"/>
+				<ParID parid="130" val="-710.405"/>
+				<ParID parid="131" val="534.061"/>
+				<ParID parid="132" val="80.7723"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_X1.CAD_2" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_3(2).stl"/>
+				<ParID parid="130" val="-710.405"/>
+				<ParID parid="131" val="534.061"/>
+				<ParID parid="132" val="80.7723"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="2: DarkGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_X1.CAD_3" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_4(2).stl"/>
+				<ParID parid="130" val="-710.405"/>
+				<ParID parid="131" val="534.061"/>
+				<ParID parid="132" val="80.7723"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="3: gray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Frame_X1.CAD" visible="1" mask="" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Frame_Color_1(2).stl"/>
+				<ParID parid="130" val="-710.405"/>
+				<ParID parid="131" val="534.061"/>
+				<ParID parid="132" val="80.7723"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="8: LightCyan"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="250" name="CNC.&apos;copy of Axis_X_Small_Wheel&apos;.CAD.frame_a" visible="1" mask="#101:60#102:64" binding="" jointoparent="0">
+			<ParID parid="100" val="930.789"/>
+			<ParID parid="101" val="-637.966"/>
+			<ParID parid="102" val="-109.619"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.&apos;copy of Axis_X_Small_Wheel&apos;.CAD" visible="1" mask="#104:68#105:72" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0.00546698"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_X_Small_Wheel_Color_1.stl"/>
+				<ParID parid="130" val="-930.789"/>
+				<ParID parid="131" val="637.966"/>
+				<ParID parid="132" val="109.619"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="5: DarkSlateGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.&apos;copy of Axis_X_Small_Wheel&apos;.CAD_1" visible="1" mask="#104:68#105:72" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0.00546698"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_X_Small_Wheel_Color_2.stl"/>
+				<ParID parid="130" val="-930.789"/>
+				<ParID parid="131" val="637.966"/>
+				<ParID parid="132" val="109.619"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="5: DarkSlateGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="250" name="CNC.Axis_Y_Small_Wheel1.CAD.frame_a" visible="1" mask="#100:0#102:4" binding="" jointoparent="0">
+			<ParID parid="100" val="217.465"/>
+			<ParID parid="101" val="-840.289"/>
+			<ParID parid="102" val="284.652"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="106" val="1"/>
+			<ParID parid="107" val="1"/>
+			<ParID parid="108" val="1"/>
+			<ParID parid="124" val="1e-06"/>
+			<ParID parid="125" val="TRUE"/>
+			<Object objecttypeid="600" name="CNC.Axis_Y_Small_Wheel1.CAD" visible="1" mask="#103:8#104:12#105:16" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="-0.0390835"/>
+				<ParID parid="105" val="-0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_Color_1(2).stl"/>
+				<ParID parid="130" val="-397.466"/>
+				<ParID parid="131" val="840.289"/>
+				<ParID parid="132" val="-284.652"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="5: DarkSlateGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+			<Object objecttypeid="600" name="CNC.Axis_Y_Small_Wheel1.CAD_1" visible="1" mask="#103:8#104:12#105:16" binding="" jointoparent="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="-0.0390835"/>
+				<ParID parid="105" val="-0"/>
+				<ParID parid="106" val="1000"/>
+				<ParID parid="107" val="1000"/>
+				<ParID parid="108" val="1000"/>
+				<ParID parid="120" val="CADdata/Axis_Color_2(2).stl"/>
+				<ParID parid="130" val="-397.466"/>
+				<ParID parid="131" val="840.289"/>
+				<ParID parid="132" val="-284.652"/>
+				<ParID parid="133" val="0"/>
+				<ParID parid="134" val="0"/>
+				<ParID parid="135" val="0"/>
+				<ParID parid="140" val="5: DarkSlateGray"/>
+				<ParID parid="141" val="1"/>
+				<ParID parid="150" val="0"/>
+				<ParID parid="151" val="1"/>
+				<ParID parid="152" val="1e-06"/>
+				<ParID parid="200" val="0"/>
+				<ParID parid="201" val="0"/>
+				<ParID parid="202" val="0"/>
+				<ParID parid="203" val="0"/>
+				<ParID parid="204" val="0"/>
+				<ParID parid="205" val="0"/>
+			</Object>
+		</Object>
+	</Object>
 </Object>
-
 <Materials>
-  <Material ID = '8' Name = 'LightCyan' Ambient = '0.878431 0.984314 0.996078 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '2' Name = 'DarkGray' Ambient = '0.627451 0.627451 0.627451 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '7' Name = 'WhiteSmoke' Ambient = '0.960784 0.960784 0.964706 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '4' Name = 'Firebrick' Ambient = '0.678431 0.117647 0.039216 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '6' Name = 'Black' Ambient = '0.000000 0.000000 0.000000 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '3' Name = 'gray' Ambient = '0.752941 0.752941 0.752941 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '1' Name = 'Gray' Ambient = '0.501961 0.501961 0.501961 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
-  <Material ID = '5' Name = 'DarkSlateGray' Ambient = '0.250980 0.270588 0.270588 1.000000' Specular = '.75 .75 .74 1.0' Emission = '0 0 0 1' Shininess = '32'/>
+	<Material ID="1" Name="Gray" Ambient="0.501961 0.501961 0.501961 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="2" Name="DarkGray" Ambient="0.627451 0.627451 0.627451 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="3" Name="gray" Ambient="0.752941 0.752941 0.752941 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="4" Name="Firebrick" Ambient="0.678431 0.117647 0.039216 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="5" Name="DarkSlateGray" Ambient="0.250980 0.270588 0.270588 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="6" Name="Black" Ambient="0.000000 0.000000 0.000000 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="7" Name="WhiteSmoke" Ambient="0.960784 0.960784 0.964706 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
+	<Material ID="8" Name="LightCyan" Ambient="0.878431 0.984314 0.996078 1.000000" Specular="0.750000 0.750000 0.740000 1.000000" Emission="0.000000 0.000000 0.000000 1.000000" Shininess="32.000000"/>
 </Materials>
-
 <Views/>
-
 <Connection>
-  <PVI>
-    <NameTask>MSpltrPrg</NameTask>
-    <NameTime>time</NameTime>
-    <NameVariable>MSpltrView_0.ObjPos</NameVariable>
-    <ExtraSettings/>
-    <ConnectionParameters/>
-    <RF>25</RF>
-    <DAIP>127.0.0.1</DAIP>
-    <Size>76</Size>
-    <TimerModeOn>1</TimerModeOn>
-  </PVI>
+	<PVI>
+		<NameTask>
+			MSpltrPrg
+		</NameTask>
+		<NameTime>
+			time
+		</NameTime>
+		<NameVariable>
+			MSpltrView_0.ObjPos
+		</NameVariable>
+		<ExtraSettings>
+		</ExtraSettings>
+		<ConectionParameters>
+		</ConectionParameters>
+		<RF>
+			25
+		</RF>
+		<DAIP>
+			127.0.0.1
+		</DAIP>
+		<Size>
+			76
+		</Size>
+		<TimerModeOn>
+			1
+		</TimerModeOn>
+	</PVI>
 </Connection>
-

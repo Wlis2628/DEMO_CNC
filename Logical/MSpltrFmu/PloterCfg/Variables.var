@@ -1,0 +1,3 @@
+VAR
+	NewObjPos : ARRAY[0..18] OF REAL;
+END_VAR

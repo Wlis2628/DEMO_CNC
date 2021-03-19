@@ -326,12 +326,20 @@
         <seg>Set axis Y position limit</seg>
       </tuv>
     </tu>
+    <tu tuid="Setacclimit_1">
+      <tuv xml:lang="pl">
+        <seg>Ustaw limit przyspieszenia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set axis Y acceleration</seg>
+      </tuv>
+    </tu>
     <tu tuid="Setacclimit">
       <tuv xml:lang="pl">
         <seg>Ustaw limit przyspieszenia</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Set acceleration</seg>
+        <seg>Set axis X acceleration</seg>
       </tuv>
     </tu>
     <tu tuid="SetacclimitY">

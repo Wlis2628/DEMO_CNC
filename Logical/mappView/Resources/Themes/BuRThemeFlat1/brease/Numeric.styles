@@ -6,7 +6,7 @@
 	<Style id="Input" xsi:type="widgets.brease.NumericInput" 
 		textColor="#ffffff" 
 		borderWidth="0px 0px 0px 6px" 
-		borderColor="#ff8800" 
+		borderColor="#FF8000" 
 		activeBorderColor="#d6d6d6" 
 		fontSize="20px" 
 		backColor="#646464" 
@@ -26,9 +26,9 @@
 		bold="false" />
 		
 	<Style id="InputCommand" xsi:type="widgets.brease.NumericInput" 
-		textColor="#646464" 
-		borderWidth="0px 0px 0px 6px" 
-		borderColor="#d7d7d7" 
+		textColor="#000000" 
+		borderWidth="0px 0px 0px 5px" 
+		borderColor="#FF8000" 
 		activeBorderWidth="2px 2px 2px 2px" 
 		activeBorderColor="#646464" 
 		fontSize="20px" 
