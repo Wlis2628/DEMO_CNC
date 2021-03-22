@@ -1,10 +1,8 @@
 (*Insert your comment here.*)
 VAR
-	AutoTunePosX : {REDUND_UNREPLICABLE} MC_BR_AutoTunePositionCtrl_AcpAx;
-	AutoTunePosZ : {REDUND_UNREPLICABLE} MC_BR_AutoTunePositionCtrl_AcpAx;
-	AutoTuneX : MC_BR_AutoTuneSpeedCtrl_AcpAx;
-	AutoTuneZ : MC_BR_AutoTuneSpeedCtrl_AcpAx;
-	BufferMode : McBufferModeEnum := mcABORTING;
+	Show : BOOL := FALSE;
+	NumericInput : USINT := 0;
+	SliderInput : USINT := 0;
 	ButtonEnable : BOOL;
 	CncName : STRING[80];
 	CncNameCopy : STRING[80];
@@ -14,15 +12,10 @@ VAR
 	gActiveTool : BOOL; (*TRUE-d³ugopis pisze; FALSE- d³ugopis nie pisze*)
 	gAlarmActive : BOOL;
 	gAxisMovement : BOOL; (*TRUE -ruch narzêdzia w dowolnej osi; FALSE- brak ruchu*)
-	gBufferMode : McBufferModeEnum;
-	gCoordSystem : McCoordinateSystemEnum := mcACS;
-	gGroupJogAbsolute : MC_BR_GroupJogAbsolute_15;
 	gLiveDrawing : BOOL; (*TRUE- rysowanie na zywo; FALSE- inny tryb*)
 	gManualContr : BOOL; (*TRUE- sterowanie rêczne; FALSE-inny tryb*)
-	gMotionPadError : INT;
 	gMoveAbsoluteX : BOOL;
 	gMoveAbsoluteY : BOOL;
-	gMoveDirectAbsolute : MC_MoveDirectAbsolute_15;
 	gMsgBox : BOOL;
 	gMsgBox2 : BOOL;
 	gMsgBox3 : BOOL;
@@ -32,11 +25,7 @@ VAR RETAIN
 	gParameter : SaveParameterType;
 END_VAR
 VAR
-	gShowMsgBox : BOOL;
 	gStartValueChanging : BOOL;
-	gStop : BOOL;
-	gTransitionMode : McTransitionModeEnum := mcTM_NONE;
-	gUploadedImage : BOOL; (*TRUE-za³adowane zdjecie; FALSE - inny tryb*)
 END_VAR
 VAR CONSTANT
 	HomingMode : McHomingModeEnum := mcHOMING_ABSOLUTE;

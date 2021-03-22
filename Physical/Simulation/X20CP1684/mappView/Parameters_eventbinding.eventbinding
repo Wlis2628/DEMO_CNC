@@ -156,5 +156,22 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
+		<EventBinding id="Parameters.FlyOut1.ToggleStateChanged">
+			<Source contentRefId="Parameters" widgetRefId="FlyOut1" xsi:type="widgets.brease.FlyOut.Event" event="ToggleStateChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="Parameters" widgetRefId="FlyOut1">
+						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Down2.svg" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Action>
+					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="Parameters" widgetRefId="FlyOut1">
+						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Up2.svg" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
 	</Bindings>
 </EventBindingSet>

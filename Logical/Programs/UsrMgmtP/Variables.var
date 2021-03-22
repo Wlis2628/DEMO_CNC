@@ -1,18 +1,8 @@
 VAR
-	LabelFirstLoginVisible : BOOL;
-	DateFirstLoginVisible : BOOL;
-	StringError : WSTRING[80];
 	EditUserRoleIndex : USINT;
 	NewUserRoleIndex : USINT;
-	DialogEditUserConfirmEnabled : BOOL;
-	DialogNewUserConfirmEnabled : BOOL;
 	SelectedUser : WSTRING[80];
-	EditUserPasswordOk : WSTRING[80];
-	NewUserPasswordOk : WSTRING[80];
 	SelectedUserGroup : WSTRING[80];
-	LoggedAs : WSTRING[80];
-	EditUserPasswordHint : WSTRING[80];
-	NewUserPasswordHint : WSTRING[80];
 	MpUserXLoginUIConnect0 : MpUserXLoginUIConnectType;
 	MpUserXLoginUI_0 : MpUserXLoginUI;
 	MpUserXMgrUIConnect_0 : MpUserXMgrUIConnectType;

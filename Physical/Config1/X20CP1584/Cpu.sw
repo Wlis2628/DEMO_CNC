@@ -4,12 +4,12 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="Initiation" Source="Programs.CNC_Programs.InitiationandHoming.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ManualCont" Source="Programs.CNC_Programs.ManualContr.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="RuchZGCode" Source="Programs.RuchZGCode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="RuchZGCode" Source="Programs.CNC_Programs.RuchZGCode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="live_draw" Source="Programs.live_drawing.live_draw.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
-    <Task Name="UsrMgmtP" Source="Programs.UserManagement.UsrMgmtP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="UsrMgmtP" Source="Programs.UsrMgmtP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="svg_to_gco" Source="Programs.live_drawing.svg_to_gcode.prg" Memory="UserROM" Language="IEC" Debugging="true" />

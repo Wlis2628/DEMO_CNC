@@ -102,5 +102,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:MpBasicParametersX.Position" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="NumericInput7" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleSwitch1" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

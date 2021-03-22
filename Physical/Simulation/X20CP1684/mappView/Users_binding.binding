@@ -71,30 +71,12 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="Button1" attribute="enable" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UserVisu:Show" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="Image1" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UserVisu:NumericInput" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ProgressBar1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UserVisu:NumericInput" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="NumericInput1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UserVisu:SliderInput" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="BasicSlider1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UserVisu:SliderInput" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="RadialSlider1" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UserVisu:Show" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleButton2" attribute="value" />
-</Binding>
+
+
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="MomentaryPushButton1" attribute="enable" />
@@ -136,6 +118,34 @@
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="NumericInput5" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Show" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleButton2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Show" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="Image1" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:NumericInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="NumericInput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:NumericInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="ProgressBar1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SliderInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="BasicSlider1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SliderInput" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="RadialSlider1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleSwitch1" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>

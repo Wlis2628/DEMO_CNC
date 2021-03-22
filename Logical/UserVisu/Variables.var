@@ -1,5 +1,0 @@
-VAR
-	Show : BOOL;
-	NumericInput : USINT;
-	SliderInput : USINT;
-END_VAR

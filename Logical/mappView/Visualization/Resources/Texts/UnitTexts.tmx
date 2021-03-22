@@ -280,7 +280,7 @@
     </tu>
     <tu tuid="OpenExplorer">
       <tuv xml:lang="pl">
-        <seg>Otwórz przeglądarkę plików</seg>
+        <seg>Przeglądaj pliki</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Open Explorer</seg>
@@ -328,7 +328,7 @@
     </tu>
     <tu tuid="Setacclimit_1">
       <tuv xml:lang="pl">
-        <seg>Ustaw limit przyspieszenia</seg>
+        <seg>Ustaw limit przyspieszenia osi Y</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Set axis Y acceleration</seg>
@@ -336,7 +336,7 @@
     </tu>
     <tu tuid="Setacclimit">
       <tuv xml:lang="pl">
-        <seg>Ustaw limit przyspieszenia</seg>
+        <seg>Ustaw limit przyspieszenia osi X</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Set axis X acceleration</seg>
@@ -532,6 +532,86 @@
       </tuv>
       <tuv xml:lang="en">
         <seg>Turn off Move Program</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentVelocity">
+      <tuv xml:lang="pl">
+        <seg>Aktualna prędkość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CheckAlarms">
+      <tuv xml:lang="pl">
+        <seg>Proszę, sprawdź alarmy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Please, check alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Charts">
+      <tuv xml:lang="pl">
+        <seg>Wykresy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Charts</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Set">
+      <tuv xml:lang="pl">
+        <seg>Ustawiona</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Position">
+      <tuv xml:lang="pl">
+        <seg>Pozycja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Velocity">
+      <tuv xml:lang="pl">
+        <seg>Prędkość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Velocity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ShowGCode">
+      <tuv xml:lang="pl">
+        <seg>Pokaż G-kod</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Show G-Code</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Create">
+      <tuv xml:lang="pl">
+        <seg>Stwórz</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Create</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Delete">
+      <tuv xml:lang="pl">
+        <seg>Usuń</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Delete</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Show">
+      <tuv xml:lang="pl">
+        <seg>Pokaż</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Show</seg>
       </tuv>
     </tu>
   </body>

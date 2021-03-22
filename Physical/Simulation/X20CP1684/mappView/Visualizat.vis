@@ -27,6 +27,7 @@
 		<BindingsSet refId="DialogUserError_binding" />
 		<BindingsSet refId="TopContent_binding" />
 		<BindingsSet refId="ChartsContent_binding" />
+		<BindingsSet refId="ShowGcodeContent_binding"/>
 		
   </BindingsSets>
   <EventBindingsSets>

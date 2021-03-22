@@ -41,6 +41,8 @@ PROGRAM _CYCLIC
 	MpUserXLoginUI_0();
 	MpUserXManagerUI_0();
 	
+	
+	VisuAction;
 END_PROGRAM
 
 PROGRAM _EXIT

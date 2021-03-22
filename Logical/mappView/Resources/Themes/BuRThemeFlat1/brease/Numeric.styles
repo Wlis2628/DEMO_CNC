@@ -89,11 +89,11 @@
 	<Style id="InputCommand" xsi:type="widgets.brease.Password" 
 		textColor="#646464" 
 		borderWidth="0px 0px 0px 6px" 
-		borderColor="#d6d6d6" 
+		borderColor="#FF8000" 
 		activeBorderColor="#646464" 
 		fontSize="16px" 
 		backColor="#FFF" 
-		activeBackColor="#646464" 
+		activeBackColor="#ffffff" 
 		activeTextColor="#FFF" 
 		bold="false" 
 		textAlign="center" />

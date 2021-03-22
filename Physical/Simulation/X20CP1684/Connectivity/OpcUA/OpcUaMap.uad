@@ -7,11 +7,6 @@
         <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
         <ACE RoleId="1" RoleName="Administrator" Access="0x015F" />
       </ACL>
-      <ACL Id="2">
-        <ACE RoleId="3" RoleName="Operator" Access="0x017F" />
-        <ACE RoleId="2" RoleName="Everyone" Access="0x017F" />
-        <ACE RoleId="1" RoleName="Administrator" Access="0x017F" />
-      </ACL>
       <ACL Id="3">
         <ACE RoleId="3" RoleName="Operator" Access="0x01FF" />
         <ACE RoleId="2" RoleName="Everyone" Access="0x01FF" />
@@ -21,6 +16,7 @@
     <EURangeViolationAliases>
       <EURangeViolation Id="2" Mode="2" />
       <EURangeViolation Id="3" Mode="2" AclInherit="2" AclId="2" />
+      <EURangeViolation Id="4" Mode="1" />
     </EURangeViolationAliases>
     <EURangesAliases>
       <EURanges Id="2">
@@ -35,36 +31,36 @@
           <High ValueProvider="Const">520</High>
         </EURange>
       </EURanges>
-      <EURanges Id="7">
+      <EURanges Id="4">
         <EURange>
-          <Low ValueProvider="Const">0</Low>
-          <High ValueProvider="Const">100</High>
-        </EURange>
-        <EURange Priority="1" RoleId="3">
           <Low ValueProvider="Const">0</Low>
           <High ValueProvider="Const">50</High>
         </EURange>
-        <EURange Priority="2" RoleId="1">
+        <EURange Priority="1" RoleId="1">
           <Low ValueProvider="Const">0</Low>
           <High ValueProvider="Const">100</High>
+        </EURange>
+        <EURange Priority="2" RoleId="3">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">60</High>
         </EURange>
         <EURange Priority="3" RoleId="2">
           <Low ValueProvider="Const">0</Low>
           <High ValueProvider="Const">0</High>
         </EURange>
       </EURanges>
-      <EURanges Id="8">
+      <EURanges Id="5">
         <EURange>
           <Low ValueProvider="Const">0</Low>
           <High ValueProvider="Const">50</High>
         </EURange>
-        <EURange Priority="1" RoleId="3">
-          <Low ValueProvider="Const">0</Low>
-          <High ValueProvider="Const">50</High>
-        </EURange>
-        <EURange Priority="2" RoleId="1">
+        <EURange Priority="1" RoleId="1">
           <Low ValueProvider="Const">0</Low>
           <High ValueProvider="Const">100</High>
+        </EURange>
+        <EURange Priority="2" RoleId="3">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">50</High>
         </EURange>
         <EURange Priority="3" RoleId="2">
           <Low ValueProvider="Const">0</Low>
@@ -116,10 +112,29 @@
           <Variable Name="MoveDone" />
           <Variable Name="Stopped" />
           <Variable Name="SingleStepActive" />
-          <Variable Name="Info" />
+          <Variable Name="Info">
+            <Variable Name="Program">
+              <Variable Name="MainProgram" />
+              <Variable Name="InitProgram" />
+              <Variable Name="CurrentProgram" />
+              <Variable Name="ProgramMonitor">
+                <Variable Name="BlockMonitor">
+                  <Variable Name="SecondLast" />
+                  <Variable Name="Last" />
+                  <Variable Name="Current" />
+                  <Variable Name="Next" />
+                  <Variable Name="SecondNext" />
+                </Variable>
+              </Variable>
+              <Variable Name="ProgramPhase" />
+              <Variable Name="InterruptStatus" />
+            </Variable>
+            <Variable Name="Path">
+              <Variable Name="RemainingDistance" />
+            </Variable>
+          </Variable>
           <Variable Name="Internal" />
         </Variable>
-        <Variable Name="gUploadedImage" />
         <Variable Name="gActiveTool" />
         <Variable Name="CncParameters" />
         <Variable Name="gSvgStringArray" />
@@ -140,7 +155,6 @@
           <Variable Name="ErrorReset" />
           <Variable Name="Stop" />
         </Variable>
-        <Variable Name="gMotionPadError" />
         <Variable Name="CncPosX" />
         <Variable Name="CncPosY" />
         <Variable Name="gAlarmActive" />
@@ -161,13 +175,16 @@
           <Variable Name="Position" />
         </Variable>
         <Variable Name="gMsgBox" />
-        <Variable Name="gShowMsgBox" />
         <Variable Name="gMoveAbsoluteX" />
         <Variable Name="gMoveAbsoluteY" />
         <Variable Name="gMsgBox2" />
         <Variable Name="gMsgBox3" />
         <Variable Name="gMsgBox4" />
         <Variable Name="gAutomaticContr" />
+        <Variable Name="gCncXZ" />
+        <Variable Name="NumericInput" EURangeViolationId="4" EURangesId="4" />
+        <Variable Name="Show" />
+        <Variable Name="SliderInput" EURangeViolationId="4" EURangesId="5" />
       </GlobalVariables>
       <Task Name="UsrMgmtP">
         <Variable Name="MpUserXLogin_0" />
@@ -396,19 +413,9 @@
         </Variable>
         <Variable Name="MpUserXMgrUISetup_0" />
         <Variable Name="SelectedUser" />
-        <Variable Name="DialogNewUserConfirmEnabled" />
-        <Variable Name="NewUserPasswordHint" />
-        <Variable Name="LoggedAs" />
-        <Variable Name="NewUserPasswordOk" />
         <Variable Name="SelectedUserGroup" />
         <Variable Name="NewUserRoleIndex" />
-        <Variable Name="DialogEditUserConfirmEnabled" />
-        <Variable Name="EditUserPasswordHint" />
-        <Variable Name="EditUserPasswordOk" />
         <Variable Name="EditUserRoleIndex" />
-        <Variable Name="StringError" />
-        <Variable Name="DateFirstLoginVisible" />
-        <Variable Name="LabelFirstLoginVisible" />
       </Task>
       <Task Name="Initiation" />
       <Task Name="ManualCont">
@@ -501,11 +508,6 @@
       </Task>
       <Task Name="svg_to_gco">
         <Variable Name="cmdConvert" />
-      </Task>
-      <Task Name="UserVisu">
-        <Variable Name="Show" />
-        <Variable Name="NumericInput" EURangeViolationId="2" EURangesId="7" />
-        <Variable Name="SliderInput" EURangeViolationId="3" EURangesId="8" />
       </Task>
     </Module>
   </DefaultView>

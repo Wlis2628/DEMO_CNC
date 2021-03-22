@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="Program" Language="IEC">InitiationandHoming</Object>
     <Object Type="Program" Language="IEC">ManualContr</Object>
+    <Object Type="Program" Language="IEC">RuchZGCode</Object>
   </Objects>
 </Package>

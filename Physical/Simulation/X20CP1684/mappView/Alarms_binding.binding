@@ -95,5 +95,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="Alarms" widgetRefId="Rectangle6" attribute="visible" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="Alarms" widgetRefId="ToggleSwitch1" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

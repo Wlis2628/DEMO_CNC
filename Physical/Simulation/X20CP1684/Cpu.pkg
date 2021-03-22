@@ -21,7 +21,7 @@
     <Build GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
     <Safety SafetyRelease="0.0" />
-    <Transfer AddToUserPart="False" AdditionalUserDir="" AllowInitialTransfer="False" AllowPartitioning="False" ExecuteInitExitProgram="True" ForceInitialTransfer="False" IdentificationTypeValue="" IgnoreVersion="True" KeepNonVolatileMemory="False" ModuleSystemForPip="" PreserveVariableValues="False" ProjectConsistent="False" RebootDuringTransfer="True" TargetIdentificationType="Always" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
+    <Transfer AddToUserPart="False" AdditionalUserDir="" AllowInitialTransfer="False" AllowPartitioning="False" ExecuteInitExitProgram="True" ForceInitialTransfer="False" IdentificationTypeValue="" IgnoreVersion="True" KeepNonVolatileMemory="False" ModuleSystemForPip="" PreserveVariableValues="False" ProjectConsistent="True" RebootDuringTransfer="False" TargetIdentificationType="Always" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
     <Vc FirmwareVersion="V4.72.0" />
     <OnlineConfiguration Name="X20CP1684" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.102 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
   </Configuration>

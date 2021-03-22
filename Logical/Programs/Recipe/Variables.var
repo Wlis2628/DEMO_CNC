@@ -10,7 +10,5 @@ VAR
 	UIConnect : MpRecipeUIConnectType := (Recipe:=(SortOrder:=mpRECIPE_UI_SORT_DATE_ASCENDING));
 	UISetup : MpRecipeUISetupType := (RecipeListSize:=20);
 	DataProvider0 : ARRAY[0..4] OF STRING[100];
-	input : BOOL;
-	TP_01 : TP;
 	CreatingRecipe : BOOL;
 END_VAR

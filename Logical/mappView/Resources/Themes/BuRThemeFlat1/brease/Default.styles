@@ -128,7 +128,7 @@
 		textColor="#646464" 
 		mouseDownTextColor="#fff" 
 		cornerRadius="0px" 
-		foreColor="#646464" 
+		foreColor="#ff8800" 
 		borderWidth="0px 5px 0px 0px" 
 		borderColor="#646464" 
 		mouseDownBorderWidth="0px 0px 0px 6px" 

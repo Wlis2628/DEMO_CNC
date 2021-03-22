@@ -161,5 +161,17 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="Parameters" widgetRefId="NumericInput11" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="ToggleSwitch1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gAutomaticContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="Rectangle10" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
+<Target xsi:type="brease" contentRefId="Parameters" widgetRefId="Rectangle5" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>
