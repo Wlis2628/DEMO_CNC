@@ -53,8 +53,8 @@
         <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput19" top="20" left="550" width="200" height="63" zIndex="20" multiLine="true" value="$IAT/Position" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="25px" bold="false" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Image" id="Image1" top="575" left="47" width="180" height="131" zIndex="1005" image="Media/br_logo.png" permissionOperate="['Administrator', 'Operator']" />
-    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBar1" top="520" left="320" width="100" height="203" zIndex="1006" orientation="BottomToTop" permissionOperate="['Administrator', 'Operator']" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="588" left="50" width="180" height="105" zIndex="1005" image="Media/br_logo.png" permissionOperate="['Administrator', 'Operator']" />
+    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBar1" top="539" left="320" width="100" height="203" zIndex="1006" orientation="BottomToTop" permissionOperate="['Administrator', 'Operator']" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="449" left="290" width="160" height="42" zIndex="1007" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="30px" permissionOperate="['Administrator', 'Operator']" />
     <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider1" top="429" left="527" width="169" height="58" zIndex="1008" permissionOperate="['Administrator', 'Operator']" />
     <Widget xsi:type="widgets.brease.RadialSlider" id="RadialSlider1" top="516" left="496" width="248" height="248" zIndex="1009" value="0" permissionOperate="['Administrator', 'Operator']" />
