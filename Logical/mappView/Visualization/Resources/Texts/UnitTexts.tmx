@@ -614,5 +614,29 @@
         <seg>Show</seg>
       </tuv>
     </tu>
+    <tu tuid="Current">
+      <tuv xml:lang="pl">
+        <seg>Prąd</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ActualAlarms">
+      <tuv xml:lang="pl">
+        <seg>Aktualne alarmy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Actual alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AlarmsHistory">
+      <tuv xml:lang="pl">
+        <seg>Historia alarmów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarms history</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

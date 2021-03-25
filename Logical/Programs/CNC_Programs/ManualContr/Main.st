@@ -209,6 +209,7 @@ PROGRAM _CYCLIC
 	MpAxisBasicX();
 	MpAxisBasicY();
 	
+	
 	IF MpAxisBasicX.Velocity=0 THEN
 		gCurrentX:=0;
 	ELSIF MpAxisBasicX.Velocity<0 THEN
@@ -217,6 +218,7 @@ PROGRAM _CYCLIC
 		gCurrentX:=MpAxisBasicX.Velocity*0.01+0.48;
 		END_IF;
 		
+	
 		IF MpAxisBasicY.Velocity=0 THEN
 		gCurrentY:=0;
 	ELSIF MpAxisBasicY.Velocity<0 THEN
