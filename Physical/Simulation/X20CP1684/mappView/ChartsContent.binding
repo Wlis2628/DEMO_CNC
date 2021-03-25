@@ -120,5 +120,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="ChartsContent" widgetRefId="ToggleSwitch1" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:gCurrentX" attribute="node" />
+<Target xsi:type="brease" contentRefId="ChartsContent" widgetRefId="OnlineChartHDA5" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::ManualCont:gCurrentY" attribute="node" />
+<Target xsi:type="brease" contentRefId="ChartsContent" widgetRefId="OnlineChartHDA6" attribute="graph[graph1].node" />
+</Binding>
 </Bindings>
 </BindingsSet>

@@ -31,5 +31,8 @@
     <Object Type="Library" Language="Binary" Description="User management based on user role system">MpUserX</Object>
     <Object Type="Library" Language="Binary" Description="Web access">MpWebXs</Object>
     <Object Type="Library" Language="Binary" Description="Text based messaging system">MpTweet</Object>
+    <Object Type="Library" Language="binary" Description="This library contains FBKs for pinging a station.">AsICMP</Object>
+    <Object Type="Library" Language="binary" Description="This library contains FBKs for sending email over an SMTP (Simple Mail Transfer Protocol) server.">AsSMTP</Object>
+    <Object Type="Library" Language="binary" Description="The BRSystem library provides the user with a number of system functions for e.g. handling permanent memory, accessing exception information, etc.">brsystem</Object>
   </Objects>
 </Package>

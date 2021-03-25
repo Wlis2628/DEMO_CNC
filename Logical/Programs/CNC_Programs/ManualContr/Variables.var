@@ -10,4 +10,7 @@ VAR
 	strHelp : STRING[80];
 	pointString : STRING[120];
 	GetThere : BOOL;
+	gCurrentX : REAL;
+	gCurrentY : REAL;
+	a : INT;
 END_VAR

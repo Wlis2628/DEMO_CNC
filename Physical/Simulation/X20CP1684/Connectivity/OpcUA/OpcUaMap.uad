@@ -14,8 +14,6 @@
       </ACL>
     </ACLAliases>
     <EURangeViolationAliases>
-      <EURangeViolation Id="2" Mode="2" />
-      <EURangeViolation Id="3" Mode="2" AclInherit="2" AclId="2" />
       <EURangeViolation Id="4" Mode="1" />
     </EURangeViolationAliases>
     <EURangesAliases>
@@ -426,6 +424,8 @@
         <Variable Name="GoRight" />
         <Variable Name="GoUp" />
         <Variable Name="pointString" />
+        <Variable Name="gCurrentX" />
+        <Variable Name="gCurrentY" />
       </Task>
       <Task Name="live_draw">
         <Variable Name="cmdDraw" />

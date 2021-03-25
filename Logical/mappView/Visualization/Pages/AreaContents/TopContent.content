@@ -11,6 +11,6 @@
     <Widget xsi:type="widgets.brease.Image" id="Image4" top="10" left="5" width="140" height="80" zIndex="7" image="Media/br_logo.png" />
     <Widget xsi:type="widgets.brease.Image" id="Image5" top="10" left="240" width="81" height="80" zIndex="8" image="Media/SymbolLib/Alarm/Alarm.svg" imageColor="rgba(255, 0, 0, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="Label2" top="0" left="320" width="160" height="100" zIndex="9" multiLine="true" text="$IAT/CheckAlarms" wordWrap="true" textColor="rgba(255, 0, 0, 1)" fontSize="25px" />
-    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="60" left="960" width="161" zIndex="10" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)" textAlign="left" fontSize="20px" bold="false" />
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="50" left="960" width="161" zIndex="10" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)" textAlign="left" fontSize="20px" bold="false" />
   </Widgets>
 </Content>

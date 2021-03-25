@@ -23,7 +23,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA1" top="29" left="1" width="700" height="465" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="540" textColor="rgba(0, 0, 0, 1)" min="-10" />
+                  <Element id="yAxis1" max="540" textColor="rgba(0, 0, 0, 1)" min="-10" unit="{'metric':'MMTR','imperial':'MMTR','imperial-us':'MMTR'}" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" numberOfTicks="7" textColor="rgba(0, 0, 0, 1)" fontSize="15px" />
@@ -63,7 +63,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA5" top="29" left="1" width="700" height="465" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="110" min="-110" textColor="rgba(0, 0, 0, 1)" />
+                  <Element id="yAxis1" max="2.5" textColor="rgba(0, 0, 0, 1)" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" textColor="rgba(0, 0, 0, 1)" fontSize="16px" numberOfTicks="7" />
@@ -87,7 +87,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA2" top="29" left="0" width="700" height="465" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="440" textColor="rgba(0, 0, 0, 1)" />
+                  <Element id="yAxis1" max="440" textColor="rgba(0, 0, 0, 1)" unit="{'metric':'mmt','imperial':'MMT','imperial-us':'MMTR'}" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" numberOfTicks="7" textColor="rgba(0, 0, 0, 1)" fontSize="16px" />
@@ -127,7 +127,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA6" top="29" left="20" width="700" height="465" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="110" min="-110" textColor="rgba(0, 0, 0, 1)" />
+                  <Element id="yAxis1" max="2.5" textColor="rgba(0, 0, 0, 1)" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" textColor="rgba(0, 0, 0, 1)" fontSize="16px" numberOfTicks="7" />

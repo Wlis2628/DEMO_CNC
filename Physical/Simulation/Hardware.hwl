@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <BR.AS.HardwareTopology Version="0.0.0.1">
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="12/10/2020 14:18:04" />
+    <TimeStamp LogicalPath="Simulation.Hardware.hw" LastWriteTime="03/25/2021 09:35:29" />
   </TimeStamps>
   <Modules>
     <Module Name="8V1022.00-2" Type="8V1022.00-2" X="273" Y="249" />
@@ -10,10 +10,10 @@
     <Module Name="8V1022.00-2a" Type="8V1022.00-2" X="199" Y="249" />
     <Module Name="8AC120.60-1a" Type="8AC120.60-1" X="213" Y="455.5" />
     <Module Name="8AC114.60-2a" Type="8AC114.60-2" X="201.8" Y="455.5" />
-    <Module Name="X20CP1584" Type="X20CP1584" X="75" Y="97" />
+    <Module Name="X20CP1684" Type="X20CP1684" X="100" Y="100" />
   </Modules>
   <Links>
-    <Link From="8AC114.60-2a" To="8AC114.60-2" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
+    <Link From="8AC114.60-2" To="8AC114.60-2a" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
       <Point X="207.900009" Y="493.1" />
       <Point X="207.900009" Y="493.1" />
       <Point X="198.900009" Y="493.1" />
@@ -25,14 +25,14 @@
       <Point X="281.9" Y="493.1" />
       <Point X="281.9" Y="493.1" />
     </Link>
-    <Link From="8AC114.60-2a" To="X20CP1584" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+    <Link From="8AC114.60-2a" To="X20CP1684" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
       <Point X="207.900009" Y="483.3" />
       <Point X="207.900009" Y="483.3" />
       <Point X="198.900009" Y="483.3" />
-      <Point X="131" Y="483.3" />
-      <Point X="131" Y="197" />
-      <Point X="131" Y="184" />
-      <Point X="131" Y="184" />
+      <Point X="156" Y="483.3" />
+      <Point X="156" Y="200" />
+      <Point X="156" Y="187" />
+      <Point X="156" Y="187" />
     </Link>
   </Links>
   <InfoElements>
