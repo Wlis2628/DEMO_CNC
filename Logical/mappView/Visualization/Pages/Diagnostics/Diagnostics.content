@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="Diagnostics" height="800" width="1450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.WebViewer" id="WebViewerSDM" top="0" left="180" width="1060" height="680" zIndex="0" src="http://127.0.0.1/sdm/index.html" />
+    <Widget xsi:type="widgets.brease.WebViewer" id="WebViewerSDM" top="0" left="180" width="1060" height="580" zIndex="0" src="http://127.0.0.1/sdm/index.html" />
     <Widget xsi:type="widgets.brease.FlyOut" id="FlyOut1" top="0" left="5" width="1450" zIndex="1" docking="bottom" image="Media/SymbolLib/Arrow/Up2.svg" showOnTop="true" buttonWidth="150" buttonCornerRadius="5px 5px 0px 0px" buttonBackColor="rgba(255, 140, 0, 1)" backColor="rgba(224, 224, 224, 1)" textAlign="center" textRotation="horizontal" shadow="10px 2px 5px 5px rgba(255, 136, 0, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton1" top="20" left="345" width="50" height="60" zIndex="12" image="Media/SymbolLib/Arrow/ArrowUp.svg" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 1px 1px" cornerRadius="10px" backColor="rgba(169, 169, 169, 1)" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" style="MyStyle" />
