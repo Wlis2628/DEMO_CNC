@@ -35,20 +35,6 @@
 <Source xsi:type="opcUa" refId="::ManualCont:GoUp" attribute="value" />
 <Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="MomentaryPushButton1" attribute="value" />
 </Binding>
-
-
-
-
-
-
-		<Binding mode="oneWay">
-			<Source xsi:type="opcUa" refId="::AsGlobalPV:gActiveTool" attribute="value" />
-			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton6" attribute="value" />
-</Binding>
-
-
-
-
 		<Binding mode="twoWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:MpCnc2Axis_0.Power" attribute="value" />
 			<Target xsi:type="brease" contentRefId="MainPageContent" widgetRefId="ToggleButton8" attribute="value" />
