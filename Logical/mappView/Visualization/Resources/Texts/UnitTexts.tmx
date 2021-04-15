@@ -638,5 +638,13 @@
         <seg>Alarms history</seg>
       </tuv>
     </tu>
+    <tu tuid="Messages">
+      <tuv xml:lang="pl">
+        <seg>Wiadomości</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Messages</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

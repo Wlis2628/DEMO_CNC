@@ -37,5 +37,7 @@
     <Object Type="File">ChartsContent.binding</Object>
     <Object Type="File">ChartsContent.eventbinding</Object>
     <Object Type="File">ShowGcodeContent.binding</Object>
+    <Object Type="File">MessagesContent.binding</Object>
+    <Object Type="File">MessagesContent.eventbinding</Object>
   </Objects>
 </Package>

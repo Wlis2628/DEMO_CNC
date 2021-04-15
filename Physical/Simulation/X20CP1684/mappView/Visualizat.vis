@@ -9,6 +9,7 @@
 		<Page refId="Alarms"/>
 		<Page refId="MainPage"/>
 		<Page refId="Charts"/>
+		<Page refId="MessagesPage"/>
   </Pages>
   <Navigations>
     <Navigation refId="Navigation" />
@@ -28,8 +29,8 @@
 		<BindingsSet refId="TopContent_binding" />
 		<BindingsSet refId="ChartsContent_binding" />
 		<BindingsSet refId="ShowGcodeContent_binding"/>
-		
-  </BindingsSets>
+		<BindingsSet refId="MessagesContent_binding"/>
+	</BindingsSets>
   <EventBindingsSets>
 		<EventBindingsSet refId="MainPage_eventbinding" />
 		<EventBindingsSet refId="GraphicTextEditor_eventbinding" />
@@ -47,6 +48,7 @@
 		<EventBindingsSet refId="TopContent_eventbinding" />
 		<EventBindingsSet refId="ShowGcodeContent_eventbinding" />
 		<EventBindingsSet refId="ChartsContent_eventbinding" />
+		<EventBindingsSet refId="MessagesContent_eventbinding" />
 				
   </EventBindingsSets>
   <Dialogs>

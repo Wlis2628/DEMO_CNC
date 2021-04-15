@@ -17,6 +17,7 @@
     <Task Name="Alarm" Source="Programs.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="SMTP" Source="Sources.Infrastructure.SMTP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ICMP" Source="Sources.Infrastructure.ICMP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Smtp_Send" Source="LibAsSmtp1_ST.Smtp_Send.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -26,6 +27,7 @@
   </TaskClass>
   <DataObjects>
     <DataObject Name="McAcpSys" Source="" Memory="UserROM" Language="Binary" />
+    <DataObject Name="DatObj" Source="LibAsSmtp1_ST.DatObj.dob" Memory="UserROM" Language="Simple" />
   </DataObjects>
   <NcDataObjects>
     <NcDataObject Name="InitCncPro" Source="" Memory="UserROM" Language="Binary" />

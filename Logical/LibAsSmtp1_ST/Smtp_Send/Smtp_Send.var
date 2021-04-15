@@ -1,0 +1,13 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: Smtp_Send
+ * File: Smtp_Send.var
+ * Author: Bernecker + Rainer
+ * Created: April 17, 2009
+ ********************************************************************
+ * Local variables of program Smtp_Send
+ ********************************************************************)
+VAR
+	Smtp : Smtp_typ; (*Variable of Smtp_typ*)
+END_VAR
