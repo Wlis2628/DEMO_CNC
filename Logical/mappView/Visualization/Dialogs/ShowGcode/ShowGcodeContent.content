@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ShowGcodeContent" height="600" width="800" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="Button1" top="540" left="360" width="140" height="51" zIndex="0" text="Ok" style="MyStyle" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="80" left="240" width="540" zIndex="1" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput2" top="160" left="240" width="540" zIndex="2" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput3" top="240" left="240" width="540" zIndex="3" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="80" left="40" width="180" zIndex="4" text="Second last" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label2" top="160" left="40" width="180" zIndex="5" text="Last" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label3" top="240" left="40" width="180" zIndex="6" text="Current" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label4" top="400" left="40" width="180" zIndex="7" text="Second Next" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label5" top="320" left="40" width="180" zIndex="8" text="Next" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput4" top="320" left="240" width="540" zIndex="9" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput5" top="400" left="240" width="540" zIndex="10" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="540" left="340" width="140" height="51" zIndex="0" text="Ok" fontSize="25px" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="100" left="238" width="540" zIndex="1" borderWidth="1px 5px 1px 1px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" borderStyle="solid" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput2" top="180" left="238" width="540" zIndex="2" borderWidth="1px 5px 1px 1px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" borderStyle="solid" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput3" top="258" left="238" width="540" zIndex="3" borderWidth="1px 5px 1px 1px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" borderStyle="solid" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="100" left="40" width="180" zIndex="4" text="Second last" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="180" left="40" width="180" zIndex="5" text="Last" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="258" left="40" width="180" zIndex="6" text="Current" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="420" left="40" width="180" zIndex="7" text="Second Next" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="340" left="40" width="180" zIndex="8" text="Next" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput4" top="340" left="238" width="540" zIndex="9" borderWidth="1px 5px 1px 1px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" borderStyle="solid" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput5" top="420" left="238" width="540" zIndex="10" borderWidth="1px 5px 1px 1px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" borderStyle="solid" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="20" left="320" width="180" zIndex="11" text="G-code lines" textColor="rgba(0, 0, 0, 1)" fontSize="30px" />
   </Widgets>
 </Content>

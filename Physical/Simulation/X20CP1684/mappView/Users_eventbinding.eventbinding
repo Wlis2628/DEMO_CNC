@@ -124,7 +124,7 @@
 			<EventHandler>
 				<Action>
 					<Target xsi:type="clientSystem.Action">
-						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ShowGcode" headerText="G-code editor" />
+						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ShowGcode" headerText="G-code" />
 					</Target>
 				</Action>
 			</EventHandler>
