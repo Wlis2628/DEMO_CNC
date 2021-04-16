@@ -12,6 +12,11 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	(* Insert code here *)
 	
+	IF cmdConvert THEN
+		gMsgBox5:=TRUE;
+	ELSE
+		gMsgBox5:=FALSE;
+	END_IF;
 	
 	IF cmdConvert THEN
 		

@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.7.2.98?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
-  <Module Name="0RMSM1135.4G-EU" Type="0RMSM1135.4G-EU" Version="1.0.0.0">
-    <Connection Connector="DEV1" TargetModule="X20CP1684" TargetConnector="IF2">
-      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
-    </Connection>
-    <Parameter ID="DeviceIp" Value="192.168.0.152" />
-    <Parameter ID="Uplink2Enable" Value="on" />
-    <Parameter ID="Uplink2SimPin" Value="D7ir5DWjUiZRH9xaXB6L/w6El3DI9fYPjqj++jGHBD1Nq4L25RZ0pZGcDNY3sZhkD3Gp8e8FrfGYzxswrL+oMWHFJGtwgJoRqfcxWeewk7MZsmWteYfZkZxm8r8i/L//tJdT2NJLFt5I6zvUevZxH1GPLzLDioyBkvw0dj4CyDY=" Description="0000" />
-    <Parameter ID="GmToken" Value="Poland.Kraków" />
-    <Parameter ID="GmServerIp" Value="213.33.116.130" />
-  </Module>
   <Module Name="8AC114.60-2" Type="8AC114.60-2" Version="1.0.0.8">
     <Connection Connector="SS" TargetModule="8V1022.00-2" TargetConnector="SS1" />
     <Connection Connector="PLK2" TargetModule="8AC114.60-2a" TargetConnector="PLK2">

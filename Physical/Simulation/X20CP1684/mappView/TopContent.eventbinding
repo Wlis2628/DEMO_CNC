@@ -42,5 +42,15 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
+		<EventBinding id="TopContent.Label2.Click">
+			<Source contentRefId="TopContent" widgetRefId="Label2" xsi:type="widgets.brease.Label.Event" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.Navigate" pageId="Alarms" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
 	</Bindings>
 </EventBindingSet>

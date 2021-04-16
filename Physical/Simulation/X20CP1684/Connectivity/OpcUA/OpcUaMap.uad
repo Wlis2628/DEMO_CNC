@@ -508,6 +508,7 @@
       </Task>
       <Task Name="svg_to_gco">
         <Variable Name="cmdConvert" />
+        <Variable Name="gMsgBox5" />
       </Task>
     </Module>
   </DefaultView>

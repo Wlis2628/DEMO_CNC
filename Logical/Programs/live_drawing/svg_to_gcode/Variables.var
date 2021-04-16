@@ -44,4 +44,5 @@ VAR
 	Rscale : REAL;
 	Y2scale : REAL;
 	X2scale : REAL;
+	gMsgBox5 : BOOL;
 END_VAR
