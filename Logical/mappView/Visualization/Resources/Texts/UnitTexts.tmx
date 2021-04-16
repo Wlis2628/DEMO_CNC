@@ -408,7 +408,7 @@
     </tu>
     <tu tuid="Username">
       <tuv xml:lang="pl">
-        <seg>Nazwa użytkownika</seg>
+        <seg>Użytkownik</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Username</seg>
@@ -432,7 +432,7 @@
     </tu>
     <tu tuid="NewUser">
       <tuv xml:lang="pl">
-        <seg>Nowy Użytkownik</seg>
+        <seg>Nowy użytkownik</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>New user</seg>
@@ -464,7 +464,7 @@
     </tu>
     <tu tuid="Currently">
       <tuv xml:lang="pl">
-        <seg>Aktualnie zalogowany użytkownik</seg>
+        <seg>Wybrany użytkownik</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Currently selected user</seg>
@@ -644,6 +644,78 @@
       </tuv>
       <tuv xml:lang="en">
         <seg>Messages</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Power">
+      <tuv xml:lang="pl">
+        <seg>Włącz</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Power ON</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PowerOFF">
+      <tuv xml:lang="pl">
+        <seg>Wyłącz</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PowerOFF</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ErrorRes">
+      <tuv xml:lang="pl">
+        <seg>Resetuj błędy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Error reset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="RecipesMan">
+      <tuv xml:lang="pl">
+        <seg>Zarządzanie recepturami</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipes managemet</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserInform">
+      <tuv xml:lang="pl">
+        <seg>Informacje o wybranym użytkowniku</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Information about selected user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurSelGr">
+      <tuv xml:lang="pl">
+        <seg>Wybrany użytkownik</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Currently selested user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Userchanged">
+      <tuv xml:lang="pl">
+        <seg>Użytkownik:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User changed to:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LoginSucc">
+      <tuv xml:lang="pl">
+        <seg>Logowanie zakończono pomyślnie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login successful</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UsersInfo">
+      <tuv xml:lang="pl">
+        <seg>Użytkownik: administrator, Hasło: admin; Użytkownik:operator, Hasło:1234</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Username: administrator, Password: admin; Username: operator, Password:1234;</seg>
       </tuv>
     </tu>
   </body>
