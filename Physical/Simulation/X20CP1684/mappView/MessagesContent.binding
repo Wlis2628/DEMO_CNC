@@ -57,10 +57,7 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="MessagesContent" widgetRefId="MomentaryPushButton3" attribute="enable" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
-<Target xsi:type="brease" contentRefId="MessagesContent" widgetRefId="FlyOut1" attribute="enable" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gManualContr" attribute="value" />
 <Target xsi:type="brease" contentRefId="MessagesContent" widgetRefId="NumericInput7" attribute="enable" />
