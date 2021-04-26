@@ -17,6 +17,7 @@
     <Task Name="Alarm" Source="Programs.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="SMTP" Source="Sources.Infrastructure.SMTP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ICMP" Source="Sources.Infrastructure.ICMP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Icmp_Ping" Source="LibAsIcmp1_ST.Icmp_Ping.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

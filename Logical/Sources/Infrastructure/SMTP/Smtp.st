@@ -22,7 +22,7 @@ PROGRAM _INIT
 	Smtp.Parameters.Receiver	:=	RECEIVER;
 	Smtp.Parameters.Subject		:=	SUBJECT;
 	Smtp.Parameters.Text		:=	HEADER;
-	Smtp.Parameters.Domain		:=	DOMAIN;					//Usually domain name is not needed
+	Smtp.Parameters.Domain		:=	DOMAIN;				//Usually domain name is not needed
 	Smtp.Parameters.Timeout		:=	0;					//If 0 specified then default 120s is used
 	Smtp.Parameters.Port		:=	PORT;				//If 0 specified then default port for SMTP (25) is used
 	

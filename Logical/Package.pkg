@@ -10,5 +10,6 @@
     <Object Type="Package">Programs</Object>
     <Object Type="File">Project.language</Object>
     <Object Type="Package" Description="Sources package">Sources</Object>
+    <Object Type="Package">LibAsIcmp1_ST</Object>
   </Objects>
 </Package>
