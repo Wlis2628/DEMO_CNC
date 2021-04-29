@@ -435,6 +435,13 @@
         <Variable Name="cmdBack" />
         <Variable Name="curShape" />
         <Variable Name="InfoString" />
+        <Variable Name="inXlinePosX" />
+        <Variable Name="inYlinePosY" />
+        <Variable Name="HelpLines" />
+        <Variable Name="readXRec" />
+        <Variable Name="readYRec" />
+        <Variable Name="radius" />
+        <Variable Name="CircleRadius" />
       </Task>
       <Task Name="Initiation" />
       <Task Name="ManualCont" />

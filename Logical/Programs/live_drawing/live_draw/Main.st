@@ -1,13 +1,13 @@
 
 PROGRAM _INIT
 	
-
 	readX;
 	readY;
 	
 END_PROGRAM
 
 PROGRAM _CYCLIC
+	
 	
 	IF gSvgStringArrayIndex>0 THEN
 		gLiveDrawing:=TRUE;
@@ -38,6 +38,7 @@ PROGRAM _CYCLIC
 	
 	
 	CASE curShape OF
+		
 		circle:
 			(*-circle drawing-*)
 			CASE stage OF  
@@ -57,41 +58,27 @@ PROGRAM _CYCLIC
 						strcat(ADR(shapeString),ADR(strY));
 						strHelp:='" r="';
 						strcat(ADR(shapeString),ADR(strHelp));
-						stage:=1;	
-					END_IF;
-		
-				1:
-				InfoString:='Point distance from the centre';
-					IF EDGEPOS(cmdDraw) THEN
-						cmdDraw:=FALSE;
-						distX:=ABS(readX-prevReadX);
-						distY:=ABS(readY-prevReadY);
-						distX:=distX*distX;
-						distY:=distY*distY;
-						radius:=SQRT(UDINT_TO_REAL(distX+distY));
+						stage:=1;
 						
-						IF prevReadX-radius<0 OR prevReadY-radius<0 OR prevReadX+radius>780 OR prevReadY+radius>630 THEN
+						IF prevReadX-CircleRadius<0 OR prevReadY-CircleRadius<0 OR prevReadX+CircleRadius>780 OR prevReadY+CircleRadius>630 THEN
+							stage:=1;
+						ELSIF CircleRadius=0 THEN
 							stage:=2;
-						ELSIF radius=0 THEN
-							stage:=3;
 						ELSE
-							strRadius:=REAL_TO_STRING(radius);
+							strRadius:=REAL_TO_STRING(CircleRadius);
 							strcat(ADR(shapeString),ADR(strRadius));
 							strHelp:='" stroke="black" fill="none" />';
 							strcat(ADR(shapeString),ADR(strHelp));
 				
 							svgStringArray[svgStringArrayIndex]:=shapeString;	
-				
 							svgStringArrayIndex:=svgStringArrayIndex+1;
 				
-						
 							stage:=0;
 						END_IF;
-						
-						
-						
 					END_IF;
-				2:
+		
+	
+				1:
 					InfoString:='Shape outside drawing field!';
 			
 					IF EDGEPOS(cmdDraw) THEN
@@ -100,7 +87,7 @@ PROGRAM _CYCLIC
 					END_IF;
 				
 						
-				3: 
+				2: 
 					InfoString:='Radius can not be equal to 0!';
 					IF EDGEPOS(cmdDraw) THEN
 						cmdDraw:=FALSE;
@@ -152,7 +139,6 @@ PROGRAM _CYCLIC
 				
 						svgStringArrayIndex:=svgStringArrayIndex+1;
 				
-						
 						stage:=0;
 					END_IF;
 	
@@ -170,24 +156,17 @@ PROGRAM _CYCLIC
 						shapeString:='<polyline points="';
 						prevReadX:=readX;
 						prevReadY:=readY;
-				
-						stage:=1;	
-					END_IF;
-		
-				1:
-			InfoString:='Point bottom-right corner of the rectangle';
-					IF EDGEPOS(cmdDraw) THEN
 						
-						cmdDraw:=FALSE;
-						
-						IF readX=prevReadX OR readY=prevReadY THEN
+						IF prevReadX+readXRec>780 OR prevReadY+readYRec>630 THEN
 							cmdDraw:=FALSE;
+							stage:=1;
+						ELSIF readXRec=0 OR readYRec=0 THEN
 							stage:=2;
 						ELSE
 							strPrevX:=UINT_TO_STRING(prevReadX);
 							strPrevY:=UINT_TO_STRING(prevReadY);
-							strX:=UINT_TO_STRING(readX);
-							strY:=UINT_TO_STRING(readY);
+							strXRec:=UINT_TO_STRING(prevReadX+readXRec);
+							strYRec:=UINT_TO_STRING(prevReadY+readYRec);
 							strHelp:=',';
 							strcat(ADR(shapeString),ADR(strPrevX));
 							strcat(ADR(shapeString),ADR(strHelp));
@@ -195,21 +174,21 @@ PROGRAM _CYCLIC
 							strHelp:=' ';
 							strcat(ADR(shapeString),ADR(strHelp));
 							strHelp:=',';
-							strcat(ADR(shapeString),ADR(strX));
+							strcat(ADR(shapeString),ADR(strXRec));
 							strcat(ADR(shapeString),ADR(strHelp));
 							strcat(ADR(shapeString),ADR(strPrevY));
 							strHelp:=' ';
 							strcat(ADR(shapeString),ADR(strHelp));
 							strHelp:=',';
-							strcat(ADR(shapeString),ADR(strX));
+							strcat(ADR(shapeString),ADR(strXRec));
 							strcat(ADR(shapeString),ADR(strHelp));
-							strcat(ADR(shapeString),ADR(strY));
+							strcat(ADR(shapeString),ADR(strYRec));
 							strHelp:=' ';
 							strcat(ADR(shapeString),ADR(strHelp));
 							strHelp:=',';
 							strcat(ADR(shapeString),ADR(strPrevX));
 							strcat(ADR(shapeString),ADR(strHelp));
-							strcat(ADR(shapeString),ADR(strY));
+							strcat(ADR(shapeString),ADR(strYRec));
 						
 							strHelp:=' ';
 							strcat(ADR(shapeString),ADR(strHelp));
@@ -227,12 +206,18 @@ PROGRAM _CYCLIC
 				
 							stage:=0;
 						END_IF;
-						
-						
-						
+					END_IF;
+					
+				
+				1:	
+					InfoString:='Shape outside drawing field!';
+			
+					IF EDGEPOS(cmdDraw) THEN
+						cmdDraw:=FALSE;
+						stage:=0;
 					END_IF;
 				
-				2:	
+				2: 
 					InfoString:='Distance can not be equal to 0!';
 							
 					IF EDGEPOS(cmdDraw) THEN
@@ -254,28 +239,24 @@ PROGRAM _CYCLIC
 						shapeString:='<polyline points="';
 						prevReadX:=readX;
 						prevReadY:=readY;
-				
-						stage:=1;	
 					END_IF;
-		
-				1:
-				InfoString:='Point distance from the centre';
-					IF EDGEPOS(cmdDraw) THEN
-						cmdDraw:=FALSE;
-						distX:=ABS(readX-prevReadX);
-						distY:=ABS(readY-prevReadY);
-						distX:=distX*distX;
-						distY:=distY*distY;
-						radius:=SQRT(UDINT_TO_REAL(distX+distY));
-						IF prevReadX-radius<0 OR prevReadY-radius<0 OR prevReadX+radius>780 OR prevReadY+radius>630 THEN
+					
+					cmdDraw:=FALSE;
+					distX:=ABS(readX-prevReadX);
+					distY:=ABS(readY-prevReadY);
+					distX:=distX*distX;
+					distY:=distY*distY;
+					radius:=SQRT(UDINT_TO_REAL(distX+distY));
+						
+					IF prevReadX-radius<0 OR prevReadY-radius<0 OR prevReadX+radius>780 OR prevReadY+radius>630 THEN
+							stage:=1;
+					ELSIF radius=0 THEN
 							stage:=2;
-						ELSIF radius=0 THEN
-							stage:=3;
-						ELSE
+					ELSE
 						smallRadius:=radius/3;
 						angle:=-18; // degrees
+						
 						FOR i:=1 TO 5 DO
-	  					
 							x:=radius*COS(angle/180*PI);
 							y:=radius*SIN(angle/180*PI);
 							strX:=REAL_TO_STRING(x+prevReadX);
@@ -301,7 +282,7 @@ PROGRAM _CYCLIC
 							angle:=angle+72;
 							
 						END_FOR;
-				
+						
 						x:=radius*COS(angle/180*PI);
 						y:=radius*SIN(angle/180*PI);
 						strX:=REAL_TO_STRING(x+prevReadX);
@@ -321,15 +302,14 @@ PROGRAM _CYCLIC
 					
 							stage:=0;
 							END_IF
-					END_IF;
-				2:
+				1:
 					InfoString:='Shape outside drawing field!';
 					IF EDGEPOS(cmdDraw) THEN
 						cmdDraw:=FALSE;
 						stage:=0;
 					END_IF
 				
-				3: 
+				2: 
 					InfoString:='Distance can not be equal to 0!';
 					IF EDGEPOS(cmdDraw) THEN
 						cmdDraw:=FALSE;
@@ -453,70 +433,101 @@ PROGRAM _CYCLIC
 	gSvgStringArrayIndex:=svgStringArrayIndex;
 	
 	
-	(*------- Mirroring --------*)
+	
+	IF HelpLines THEN
+
+	
+	(* A line showing the position in X*)
+	inXlinePosYStr:=REAL_TO_STRING(inXlinePosY);
+	inXlinePosXStr:=REAL_TO_STRING(inXlinePosX);
+	inXlinePosYStr1:=REAL_TO_STRING(inXlinePosY1);
 	
 	
-//	IF EDGEPOS(cmdMirror) THEN
-//	
-//	svgString:=gSvgStringArray[0];
-//	labelString:=LEFT(svgString,4);
-//	Xstr:='';
-//	Ystr:='';
-//	
-//	IF labelString='<pol' THEN
-//		j:=19;
-//		pos:=j;
-//		flag1:=TRUE;
-//		
-//		WHILE flag1 DO
-//			buff:=MID(svgString,1,j);
-//				
-//				
-//			IF buff=',' THEN
-//				xory:=TRUE;
-//				
-//				
-//			ELSIF buff=' ' OR buff='"' THEN
-//				xory:=FALSE;
-//						
-//				Xreal:=STRING_TO_REAL(Xstr);
-//				
-//				Yreal:=STRING_TO_REAL(Ystr);
-//				Xreal:=Xreal+50;
-//				Yreal:=Yreal+50;
-//					
-//				
-//						
-//			Xstr2:=REAL_TO_STRING(Xreal);
-//				Ystr2:=REAL_TO_STRING(Yreal);
-//			
-//				svgString:=REPLACE(svgString,Xstr2,LEN(Xstr),pos);
-//				svgString:=REPLACE(svgString,Ystr2,LEN(Ystr),pos+1+LEN(Xstr));
-//						
-//						
-//				Xstr:='';
-//				Ystr:='';
-//				pos:=j+1;	
-//						
-//				IF buff='"' THEN
-//					flag1:=FALSE;
-//				END_IF
-//			
-//							
-//			ELSE
-//				IF xory THEN 
-//					strcat(ADR(Ystr),ADR(buff));
-//				ELSE
-//					
-//					strcat(ADR(Xstr),ADR(buff));
-//				END_IF	
-//			END_IF
-//			j:=j+1;
-//		END_WHILE;
-//			
-//	END_IF
-//	END_IF
+	gSvgStringArray[0]:='<polyline points="';
+	inXlinePosY1:=0;
+	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+	strHelp:=',';
+	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr1));
+	strHelp:=' ';
+	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+	inXlinePosY:=630;
+	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+	strHelp:=',';
+	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr));
+	strHelp:='" fill="none" stroke="red" />';
+	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
 	
+	
+	(* A line showing the position in Y*)
+	inYlinePosYStr:=REAL_TO_STRING(inYlinePosY);
+	inYlinePosXStr:=REAL_TO_STRING(inYlinePosX);
+	inYlinePosXStr1:=REAL_TO_STRING(inYlinePosX1);
+	
+	
+	gSvgStringArray[1]:='<polyline points="';
+	inYlinePosX1:=0;
+	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr1));
+	strHelp:=',';
+	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+	strHelp:=' ';
+	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	inYlinePosX:=780;
+	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr));
+	strHelp:=',';
+	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+	strHelp:='" fill="none" stroke="red" />';
+	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	
+	ELSE
+		(* A line showing the position in X*)
+		inXlinePosYStr:=REAL_TO_STRING(inXlinePosY);
+		inXlinePosXStr:=REAL_TO_STRING(inXlinePosX);
+		inXlinePosYStr1:=REAL_TO_STRING(inXlinePosY1);
+	
+	
+		gSvgStringArray[0]:='<polyline points="';
+		inXlinePosY1:=0;
+		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+		strHelp:=',';
+		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr1));
+		strHelp:=' ';
+		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+		inXlinePosY:=630;
+		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+		strHelp:=',';
+		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr));
+		strHelp:='" fill="none" stroke="white" />';
+		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+	
+	
+		(* A line showing the position in Y*)
+		inYlinePosYStr:=REAL_TO_STRING(inYlinePosY);
+		inYlinePosXStr:=REAL_TO_STRING(inYlinePosX);
+		inYlinePosXStr1:=REAL_TO_STRING(inYlinePosX1);
+	
+	
+		gSvgStringArray[1]:='<polyline points="';
+		inYlinePosX1:=0;
+		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr1));
+		strHelp:=',';
+		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+		strHelp:=' ';
+		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		inYlinePosX:=780;
+		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr));
+		strHelp:=',';
+		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+		strHelp:='" fill="none" stroke="white" />';
+		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	END_IF;
 	
 END_PROGRAM
 

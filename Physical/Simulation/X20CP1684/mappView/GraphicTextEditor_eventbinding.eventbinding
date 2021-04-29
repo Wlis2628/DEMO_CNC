@@ -161,16 +161,7 @@
 				</Action>
 			</EventHandler>
 		</EventBinding>
-		<EventBinding id="GraphicTextEditor.ArcButton.Click">
-			<Source contentRefId="GraphicTextEditor" widgetRefId="ArcButton" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::live_draw:curShape">
-						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="4" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
+	
 		<EventBinding id="GraphicTextEditor.ClearButton.Click">
 			<Source contentRefId="GraphicTextEditor" widgetRefId="ClearButton" xsi:type="widgets.brease.Button.Event" event="Click" />
 			<EventHandler>
@@ -395,14 +386,31 @@
 			<EventHandler condition="newValue=TRUE">
 				<Action>
 					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut1">
-						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Down2.svg" />
+						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/ArrowDown.svg" />
 					</Target>
 				</Action>
 			</EventHandler>
 			<EventHandler condition="newValue=FALSE">
 				<Action>
 					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut1">
-						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Up2.svg" />
+						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/ArrowUp.svg" />
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+		<EventBinding id="GraphicTextEditor.FlyOut2.ToggleStateChanged">
+			<Source contentRefId="GraphicTextEditor" widgetRefId="FlyOut2" xsi:type="widgets.brease.FlyOut.Event" event="ToggleStateChanged" />
+			<EventHandler condition="newValue=TRUE">
+				<Action>
+					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut1">
+						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
+					</Target>
+				</Action>
+			</EventHandler>
+			<EventHandler condition="newValue=FALSE">
+				<Action>
+					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut1">
+						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
 					</Target>
 				</Action>
 			</EventHandler>

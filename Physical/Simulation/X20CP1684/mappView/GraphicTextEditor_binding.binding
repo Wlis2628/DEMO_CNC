@@ -120,5 +120,40 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="ToggleSwitch1" attribute="enable" />
 </Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:inXlinePosX" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="BasicSlider1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:inYlinePosY" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="BasicSlider2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:HelpLines" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="ToggleButton2" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:readXRec" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:readYRec" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:CircleRadius" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput1" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:inYlinePosY" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:inXlinePosX" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput11" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

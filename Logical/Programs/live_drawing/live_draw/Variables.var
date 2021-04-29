@@ -36,4 +36,25 @@ VAR
 	svgStringArrayIndex : UINT;
 	x : REAL;
 	y : REAL;
+	pointString : STRING[120];
+	pointStrX : STRING[80];
+	pointStrY : STRING[80];
+	inXlinePosYStr : STRING[80];
+	inXlinePosY : REAL;
+	inXlinePosXStr : STRING[80];
+	inXlinePosX : REAL;
+	inXlinePosYStr1 : STRING[80];
+	inXlinePosY1 : REAL;
+	inYlinePosYStr : STRING[80];
+	inYlinePosY : REAL;
+	inYlinePosXStr : STRING[80];
+	inYlinePosX : REAL;
+	inYlinePosXStr1 : STRING[80];
+	inYlinePosX1 : REAL;
+	HelpLines : BOOL;
+	readYRec : UINT := 40;
+	readXRec : UINT := 40;
+	strXRec : STRING[80];
+	strYRec : STRING[80];
+	CircleRadius : REAL := 70;
 END_VAR
