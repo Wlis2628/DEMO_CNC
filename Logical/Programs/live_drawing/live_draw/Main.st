@@ -37,6 +37,16 @@ PROGRAM _CYCLIC
 	END_IF;
 	
 	
+	IF HelpLines THEN
+		
+		IF (readX-inXlinePosX)<=20 AND (readY-inYlinePosY)<=20 AND (readY-inYlinePosY)>=-20 AND (readX-inXlinePosX)>=-20 THEN
+			readX:=REAL_TO_UINT(inXlinePosX);
+			readY:=REAL_TO_UINT(inYlinePosY);
+		END_IF;
+		
+		
+	END_IF;
+	
 	CASE curShape OF
 		
 		circle:
@@ -480,8 +490,18 @@ PROGRAM _CYCLIC
 	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
 	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
 	strHelp:='" fill="none" stroke="red" />';
-	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		
+		(* A circle*)
+		
+		gSvgStringArray[2]:='<circle cx="';
 	
+		strHelp:='" cy="';
+		strcat(ADR(gSvgStringArray[2]),ADR(inXlinePosXStr));
+		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[2]),ADR(inYlinePosYStr));
+		strHelp:='" r="20" stroke="red" stroke-width="1" fill="none" />';
+		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
 	ELSE
 		(* A line showing the position in X*)
 		inXlinePosYStr:=REAL_TO_STRING(inXlinePosY);
@@ -527,6 +547,17 @@ PROGRAM _CYCLIC
 		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
 		strHelp:='" fill="none" stroke="white" />';
 		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		
+		(* A circle*)
+		
+		gSvgStringArray[2]:='<circle cx="';
+	
+		strHelp:='" cy="';
+		strcat(ADR(gSvgStringArray[2]),ADR(inXlinePosXStr));
+		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
+		strcat(ADR(gSvgStringArray[2]),ADR(inYlinePosYStr));
+		strHelp:='" r="20" stroke="white" stroke-width="2" fill="none" />';
+		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
 	END_IF;
 	
 END_PROGRAM

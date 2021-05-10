@@ -402,14 +402,14 @@
 			<Source contentRefId="GraphicTextEditor" widgetRefId="FlyOut2" xsi:type="widgets.brease.FlyOut.Event" event="ToggleStateChanged" />
 			<EventHandler condition="newValue=TRUE">
 				<Action>
-					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut1">
+					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut2">
 						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/ArrowRight.svg" />
 					</Target>
 				</Action>
 			</EventHandler>
 			<EventHandler condition="newValue=FALSE">
 				<Action>
-					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut1">
+					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="GraphicTextEditor" widgetRefId="FlyOut2">
 						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/ArrowLeft.svg" />
 					</Target>
 				</Action>
