@@ -12,7 +12,7 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	(* Insert code here *)
 	
-	IF cmdConvert THEN
+	IF EDGEPOS(cmdConvert) THEN
 		gMsgBox5:=TRUE;
 	ELSE
 		gMsgBox5:=FALSE;
@@ -20,13 +20,12 @@ PROGRAM _CYCLIC
 	
 	IF cmdConvert THEN
 		
-		cmdConvert:=FALSE;
-		IF gSvgStringArray[0]<>'' THEN
+		IF gSvgStringArray[3]<>'' THEN
 		
 			memset(ADR(cncString), 0, SIZEOF(cncString));
 			strHelp:='%001$n';
 			strcat(ADR(cncString),ADR(strHelp));
-			FOR i:=0 TO (gSvgStringArrayIndex-1) DO
+			FOR i:=3 TO (gSvgStringArrayIndex-1) DO
 
 				svgString:=gSvgStringArray[i];
 				labelString:=LEFT(svgString,4);
@@ -289,6 +288,7 @@ PROGRAM _CYCLIC
 			strcat(ADR(cncString),ADR(strHelp));
 			cmdFile:=TRUE;
 		END_IF;
+		cmdConvert:=FALSE;
 	END_IF
 	
 	

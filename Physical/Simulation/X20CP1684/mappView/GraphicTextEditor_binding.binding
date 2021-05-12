@@ -155,5 +155,34 @@
 <Source xsi:type="opcUa" refId="::live_draw:inXlinePosX" attribute="value" />
 <Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput11" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:radius" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:HelpLines" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="BasicSlider1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:HelpLines" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="BasicSlider2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:HelpLines" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput10" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:HelpLines" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput11" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:RotationAngle" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="NumericInput9" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::live_draw:PositionArray" attribute="value" />
+<Target xsi:type="brease" contentRefId="GraphicTextEditor" widgetRefId="TableItem1" attribute="stringValue" />
+</Binding>
 </Bindings>
 </BindingsSet>

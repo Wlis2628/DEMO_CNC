@@ -442,6 +442,8 @@
         <Variable Name="readYRec" />
         <Variable Name="radius" />
         <Variable Name="CircleRadius" />
+        <Variable Name="RotationAngle" />
+        <Variable Name="PositionArray" />
       </Task>
       <Task Name="Initiation" />
       <Task Name="ManualCont" />

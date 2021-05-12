@@ -20,7 +20,10 @@ VAR
 	prevPrevReadY : UINT;
 	prevReadX : UINT;
 	prevReadY : UINT;
-	radius : REAL;
+	radius : REAL := 100;
+	PositionString : STRING[500];
+	PositionArrayIndex : UINT;
+	PositionArray : ARRAY[0..999] OF STRING[500];
 	readX : UINT;
 	readY : UINT;
 	shapeString : STRING[500];
@@ -57,4 +60,9 @@ VAR
 	strXRec : STRING[80];
 	strYRec : STRING[80];
 	CircleRadius : REAL := 70;
+	strRot : STRING[80];
+	RotationAngle : REAL;
+	strPrevReadX : STRING[80];
+	strPrevReadY : STRING[80];
+	CurrentShape : STRING[80];
 END_VAR
