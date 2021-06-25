@@ -19,10 +19,7 @@
 <Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="TextOutputPasswordHintEdit" attribute="value" />
 </Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:DialogEditUserConfirmEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="ButtonConfirmEdit" attribute="enable" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.Dialog.UserName" attribute="value" />
 <Target xsi:type="brease" contentRefId="DialogEditUser" widgetRefId="TextOutputEditingUser" attribute="value" />

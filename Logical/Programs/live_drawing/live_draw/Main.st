@@ -434,10 +434,10 @@ PROGRAM _CYCLIC
 (*----clearing paper-----*)
 	IF EDGEPOS(cmdClear) THEN
 		cmdClear:=FALSE;
-		FOR i:=0 TO svgStringArrayIndex DO
+		FOR i:=3 TO svgStringArrayIndex DO
 			svgStringArray[i]:='';
 		END_FOR;
-		svgStringArrayIndex:=0;
+		svgStringArrayIndex:=3;
 		FOR i:=0 TO PositionArrayIndex DO
 			PositionArray[i]:='';
 		END_FOR;
@@ -456,9 +456,7 @@ PROGRAM _CYCLIC
 		END_IF
 		PositionArray[PositionArrayIndex]:='';
 	END_IF;
-(*------Pass to global---------*)
-	gSvgStringArray:=svgStringArray;
-	gSvgStringArrayIndex:=svgStringArrayIndex;
+
 	
 	
 	
@@ -471,21 +469,21 @@ PROGRAM _CYCLIC
 	inXlinePosYStr1:=REAL_TO_STRING(inXlinePosY1);
 	
 	
-	gSvgStringArray[0]:='<polyline points="';
+	svgStringArray[0]:='<polyline points="';
 	inXlinePosY1:=0;
-	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+	strcat(ADR(svgStringArray[0]),ADR(inXlinePosXStr));
 	strHelp:=',';
-	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
-	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr1));
+	strcat(ADR(svgStringArray[0]),ADR(strHelp));
+	strcat(ADR(svgStringArray[0]),ADR(inXlinePosYStr1));
 	strHelp:=' ';
-	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+	strcat(ADR(svgStringArray[0]),ADR(strHelp));
 	inXlinePosY:=630;
-	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+	strcat(ADR(svgStringArray[0]),ADR(inXlinePosXStr));
 	strHelp:=',';
-	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
-	strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr));
+	strcat(ADR(svgStringArray[0]),ADR(strHelp));
+	strcat(ADR(svgStringArray[0]),ADR(inXlinePosYStr));
 	strHelp:='" fill="none" stroke="red" />';
-	strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+	strcat(ADR(svgStringArray[0]),ADR(strHelp));
 	
 	
 	(* A line showing the position in Y*)
@@ -494,32 +492,32 @@ PROGRAM _CYCLIC
 	inYlinePosXStr1:=REAL_TO_STRING(inYlinePosX1);
 	
 	
-	gSvgStringArray[1]:='<polyline points="';
+	svgStringArray[1]:='<polyline points="';
 	inYlinePosX1:=0;
-	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr1));
+	strcat(ADR(svgStringArray[1]),ADR(inYlinePosXStr1));
 	strHelp:=',';
-	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
-	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+	strcat(ADR(svgStringArray[1]),ADR(strHelp));
+	strcat(ADR(svgStringArray[1]),ADR(inYlinePosYStr));
 	strHelp:=' ';
-	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	strcat(ADR(svgStringArray[1]),ADR(strHelp));
 	inYlinePosX:=780;
-	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr));
+	strcat(ADR(svgStringArray[1]),ADR(inYlinePosXStr));
 	strHelp:=',';
-	strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
-	strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+	strcat(ADR(svgStringArray[1]),ADR(strHelp));
+	strcat(ADR(svgStringArray[1]),ADR(inYlinePosYStr));
 	strHelp:='" fill="none" stroke="red" />';
-		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+	strcat(ADR(svgStringArray[1]),ADR(strHelp));
 		
 		(* A circle*)
 		
-		gSvgStringArray[2]:='<circle cx="';
+		svgStringArray[2]:='<circle cx="';
 	
 		strHelp:='" cy="';
-		strcat(ADR(gSvgStringArray[2]),ADR(inXlinePosXStr));
-		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
-		strcat(ADR(gSvgStringArray[2]),ADR(inYlinePosYStr));
+		strcat(ADR(svgStringArray[2]),ADR(inXlinePosXStr));
+		strcat(ADR(svgStringArray[2]),ADR(strHelp));
+		strcat(ADR(svgStringArray[2]),ADR(inYlinePosYStr));
 		strHelp:='" r="20" stroke="red" stroke-width="1" fill="none" />';
-		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
+		strcat(ADR(svgStringArray[2]),ADR(strHelp));
 	ELSE
 		(* A line showing the position in X*)
 		inXlinePosYStr:=REAL_TO_STRING(inXlinePosY);
@@ -527,21 +525,21 @@ PROGRAM _CYCLIC
 		inXlinePosYStr1:=REAL_TO_STRING(inXlinePosY1);
 	
 	
-		gSvgStringArray[0]:='<polyline points="';
+		svgStringArray[0]:='<polyline points="';
 		inXlinePosY1:=0;
-		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+		strcat(ADR(svgStringArray[0]),ADR(inXlinePosXStr));
 		strHelp:=',';
-		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
-		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr1));
+		strcat(ADR(svgStringArray[0]),ADR(strHelp));
+		strcat(ADR(svgStringArray[0]),ADR(inXlinePosYStr1));
 		strHelp:=' ';
-		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+		strcat(ADR(svgStringArray[0]),ADR(strHelp));
 		inXlinePosY:=630;
-		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosXStr));
+		strcat(ADR(svgStringArray[0]),ADR(inXlinePosXStr));
 		strHelp:=',';
-		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
-		strcat(ADR(gSvgStringArray[0]),ADR(inXlinePosYStr));
+		strcat(ADR(svgStringArray[0]),ADR(strHelp));
+		strcat(ADR(svgStringArray[0]),ADR(inXlinePosYStr));
 		strHelp:='" fill="none" stroke="white" />';
-		strcat(ADR(gSvgStringArray[0]),ADR(strHelp));
+		strcat(ADR(svgStringArray[0]),ADR(strHelp));
 	
 	
 		(* A line showing the position in Y*)
@@ -550,33 +548,37 @@ PROGRAM _CYCLIC
 		inYlinePosXStr1:=REAL_TO_STRING(inYlinePosX1);
 	
 	
-		gSvgStringArray[1]:='<polyline points="';
+		svgStringArray[1]:='<polyline points="';
 		inYlinePosX1:=0;
-		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr1));
+		strcat(ADR(svgStringArray[1]),ADR(inYlinePosXStr1));
 		strHelp:=',';
-		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
-		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+		strcat(ADR(svgStringArray[1]),ADR(strHelp));
+		strcat(ADR(svgStringArray[1]),ADR(inYlinePosYStr));
 		strHelp:=' ';
-		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		strcat(ADR(svgStringArray[1]),ADR(strHelp));
 		inYlinePosX:=780;
-		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosXStr));
+		strcat(ADR(svgStringArray[1]),ADR(inYlinePosXStr));
 		strHelp:=',';
-		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
-		strcat(ADR(gSvgStringArray[1]),ADR(inYlinePosYStr));
+		strcat(ADR(svgStringArray[1]),ADR(strHelp));
+		strcat(ADR(svgStringArray[1]),ADR(inYlinePosYStr));
 		strHelp:='" fill="none" stroke="white" />';
-		strcat(ADR(gSvgStringArray[1]),ADR(strHelp));
+		strcat(ADR(svgStringArray[1]),ADR(strHelp));
 		
 		(* A circle*)
 		
-		gSvgStringArray[2]:='<circle cx="';
+		svgStringArray[2]:='<circle cx="';
 	
 		strHelp:='" cy="';
-		strcat(ADR(gSvgStringArray[2]),ADR(inXlinePosXStr));
-		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
-		strcat(ADR(gSvgStringArray[2]),ADR(inYlinePosYStr));
+		strcat(ADR(svgStringArray[2]),ADR(inXlinePosXStr));
+		strcat(ADR(svgStringArray[2]),ADR(strHelp));
+		strcat(ADR(svgStringArray[2]),ADR(inYlinePosYStr));
 		strHelp:='" r="20" stroke="white" stroke-width="2" fill="none" />';
-		strcat(ADR(gSvgStringArray[2]),ADR(strHelp));
+		strcat(ADR(svgStringArray[2]),ADR(strHelp));
 	END_IF;
+	
+	(*------Pass to global---------*)
+	gSvgStringArray:=svgStringArray;
+	gSvgStringArrayIndex:=svgStringArrayIndex;
 	
 END_PROGRAM
 

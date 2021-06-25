@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpWebXs 5.12.2 */
+/* MpWebXs 5.13.1 */
 
 #ifndef _MPWEBXS_
 #define _MPWEBXS_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpWebXs_VERSION
-#define _MpWebXs_VERSION 5.12.2
+#define _MpWebXs_VERSION 5.13.1
 #endif
 
 #include <bur/plctypes.h>
@@ -20,18 +20,15 @@ extern "C"
 #ifdef _SG3
 		#include "AsArSdm.h"
 		#include "MpBase.h"
-		#include "MpBase.h"
 #endif
 
 #ifdef _SG4
 		#include "AsArSdm.h"
 		#include "MpBase.h"
-		#include "MpBase.h"
 #endif
 
 #ifdef _SGC
 		#include "AsArSdm.h"
-		#include "MpBase.h"
 		#include "MpBase.h"
 #endif
 

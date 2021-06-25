@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ddef:Dialog xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2" id="DialogRemoveUser" layoutRefId="layoutUserError">
+<ddef:Dialog xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2" id="DialogRemoveUser" layoutRefId="layoutUserError" headerBackColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="30px">
   <Assignments>
     <Assignment type="Content" baseContentRefId="DialogRemoveUser" areaRefId="AreaUserError" />
   </Assignments>

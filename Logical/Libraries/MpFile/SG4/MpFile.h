@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpFile 5.12.2 */
+/* MpFile 5.13.1 */
 
 #ifndef _MPFILE_
 #define _MPFILE_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpFile_VERSION
-#define _MpFile_VERSION 5.12.2
+#define _MpFile_VERSION 5.13.1
 #endif
 
 #include <bur/plctypes.h>
@@ -109,7 +109,18 @@ typedef enum MpFileErrorEnum
 	mpFILE_ERR_NAME_EMPTY = -1064165370,
 	mpFILE_ERR_INVALID_NAME = -1064165369,
 	mpFILE_ERR_PASTE_NOT_ALLOWED = -1064165368,
-	mpFILE_ERR_FILE_SYSTEM = -1064165367
+	mpFILE_ERR_FILE_SYSTEM = -1064165367,
+	mpFILE_ERR_INSUFF_ACCESS_RIGHT = -1064165358,
+	mpFILE_ERR_ITEM_IS_LOCKED = -1064165357,
+	mpFILE_ERR_COPY_ITEM = -1064165356,
+	mpFILE_ERR_ERASE_ITEM = -1064165355,
+	mpFILE_ERR_INVALID_PATH = -1064165354,
+	mpFILE_ERR_INVALID_PARAMETER = -1064165353,
+	mpFILE_ERR_RENAME_ITEM = -1064165352,
+	mpFILE_ERR_CREATE_ITEM = -1064165351,
+	mpFILE_ERR_READ_ITEM = -1064165350,
+	mpFILE_ERR_WRITE_ITEM = -1064165349,
+	mpFILE_INF_OVERWRITE = 1083318300
 } MpFileErrorEnum;
 
 typedef enum MpFileUIAlarmEnum

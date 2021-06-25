@@ -17,7 +17,7 @@
     <Object Type="Package">mappCockpit</Object>
   </Objects>
   <Configuration ModuleId="X20CP1684">
-    <AutomationRuntime Version="C4.73" />
+    <AutomationRuntime Version="D4.73" />
     <Build GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
     <Safety SafetyRelease="0.0" />

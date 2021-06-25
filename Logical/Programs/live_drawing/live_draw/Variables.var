@@ -36,7 +36,7 @@ VAR
 	strX : STRING[80];
 	strY : STRING[80];
 	svgStringArray : ARRAY[0..999] OF STRING[500];
-	svgStringArrayIndex : UINT;
+	svgStringArrayIndex : UINT := 3;
 	x : REAL;
 	y : REAL;
 	pointString : STRING[120];

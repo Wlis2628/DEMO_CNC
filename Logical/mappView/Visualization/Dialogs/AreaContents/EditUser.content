@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="DialogEditUser" height="500" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="LabelEditPassword" top="136" left="80" width="179" zIndex="0" text="Edit password:" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelEditConfirmPassword" top="195" left="80" width="178" zIndex="1" text="Confirm password:" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonConfirmEdit" top="440" left="420" zIndex="2" text="Confirm" enable="false" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonCancelEdit" top="440" left="80" zIndex="3" text="Cancel" />
-    <Widget xsi:type="widgets.brease.ImageList" id="ImageListEditPassword" top="140" left="419" width="20" height="21" zIndex="4" imageList="['Error.svg', 'Accept.svg']" imagePrefix="Media/" />
-    <Widget xsi:type="widgets.brease.ImageList" id="ImageListEditConfirmPassword" top="200" left="419" width="39" height="21" zIndex="5" imageList="['Error.svg', 'Accept.svg']" imagePrefix="Media/" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelNewUsername" top="80" left="80" width="179" zIndex="6" text="Currently edited user:" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelConfirmPasswordHintEdit" top="315" left="78" width="178" height="35" zIndex="7" text="Password hint" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPasswordHintEdit" top="320" left="260" width="240" height="25" zIndex="8" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelConfirmPasswordMatchEdit" top="360" left="80" width="178" height="35" zIndex="9" text="Password match:" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPasswordMatchEdit" top="360" left="260" width="240" height="25" zIndex="10" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelEditRole" top="260" left="77" width="124" height="35" zIndex="11" text="Edit role:" />
-    <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBoxEditRole" top="260" left="260" width="140" height="35" zIndex="12" dataProvider="[{'value':'2','text':'Anonymous'},{'value':'3','text':'Operator'}]" selectedValue="2" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputEditingUser" top="80" left="260" width="140" zIndex="13" />
-    <Widget xsi:type="widgets.brease.Password" id="PasswordEdit" top="140" left="260" width="140" height="29" zIndex="14" />
-    <Widget xsi:type="widgets.brease.Password" id="PasswordEditConfirm" top="200" left="260" width="140" zIndex="15" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelEditPassword" top="120" left="40" width="260" zIndex="0" text="Edit password:" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelEditConfirmPassword" top="175" left="40" width="260" zIndex="1" text="Confirm password:" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonConfirmEdit" top="420" left="400" width="150" height="40" zIndex="2" text="Confirm" borderWidth="1px 1px 2px 2px" cornerRadius="5px" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" mouseDownBorderWidth="1px 1px 1px 3px" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonCancelEdit" top="420" left="60" width="150" height="40" zIndex="3" text="Cancel" borderWidth="1px 1px 2px 2px" cornerRadius="5px" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" mouseDownBorderWidth="1px 1px 1px 3px" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageListEditPassword" top="125" left="520" width="20" height="21" zIndex="4" imageList="['Error.svg', 'Accept.svg']" imagePrefix="Media/" />
+    <Widget xsi:type="widgets.brease.ImageList" id="ImageListEditConfirmPassword" top="180" left="520" width="20" height="21" zIndex="5" imageList="['Error.svg', 'Accept.svg']" imagePrefix="Media/" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelNewUsername" top="64" left="40" width="260" zIndex="6" text="Currently edited user:" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelConfirmPasswordHintEdit" top="300" left="40" width="260" zIndex="7" text="Password hint" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPasswordHintEdit" top="303" left="320" width="240" height="25" zIndex="8" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelConfirmPasswordMatchEdit" top="345" left="40" width="260" zIndex="9" text="Password match:" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputPasswordMatchEdit" top="348" left="320" width="240" height="25" zIndex="10" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelEditRole" top="240" left="40" width="260" zIndex="11" text="Edit role:" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBoxEditRole" top="238" left="320" width="180" height="35" zIndex="12" dataProvider="[{'value':'2','text':'Anonymous'},{'value':'3','text':'Operator'}]" selectedValue="2" borderWidth="0px 0px 0px 6px" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputEditingUser" top="64" left="320" width="140" zIndex="13" textColor="rgba(0, 0, 0, 1)" fontSize="25px" />
+    <Widget xsi:type="widgets.brease.Password" id="PasswordEdit" top="118" left="320" width="180" height="35" zIndex="14" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Password" id="PasswordEditConfirm" top="173" left="320" width="180" height="35" zIndex="15" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="20px" />
   </Widgets>
 </Content>

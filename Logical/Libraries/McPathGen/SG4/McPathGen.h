@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* McPathGen 5.12.2 */
+/* McPathGen 5.13.2 */
 
 #ifndef _MCPATHGEN_
 #define _MCPATHGEN_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _McPathGen_VERSION
-#define _McPathGen_VERSION 5.12.2
+#define _McPathGen_VERSION 5.13.2
 #endif
 
 #include <bur/plctypes.h>
@@ -37,6 +37,20 @@ extern "C"
 #endif
 
 /* Datatypes and datatypes of function blocks */
+typedef enum McPathGenTrackingStateEnum
+{	mcPATHGEN_TS_NO_TRACKING = 0,
+	mcPATHGEN_TS_SYNCHRONIZING = 1,
+	mcPATHGEN_TS_SYNCHRONIZED = 2,
+	mcPATHGEN_TS_DESYNCHRONIZING = 3
+} McPathGenTrackingStateEnum;
+
+typedef enum McPathGenTrackedObjTypeEnum
+{	mcPATHGEN_TS_NO_OBJECT = 0,
+	mcPATHGEN_TS_TRACKING_PATH = 1,
+	mcPATHGEN_TS_AXES_GROUP = 2,
+	mcPATHGEN_TS_TRAK = 3
+} McPathGenTrackedObjTypeEnum;
+
 typedef enum McPathGenDynModIdentModeEnum
 {	mcPATHGEN_DMI_NO_FILE_OVR10,
 	mcPATHGEN_DMI_NO_FILE_OVR50,
@@ -304,6 +318,11 @@ typedef enum McAGFWSelfColDetectEnum
 {	mcAGFWSCD_NOT_USE = 0,
 	mcAGFWSCD_EN = 1
 } McAGFWSelfColDetectEnum;
+
+typedef enum McAGFWFlgWsEnum
+{	mcAGFWFW_NOT_USE = 0,
+	mcAGFWFW_EN = 1
+} McAGFWFlgWsEnum;
 
 typedef enum McAGFPTrgTypEnum
 {	mcAGFPTT_ACP = 0,
@@ -594,6 +613,14 @@ typedef enum McMS3ADXZBWFrmMdlEnum
 {	mcMS3ADXZBWFM_STD = 0
 } McMS3ADXZBWFrmMdlEnum;
 
+typedef enum McMS3ADBDescEnum
+{	mcMS3ADBD_STD = 0
+} McMS3ADBDescEnum;
+
+typedef enum McMS3ADBWFrmMdlEnum
+{	mcMS3ADBWFM_STD = 0
+} McMS3ADBWFrmMdlEnum;
+
 typedef enum McMS4ADADescEnum
 {	mcMS4ADAD_STD = 0
 } McMS4ADADescEnum;
@@ -609,6 +636,14 @@ typedef enum McMS4ADBDescEnum
 typedef enum McMS4ADBWFrmMdlEnum
 {	mcMS4ADBWFM_STD = 0
 } McMS4ADBWFrmMdlEnum;
+
+typedef enum McMS4ADCDescEnum
+{	mcMS4ADCD_STD = 0
+} McMS4ADCDescEnum;
+
+typedef enum McMS4ADCWFrmMdlEnum
+{	mcMS4ADCWFM_STD = 0
+} McMS4ADCWFrmMdlEnum;
 
 typedef enum McMS5ADADescEnum
 {	mcMS5ADAD_STD = 0
@@ -665,6 +700,25 @@ typedef enum McMS6ARBDescEnum
 typedef enum McMS6ARBWFrmMdlEnum
 {	mcMS6ARBWFM_STD = 0
 } McMS6ARBWFrmMdlEnum;
+
+typedef struct McPathGenTrackedObjectType
+{	enum McPathGenTrackedObjTypeEnum ObjectType;
+	struct McTrackingPathType TrackedTrkPath;
+} McPathGenTrackedObjectType;
+
+typedef struct McPathGenTrackedFrameType
+{	unsigned long FrameId;
+} McPathGenTrackedFrameType;
+
+typedef struct McPathGenErrorStructType
+{	double ActualError;
+} McPathGenErrorStructType;
+
+typedef struct McPathGenTrackingInfoType
+{	struct McPathGenTrackedObjectType TrackedObject;
+	struct McPathGenTrackedFrameType TrackedFrame;
+	struct McPathGenErrorStructType ErrorStruct;
+} McPathGenTrackingInfoType;
 
 typedef struct McPathGenMonElemFeedReductType
 {	enum McPathGenMonElemFeedReductEnum State;
@@ -1544,10 +1598,20 @@ typedef struct McAGFWSelfColDetectType
 {	enum McAGFWSelfColDetectEnum Type;
 } McAGFWSelfColDetectType;
 
+typedef struct McAGFWFlgWsEnType
+{	struct McCfgReferenceType WorkspaceReference;
+} McAGFWFlgWsEnType;
+
+typedef struct McAGFWFlgWsType
+{	enum McAGFWFlgWsEnum Type;
+	struct McAGFWFlgWsEnType Enabled;
+} McAGFWFlgWsType;
+
 typedef struct McCfgAxGrpFeatWsmType
 {	struct McAGFModalDatBxType ModalDataBehaviour;
 	struct McCfgReferenceType WorkspaceReference;
 	struct McAGFWSelfColDetectType SelfCollisionDetection;
+	struct McAGFWFlgWsType FlangeWorkspace;
 } McCfgAxGrpFeatWsmType;
 
 typedef struct McAGFEPCAGrpIntrplExType
@@ -2716,6 +2780,83 @@ typedef struct McCfgMS3AxDeltaXZBType
 	struct McMSJnt3AxPosLimType JointAxesPositionLimits;
 } McCfgMS3AxDeltaXZBType;
 
+typedef struct McMS3ADBDSDBPltType
+{	struct McCfgTransXYZType Center;
+	struct McMSDeltaDSDBPArmLinkPtType ArmLinkPoint[3];
+} McMS3ADBDSDBPltType;
+
+typedef struct McMS3ADBDSDAArmType
+{	double ArmLength;
+	double ArmOffset;
+	double ArmAngle;
+} McMS3ADBDSDAArmType;
+
+typedef struct McMS3ADBDSDimArmType
+{	struct McMS3ADBDSDAArmType Arm[3];
+} McMS3ADBDSDimArmType;
+
+typedef struct McMS3ADBDSDEEPltType
+{	struct McMSDeltaDSDEEPArmLinkPtType ArmLinkPoint[3];
+	struct McCfgTransXYZType TranslationToFlange;
+} McMS3ADBDSDEEPltType;
+
+typedef struct McMS3ADBDSDimType
+{	struct McMS3ADBDSDBPltType BasePlatform;
+	struct McMS3ADBDSDimArmType Arms;
+	struct McMS3ADBDSDEEPltType EndEffectorPlatform;
+} McMS3ADBDSDimType;
+
+typedef struct McMS3ADBDSType
+{	struct McMS3ADBDSDimType Dimensions;
+	struct McMSMdl3ZeroPosOffType ModelZeroPositionOffsets;
+	struct McMSMdl3CntDirType ModelCountDirections;
+} McMS3ADBDSType;
+
+typedef struct McMS3ADBDescType
+{	enum McMS3ADBDescEnum Type;
+	struct McMS3ADBDSType Standard;
+} McMS3ADBDescType;
+
+typedef struct McMS3ADBCoorNameCmnType
+{	plcstring XCoordinateName[251];
+	plcstring YCoordinateName[251];
+	plcstring ZCoordinateName[251];
+} McMS3ADBCoorNameCmnType;
+
+typedef struct McMS3ADBCoorNameType
+{	enum McMSCNEnum Type;
+	struct McMS3ADBCoorNameCmnType Common;
+} McMS3ADBCoorNameType;
+
+typedef struct McMS3ADBWFrmMdlStdType
+{	struct McMSFrmMdlStdEdgeType LinkPointToArm1;
+	struct McMSFrmMdlStdEdgeType Arm1;
+	struct McMSFrmMdlStdEdgeType LinkPointToArm2;
+	struct McMSFrmMdlStdEdgeType Arm2;
+	struct McMSFrmMdlStdEdgeType LinkPointToArm3;
+	struct McMSFrmMdlStdEdgeType Arm3;
+	struct McMSFrmMdlStdEdgeType EndEffectorPlatformToFlange;
+	struct McMSFrmMdlStdEdgeType FlangeToTCP;
+} McMS3ADBWFrmMdlStdType;
+
+typedef struct McMS3ADBWFrmMdlType
+{	enum McMS3ADBWFrmMdlEnum Type;
+	struct McMS3ADBWFrmMdlStdType Standard;
+} McMS3ADBWFrmMdlType;
+
+typedef struct McMS3ADBCplgType
+{	struct McCfgUnboundedArrayType LinearCoupling;
+} McMS3ADBCplgType;
+
+typedef struct McCfgMS3AxDeltaBType
+{	struct McMS3ADBDescType Description;
+	struct McMS3ADBCoorNameType CoordinatesNames;
+	struct McMS3ADBWFrmMdlType WireFrameModel;
+	struct McMSDynMdlType DynamicModel;
+	struct McMS3ADBCplgType Couplings;
+	struct McMSJnt3AxPosLimType JointAxesPositionLimits;
+} McCfgMS3AxDeltaBType;
+
 typedef struct McMS4ADADSDBPltType
 {	struct McCfgTransXYZType Center;
 	struct McMSDeltaDSDBPArmLinkPtType ArmLinkPoint[3];
@@ -2866,6 +3007,91 @@ typedef struct McCfgMS4AxDeltaBType
 	struct McMS4ADBCplgType Couplings;
 	struct McMSJnt4AxPosLimType JointAxesPositionLimits;
 } McCfgMS4AxDeltaBType;
+
+typedef struct McMS4ADCDSDBPArmLinkPtType
+{	double Angle;
+	double X;
+	double Y;
+	double Z;
+} McMS4ADCDSDBPArmLinkPtType;
+
+typedef struct McMS4ADCDSDBPltType
+{	struct McCfgTransXYZType Center;
+	struct McMS4ADCDSDBPArmLinkPtType ArmLinkPoint[3];
+} McMS4ADCDSDBPltType;
+
+typedef struct McMS4ADCDSDimArmType
+{	struct McMSDeltaDSDArmType Arm[3];
+} McMS4ADCDSDimArmType;
+
+typedef struct McMS4ADCDSDEEPArmLinkPtType
+{	double X;
+	double Z;
+} McMS4ADCDSDEEPArmLinkPtType;
+
+typedef struct McMS4ADCDSDEEPltType
+{	struct McMS4ADCDSDEEPArmLinkPtType ArmLinkPoint[3];
+	struct McCfgTransXYZType TranslationToFlange;
+} McMS4ADCDSDEEPltType;
+
+typedef struct McMS4ADCDSDimType
+{	struct McMS4ADCDSDBPltType BasePlatform;
+	struct McMS4ADCDSDimArmType Arms;
+	struct McMS4ADCDSDEEPltType EndEffectorPlatform;
+} McMS4ADCDSDimType;
+
+typedef struct McMS4ADCDSType
+{	struct McMS4ADCDSDimType Dimensions;
+	struct McMSMdl4ZeroPosOffType ModelZeroPositionOffsets;
+	struct McMSMdl4CntDirType ModelCountDirections;
+} McMS4ADCDSType;
+
+typedef struct McMS4ADCDescType
+{	enum McMS4ADCDescEnum Type;
+	struct McMS4ADCDSType Standard;
+} McMS4ADCDescType;
+
+typedef struct McMS4ADCCoorNameCmnType
+{	plcstring XCoordinateName[251];
+	plcstring YCoordinateName[251];
+	plcstring ZCoordinateName[251];
+	plcstring CCoordinateName[251];
+} McMS4ADCCoorNameCmnType;
+
+typedef struct McMS4ADCCoorNameType
+{	enum McMSCNEnum Type;
+	struct McMS4ADCCoorNameCmnType Common;
+} McMS4ADCCoorNameType;
+
+typedef struct McMS4ADCWFrmMdlStdType
+{	struct McMSFrmMdlStdEdgeType UpperArm1;
+	struct McMSFrmMdlStdEdgeType LowerArm1;
+	struct McMSFrmMdlStdEdgeType UpperArm2;
+	struct McMSFrmMdlStdEdgeType LowerArm2;
+	struct McMSFrmMdlStdEdgeType UpperArm3;
+	struct McMSFrmMdlStdEdgeType LowerArm3;
+	struct McMSFrmMdlStdEdgeType EndEffectorPlatformToFlange;
+	struct McMSFrmMdlStdEdgeType FlangeToTCP;
+} McMS4ADCWFrmMdlStdType;
+
+typedef struct McMS4ADCWFrmMdlType
+{	enum McMS4ADCWFrmMdlEnum Type;
+	struct McMS4ADCWFrmMdlStdType Standard;
+} McMS4ADCWFrmMdlType;
+
+typedef struct McMS4ADCCplgType
+{	struct McCfgUnboundedArrayType LinearCoupling;
+} McMS4ADCCplgType;
+
+typedef struct McCfgMS4AxDeltaCType
+{	struct McMS4ADCDescType Description;
+	struct McMS4ADCCoorNameType CoordinatesNames;
+	struct McMSTCPOType TCPOrientation;
+	struct McMS4ADCWFrmMdlType WireFrameModel;
+	struct McMSDynMdlType DynamicModel;
+	struct McMS4ADCCplgType Couplings;
+	struct McMSJnt4AxPosLimType JointAxesPositionLimits;
+} McCfgMS4AxDeltaCType;
 
 typedef struct McMS5ADADSDimBasePltType
 {	struct McCfgTransXYZType Center;
@@ -3311,6 +3537,24 @@ typedef struct McCfgMS6AxRobBType
 	struct McMSJnt6AxPosLimType JointAxesPositionLimits;
 } McCfgMS6AxRobBType;
 
+typedef struct MC_BR_TrackingStatus_PathGen
+{
+	/* VAR_INPUT (analog) */
+	struct McAxesGroupType* AxesGroup;
+	/* VAR_OUTPUT (analog) */
+	signed long ErrorID;
+	enum McPathGenTrackingStateEnum TrackingState;
+	struct McPathGenTrackingInfoType TrackingAdditionalInfo;
+	/* VAR (analog) */
+	struct McInternalType Internal;
+	/* VAR_INPUT (digital) */
+	plcbit Enable;
+	/* VAR_OUTPUT (digital) */
+	plcbit Valid;
+	plcbit Busy;
+	plcbit Error;
+} MC_BR_TrackingStatus_PathGen_typ;
+
 typedef struct MC_BR_GroupDynModIdent_PathGen
 {
 	/* VAR_INPUT (analog) */
@@ -3336,6 +3580,7 @@ typedef struct MC_BR_GroupDynModIdent_PathGen
 
 
 /* Prototyping of functions and function blocks */
+_BUR_PUBLIC void MC_BR_TrackingStatus_PathGen(struct MC_BR_TrackingStatus_PathGen* inst);
 _BUR_PUBLIC void MC_BR_GroupDynModIdent_PathGen(struct MC_BR_GroupDynModIdent_PathGen* inst);
 
 

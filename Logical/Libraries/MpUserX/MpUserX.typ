@@ -141,7 +141,7 @@ TYPE
 		UserName : WSTRING[50]; (*Username*)
 		FullName : WSTRING[100]; (*Full name of the new user*)
 		Roles : ARRAY[0..9]OF UINT; (*Assigned roles*)
-		RoleOption : ARRAY[0..9]OF USINT; (*Sorts and removes user roles in the drop-down list that cannot be selected*)
+		RoleOption : ARRAY[0..19]OF USINT; (*Sorts and removes user roles in the drop-down list that cannot be selected*)
 		NewPassword : WSTRING[50]; (*New password*)
 		ConfirmPassword : WSTRING[50]; (*Password confirmation*)
 		Language : STRING[20]; (*Preferred language of the new user*)
@@ -297,6 +297,7 @@ TYPE
 		ImportRole : MpUserXImportModeEnum := mpUSERX_IMPORT_OVERWRITE; (*Import mode for roles*)
 		ImportUnchecked : BOOL := FALSE; (*Ignore check-sum in input file*)
 		AdminUnlockTime : DINT := 3600; (*Automatic Unlock Time for Administrators (0=disabled)*)
+		AutoLogoutTime : DINT := 3600; (*Auto Logout Time for all sessions on the system (0=disabled)*)
 	END_STRUCT;
 	MpUserXHostType : 	STRUCT 
 		Host : STRING[255]; (*DNS name or IPv4 address of the server the client will connect to*)

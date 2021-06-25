@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpUserX 5.12.2 */
+/* MpUserX 5.13.1 */
 
 #ifndef _MPUSERX_
 #define _MPUSERX_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpUserX_VERSION
-#define _MpUserX_VERSION 5.12.2
+#define _MpUserX_VERSION 5.13.1
 #endif
 
 #include <bur/plctypes.h>
@@ -261,7 +261,7 @@ typedef struct MpUserXMgrUICreateDlgType
 	plcwstring UserName[51];
 	plcwstring FullName[101];
 	unsigned short Roles[10];
-	unsigned char RoleOption[10];
+	unsigned char RoleOption[20];
 	plcwstring NewPassword[51];
 	plcwstring ConfirmPassword[51];
 	plcstring Language[21];
@@ -427,6 +427,7 @@ typedef struct MpUserXConfigType
 	enum MpUserXImportModeEnum ImportRole;
 	plcbit ImportUnchecked;
 	signed long AdminUnlockTime;
+	signed long AutoLogoutTime;
 } MpUserXConfigType;
 
 typedef struct MpUserXHostType

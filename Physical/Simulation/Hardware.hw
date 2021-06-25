@@ -114,7 +114,7 @@
     <Parameter ID="LoadModel" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation/SimulationModeOnACOPOS" Value="OneMassBasedOnMotorParameters" />
     <Parameter ID="AdditiveLoadParID" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation/SimulationModeOnACOPOS/LoadModel" Value="0" />
   </Module>
-  <Module Name="X20CP1684" Type="X20CP1684" Version="1.1.0.0">
+  <Module Name="X20CP1684" Type="X20CP1684" Version="1.4.0.0">
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="Mode" Value="Manual" />
@@ -147,6 +147,9 @@
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="CF" />
     <Parameter ID="FileDevicePath2" Value="C:\CF" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="HD" />
+    <Parameter ID="FileDevicePath3" Value="C:\HD" />
     <Parameter ID="EthernetDefaultGateway" Value="192.168.0.152" />
     <Parameter ID="ActivateDns" Value="1" />
     <Parameter ID="DnsServer1" Value="192.168.0.152" />

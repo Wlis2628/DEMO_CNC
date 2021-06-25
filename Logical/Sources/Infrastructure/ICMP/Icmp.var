@@ -1,8 +1,0 @@
-(**** Constants ****)
-VAR CONSTANT
-	DEFAULT_TIMEOUT : UINT := 100; (*Ping timeout - 100ms*)
-END_VAR
-(**** Variables ****)
-VAR
-	Icmp : IcmpType; (*Icmp structure*)
-END_VAR

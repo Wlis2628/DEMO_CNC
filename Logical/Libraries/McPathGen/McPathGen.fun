@@ -7,7 +7,7 @@ FUNCTION_BLOCK MC_BR_GroupDynModIdent_PathGen
 		AdvancedParameters : McPathGenDynModIdentAdvParType; (*Advanced parameters for dynamic model identification*)
 	END_VAR
 	VAR_OUTPUT
-		Done : BOOL; (*Execution successful. Function block is finished.*)
+		Done: BOOL; (*Execution successful. Function block is finished.*)
 		Busy : BOOL; (*Function block is active and must continue to be called.*)
 		Active : BOOL; (*Indicates that the function block is currently controlling the axis group.*)
 		CommandAborted : BOOL; (*Command aborted by another command*)

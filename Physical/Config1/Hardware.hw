@@ -110,7 +110,7 @@
     <Parameter ID="SimulationModeOnPLC" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="SetValueGeneration" />
     <Parameter ID="SimulationModeOnACOPOS" Location="DriveConfiguration/Channel[1]/RealAxis/Simulation" Value="NotUsed" />
   </Module>
-  <Module Name="X20CP1584" Type="X20CP1684" Version="1.1.0.0">
+  <Module Name="X20CP1584" Type="X20CP1684" Version="1.4.0.0">
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="Mode" Value="Manual" />

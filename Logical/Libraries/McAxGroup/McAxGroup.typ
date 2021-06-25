@@ -1,6 +1,6 @@
-
 TYPE
 	McAddGroupReadInfoType : 	STRUCT
+		InMotion : BOOL; (*Axis of group is moving*)
 		GroupInterrupted : BOOL; (*Group movement interrupted*)
 		WaitForContinue : BOOL; (*Command "Continue" is expected (currently not implemented)*)
 		PLCopenState :  McGroupPLCopenStateEnum; (*Extended PLCopen state*)

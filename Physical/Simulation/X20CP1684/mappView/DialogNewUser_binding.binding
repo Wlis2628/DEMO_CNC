@@ -14,10 +14,7 @@
 <Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.UserNameOk" attribute="value" />
 <Target xsi:type="brease" contentRefId="NewUser" widgetRefId="ImageListNewUsername" attribute="selectedIndex" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:DialogNewUserConfirmEnabled" attribute="value" />
-<Target xsi:type="brease" contentRefId="NewUser" widgetRefId="ButtonConfirm" attribute="enable" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::UsrMgmtP:NewUserPasswordHint" attribute="value" />
 <Target xsi:type="brease" contentRefId="NewUser" widgetRefId="TextOutputPasswordHint" attribute="value" />

@@ -18,6 +18,17 @@ TYPE
         mpFILE_ERR_NAME_EMPTY := -1064165370, (* New name not entered [Error: 8198, 0xc0922006] *)
         mpFILE_ERR_INVALID_NAME := -1064165369, (* Invaild name (ErrorCause: {1:ErrorNumber}) [Error: 8199, 0xc0922007] *)
         mpFILE_ERR_PASTE_NOT_ALLOWED := -1064165368, (* Paste not allowed (ErrorCause: {1:ErrorNumber}) [Error: 8200, 0xc0922008] *)
-        mpFILE_ERR_FILE_SYSTEM := -1064165367 (* General error from file system (ErrorCause: {1:ErrorNumber}) [Error: 8201, 0xc0922009] *)
+        mpFILE_ERR_FILE_SYSTEM := -1064165367, (* General error from file system (ErrorCause: {1:ErrorNumber}) [Error: 8201, 0xc0922009] *)
+        mpFILE_ERR_INSUFF_ACCESS_RIGHT := -1064165358, (* User {2: UserName} has insufficient rights to access {3: Path} [Error: 8210, 0xc0922012] *)
+        mpFILE_ERR_ITEM_IS_LOCKED := -1064165357, (* User {2: UserName} tried to access locked item {3: Path} (locked by user {4: LockUser}, since {5: LockTime}) [Error: 8211, 0xc0922013] *)
+        mpFILE_ERR_COPY_ITEM := -1064165356, (* Item {3: SourcePath} could not be copied to {4: DestPath} (ErrorCause: {2: ErrorNumber}) [Error: 8212, 0xc0922014] *)
+        mpFILE_ERR_ERASE_ITEM := -1064165355, (* Item {3: Path} could not be deleted (ErrorCause: {2: ErrorNumber}) [Error: 8213, 0xc0922015] *)
+        mpFILE_ERR_INVALID_PATH := -1064165354, (* Invalid path-string {2: PathName} given [Error: 8214, 0xc0922016] *)
+        mpFILE_ERR_INVALID_PARAMETER := -1064165353, (* Invalid parameter passed to function [Error: 8215, 0xc0922017] *)
+        mpFILE_ERR_RENAME_ITEM := -1064165352, (* Item {3: Path} could not be renamed to {4: NewName} (ErorrCause: {2: ErrorNumber}) [Error: 8216, 0xc0922018] *)
+        mpFILE_ERR_CREATE_ITEM := -1064165351, (* Item {3: Path} could not be created (ErrorCause: {2: ErrorNumber}) [Error: 8217, 0xc0922019] *)
+        mpFILE_ERR_READ_ITEM := -1064165350, (* Item {3: Path} could not be read (ErrorCause: {2: ErrorNumber}) [Error: 8218, 0xc092201a] *)
+        mpFILE_ERR_WRITE_ITEM := -1064165349, (* Item {3: Path} could not be written to (ErrorCause: {2: ErrorNumber}) [Error: 8219, 0xc092201b] *)
+        mpFILE_INF_OVERWRITE := 1083318300 (* Item was overwritten [Informational: 8220, 0x4092201c] *)
         );
 END_TYPE

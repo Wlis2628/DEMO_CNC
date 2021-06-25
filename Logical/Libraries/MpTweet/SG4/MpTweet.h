@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpTweet 5.12.2 */
+/* MpTweet 5.13.1 */
 
 #ifndef _MPTWEET_
 #define _MPTWEET_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpTweet_VERSION
-#define _MpTweet_VERSION 5.12.2
+#define _MpTweet_VERSION 5.13.1
 #endif
 
 #include <bur/plctypes.h>

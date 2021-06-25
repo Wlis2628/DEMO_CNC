@@ -696,10 +696,23 @@ TYPE
 	McAGFWSelfColDetectType : STRUCT (*Self-collision detection*)
 		Type : McAGFWSelfColDetectEnum; (*Self-collision detection selector setting*)
 	END_STRUCT;
+	McAGFWFlgWsEnum :
+		( (*Flange workspace selector setting*)
+		mcAGFWFW_NOT_USE := 0, (*Not used - Workspace monitoring of flange is not used*)
+		mcAGFWFW_EN := 1 (*Enabled - Workspace monitoring of flange is enabled*)
+		);
+	McAGFWFlgWsEnType : STRUCT (*Type mcAGFWFW_EN settings*)
+		WorkspaceReference : McCfgReferenceType; (*Name of the workspace reference*)
+	END_STRUCT;
+	McAGFWFlgWsType : STRUCT (*Additional workspace monitoring of flange*)
+		Type : McAGFWFlgWsEnum; (*Flange workspace selector setting*)
+		Enabled : McAGFWFlgWsEnType; (*Type mcAGFWFW_EN settings*)
+	END_STRUCT;
 	McCfgAxGrpFeatWsmType : STRUCT (*Main data type corresponding to McCfgTypeEnum mcCFG_AXGRP_FEAT_WSM*)
 		ModalDataBehaviour : McAGFModalDatBxType; (*Defines the modal data behaviour of the feature.*)
 		WorkspaceReference : McCfgReferenceType; (*Name of the workspace reference*)
 		SelfCollisionDetection : McAGFWSelfColDetectType; (*Self-collision detection*)
+		FlangeWorkspace : McAGFWFlgWsType; (*Additional workspace monitoring of flange*)
 	END_STRUCT;
 	McAGFEPCAGrpIntrplExType : STRUCT
 		AxisName : McCfgUnboundedArrayType; (*Name of the axis in axes group*)
@@ -1944,6 +1957,78 @@ TYPE
 		Couplings : McMS3ADXZBCplgType; (*Couplings between selected axes and the joint axis*)
 		JointAxesPositionLimits : McMSJnt3AxPosLimType; (*Position limits for joint axis*)
 	END_STRUCT;
+	McMS3ADBDescEnum :
+		( (*Description selector setting*)
+		mcMS3ADBD_STD := 0 (*Standard - Standard description*)
+		);
+	McMS3ADBDSDBPltType : STRUCT (*Fixed platform*)
+		Center : McCfgTransXYZType; (*Center of the base platform*)
+		ArmLinkPoint : ARRAY[0..2] OF McMSDeltaDSDBPArmLinkPtType; (*Geometrical resource to define the position of a joint*)
+	END_STRUCT;
+	McMS3ADBDSDAArmType : STRUCT (*Serial kinematic chain connecting base platform and end-effector platform*)
+		ArmLength : LREAL; (*Length of the arm [measurement units]*)
+		ArmOffset : LREAL; (*Offset from the arm link point [measurement units]*)
+		ArmAngle : LREAL; (*Angle from the perpendicular direction (starting from zero) [measurement units]*)
+	END_STRUCT;
+	McMS3ADBDSDimArmType : STRUCT (*Description of arms*)
+		Arm : ARRAY[0..2] OF McMS3ADBDSDAArmType; (*Serial kinematic chain connecting base platform and end-effector platform*)
+	END_STRUCT;
+	McMS3ADBDSDEEPltType : STRUCT (*Moving platform*)
+		ArmLinkPoint : ARRAY[0..2] OF McMSDeltaDSDEEPArmLinkPtType; (*Point where the arm is linked to the end-effector platform*)
+		TranslationToFlange : McCfgTransXYZType; (*Translation from the center of the end-effector platform to flange*)
+	END_STRUCT;
+	McMS3ADBDSDimType : STRUCT (*Dimensions of the mechanical system*)
+		BasePlatform : McMS3ADBDSDBPltType; (*Fixed platform*)
+		Arms : McMS3ADBDSDimArmType; (*Description of arms*)
+		EndEffectorPlatform : McMS3ADBDSDEEPltType; (*Moving platform*)
+	END_STRUCT;
+	McMS3ADBDSType : STRUCT (*Type mcMS3ADBD_STD settings*)
+		Dimensions : McMS3ADBDSDimType; (*Dimensions of the mechanical system*)
+		ModelZeroPositionOffsets : McMSMdl3ZeroPosOffType; (*Offsets between desired and internal zero position*)
+		ModelCountDirections : McMSMdl3CntDirType; (*Count direction for joint axes relative to the internal model*)
+	END_STRUCT;
+	McMS3ADBDescType : STRUCT (*Description of the mechanical system*)
+		Type : McMS3ADBDescEnum; (*Description selector setting*)
+		Standard : McMS3ADBDSType; (*Type mcMS3ADBD_STD settings*)
+	END_STRUCT;
+	McMS3ADBCoorNameCmnType : STRUCT (*Common settings for all Type values*)
+		XCoordinateName : STRING[250]; (*X coordinate name*)
+		YCoordinateName : STRING[250]; (*Y coordinate name*)
+		ZCoordinateName : STRING[250]; (*Z coordinate name*)
+	END_STRUCT;
+	McMS3ADBCoorNameType : STRUCT (*Coordinates names*)
+		Type : McMSCNEnum; (*Coordinates names selector setting*)
+		Common : McMS3ADBCoorNameCmnType; (*Common settings for all Type values*)
+	END_STRUCT;
+	McMS3ADBWFrmMdlEnum :
+		( (*Wire frame model selector setting*)
+		mcMS3ADBWFM_STD := 0 (*Standard - Standard wire-frame model*)
+		);
+	McMS3ADBWFrmMdlStdType : STRUCT (*Type mcMS3ADBWFM_STD settings*)
+		LinkPointToArm1 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		Arm1 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		LinkPointToArm2 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		Arm2 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		LinkPointToArm3 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		Arm3 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		EndEffectorPlatformToFlange : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		FlangeToTCP : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+	END_STRUCT;
+	McMS3ADBWFrmMdlType : STRUCT (*Wire frame model of mechanical system*)
+		Type : McMS3ADBWFrmMdlEnum; (*Wire frame model selector setting*)
+		Standard : McMS3ADBWFrmMdlStdType; (*Type mcMS3ADBWFM_STD settings*)
+	END_STRUCT;
+	McMS3ADBCplgType : STRUCT (*Couplings between selected axes and the joint axis*)
+		LinearCoupling : McCfgUnboundedArrayType; (*Linear coupling*)
+	END_STRUCT;
+	McCfgMS3AxDeltaBType : STRUCT (*Main data type corresponding to McCfgTypeEnum mcCFG_MS_3AX_DELTA_B*)
+		Description : McMS3ADBDescType; (*Description of the mechanical system*)
+		CoordinatesNames : McMS3ADBCoorNameType; (*Coordinates names*)
+		WireFrameModel : McMS3ADBWFrmMdlType; (*Wire frame model of mechanical system*)
+		DynamicModel : McMSDynMdlType; (*Dynamic model of the mechanical system*)
+		Couplings : McMS3ADBCplgType; (*Couplings between selected axes and the joint axis*)
+		JointAxesPositionLimits : McMSJnt3AxPosLimType; (*Position limits for joint axis*)
+	END_STRUCT;
 	McMS4ADADescEnum :
 		( (*Description selector setting*)
 		mcMS4ADAD_STD := 0 (*Standard - Standard description*)
@@ -2084,6 +2169,85 @@ TYPE
 		WireFrameModel : McMS4ADBWFrmMdlType; (*Wire frame model of mechanical system*)
 		DynamicModel : McMSDynMdlType; (*Dynamic model of the mechanical system*)
 		Couplings : McMS4ADBCplgType; (*Couplings between selected axes and the joint axis*)
+		JointAxesPositionLimits : McMSJnt4AxPosLimType; (*Position limits for joint axis*)
+	END_STRUCT;
+	McMS4ADCDescEnum :
+		( (*Description selector setting*)
+		mcMS4ADCD_STD := 0 (*Standard - Standard description*)
+		);
+	McMS4ADCDSDBPArmLinkPtType : STRUCT (*Geometrical resource to define the position of a joint*)
+		Angle : LREAL; (*Angular distance from the center (starting from zero) [measurement units]*)
+		X : LREAL; (*X-offset from the center in the coordinate system rotated by Angle [measurement units]*)
+		Y : LREAL; (*Y-offset from the center in the coordinate system rotated by Angle [measurement units]*)
+		Z : LREAL; (*Z-offset from the center in the coordinate system rotated by Angle [measurement units]*)
+	END_STRUCT;
+	McMS4ADCDSDBPltType : STRUCT (*Fixed platform*)
+		Center : McCfgTransXYZType; (*Center of the base platform*)
+		ArmLinkPoint : ARRAY[0..2] OF McMS4ADCDSDBPArmLinkPtType; (*Geometrical resource to define the position of a joint*)
+	END_STRUCT;
+	McMS4ADCDSDimArmType : STRUCT (*Description of arms*)
+		Arm : ARRAY[0..2] OF McMSDeltaDSDArmType; (*Serial kinematic chain connecting base platform and end-effector platform*)
+	END_STRUCT;
+	McMS4ADCDSDEEPArmLinkPtType : STRUCT (*Point where the arm is linked to the end-effector platform*)
+		X : LREAL; (*X-offset from the center of lower platform (in coordinate system rotated by the corresponding angle of upper platform) [measurement units]*)
+		Z : LREAL; (*Z-offset from the center of lower platform (in coordinate system rotated by the corresponding angle of upper platform) [measurement units]*)
+	END_STRUCT;
+	McMS4ADCDSDEEPltType : STRUCT (*Moving platform*)
+		ArmLinkPoint : ARRAY[0..2] OF McMS4ADCDSDEEPArmLinkPtType; (*Point where the arm is linked to the end-effector platform*)
+		TranslationToFlange : McCfgTransXYZType; (*Translation from the center of the end-effector platform to flange*)
+	END_STRUCT;
+	McMS4ADCDSDimType : STRUCT (*Dimensions of the mechanical system*)
+		BasePlatform : McMS4ADCDSDBPltType; (*Fixed platform*)
+		Arms : McMS4ADCDSDimArmType; (*Description of arms*)
+		EndEffectorPlatform : McMS4ADCDSDEEPltType; (*Moving platform*)
+	END_STRUCT;
+	McMS4ADCDSType : STRUCT (*Type mcMS4ADCD_STD settings*)
+		Dimensions : McMS4ADCDSDimType; (*Dimensions of the mechanical system*)
+		ModelZeroPositionOffsets : McMSMdl4ZeroPosOffType; (*Offsets between desired and internal zero position*)
+		ModelCountDirections : McMSMdl4CntDirType; (*Count direction for joint axes relative to the internal model*)
+	END_STRUCT;
+	McMS4ADCDescType : STRUCT (*Description of the mechanical system*)
+		Type : McMS4ADCDescEnum; (*Description selector setting*)
+		Standard : McMS4ADCDSType; (*Type mcMS4ADCD_STD settings*)
+	END_STRUCT;
+	McMS4ADCCoorNameCmnType : STRUCT (*Common settings for all Type values*)
+		XCoordinateName : STRING[250]; (*X coordinate name*)
+		YCoordinateName : STRING[250]; (*Y coordinate name*)
+		ZCoordinateName : STRING[250]; (*Z coordinate name*)
+		CCoordinateName : STRING[250]; (*C coordinate name*)
+	END_STRUCT;
+	McMS4ADCCoorNameType : STRUCT (*Coordinates names*)
+		Type : McMSCNEnum; (*Coordinates names selector setting*)
+		Common : McMS4ADCCoorNameCmnType; (*Common settings for all Type values*)
+	END_STRUCT;
+	McMS4ADCWFrmMdlEnum :
+		( (*Wire frame model selector setting*)
+		mcMS4ADCWFM_STD := 0 (*Standard - Standard wire-frame model*)
+		);
+	McMS4ADCWFrmMdlStdType : STRUCT (*Type mcMS4ADCWFM_STD settings*)
+		UpperArm1 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		LowerArm1 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		UpperArm2 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		LowerArm2 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		UpperArm3 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		LowerArm3 : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		EndEffectorPlatformToFlange : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+		FlangeToTCP : McMSFrmMdlStdEdgeType; (*Wire frame model edge*)
+	END_STRUCT;
+	McMS4ADCWFrmMdlType : STRUCT (*Wire frame model of mechanical system*)
+		Type : McMS4ADCWFrmMdlEnum; (*Wire frame model selector setting*)
+		Standard : McMS4ADCWFrmMdlStdType; (*Type mcMS4ADCWFM_STD settings*)
+	END_STRUCT;
+	McMS4ADCCplgType : STRUCT (*Couplings between selected axes and the joint axis*)
+		LinearCoupling : McCfgUnboundedArrayType; (*Linear coupling*)
+	END_STRUCT;
+	McCfgMS4AxDeltaCType : STRUCT (*Main data type corresponding to McCfgTypeEnum mcCFG_MS_4AX_DELTA_C*)
+		Description : McMS4ADCDescType; (*Description of the mechanical system*)
+		CoordinatesNames : McMS4ADCCoorNameType; (*Coordinates names*)
+		TCPOrientation : McMSTCPOType; (*Handling of TCP orientation coordinates*)
+		WireFrameModel : McMS4ADCWFrmMdlType; (*Wire frame model of mechanical system*)
+		DynamicModel : McMSDynMdlType; (*Dynamic model of the mechanical system*)
+		Couplings : McMS4ADCCplgType; (*Couplings between selected axes and the joint axis*)
 		JointAxesPositionLimits : McMSJnt4AxPosLimType; (*Position limits for joint axis*)
 	END_STRUCT;
 	McMS5ADADescEnum :

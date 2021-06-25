@@ -28,20 +28,20 @@ TYPE
 	(
 		mcPATHGEN_FCH_STANDARD,
 		mcPATHGEN_FCH_LINEAR
-	); 
+	);
 
 	McPathGenMonElemFeedTypeEnum :
 	(
 		mcPATHGEN_FT_FEEDRATE,
 		mcPATHGEN_FT_INVERSETIMEFEEDRATE,
 		mcPATHGEN_FT_FEEDRATEPERREV
-	); 
+	);
 
 	McPathGenMonElemFeedReductEnum :
 	(
 		mcPATHGEN_FR_INACTIVE,
 		mcPATHGEN_FR_ACTIVE
-	); 
+	);
 
 	McPathGenMonElemFeedReductType : STRUCT
 		State: McPathGenMonElemFeedReductEnum;
