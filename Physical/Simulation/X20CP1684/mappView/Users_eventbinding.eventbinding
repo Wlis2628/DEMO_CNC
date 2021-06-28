@@ -1,187 +1,125 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="Users_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<Bindings>
-		
-		
-		
-		
-		<!--ERRORS-->
-		<EventBinding id="Users.Error">
-			<Source xsi:type="opcUa.Event" refId="::UsrMgmtP:MpUserXLoginUIConnect0.MessageBox.LayerStatus" event="ValueChanged" />
-			<EventHandler condition="newValue &lt; 0.5 AND oldValue &gt; 0.5" >
-				<Action>
-					<Target xsi:type="clientSystem.Action">
-						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserError" headerText="Error" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		
-		
-		
-		<!--OPENINIG NEW USER DIALOG-->
-		<EventBinding id="Users.ButtonNewUser.Click">
-			<Source contentRefId="Users" widgetRefId="ButtonNewUser" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Sequence>
-					<Step order="0">
-						<Action>
-							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.ShowDialog" >
-								<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
-							</Target>
-						</Action>
-					</Step>
-					<Step order="1">
-						<Action>
-							<Target xsi:type="clientSystem.Action">
-								<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="NewUser" headerText="New user" />
-							</Target>
-						</Action>
-					</Step>
-					<Step order="4">
-						<Action>
-							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.UserName" >
-								<Method xsi:type="opcUa.NodeAction.SetValueString" value="" />
-							</Target>
-						</Action>
-					</Step>
-					<Step order="5">
-						<Action>
-							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Create.Dialog.ConfirmPassword" >
-								<Method xsi:type="opcUa.NodeAction.SetValueString" value="" />
-							</Target>
-						</Action>
-					</Step>
-				</Sequence>
-			</EventHandler>
-		</EventBinding>
-		
-		<!--OPENINIG EDIT USER DIALOG-->
-		<EventBinding id="Users.ButtonEditUser.Click">
-			<Source contentRefId="Users" widgetRefId="ButtonEditUser" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Sequence>
-					<Step order="0">
-						<Action>
-							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Edit.ShowDialog" >
-								<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
-							</Target>
-						</Action>
-					</Step>
-					<Step order="1">
-						<Action>
-							<Target xsi:type="clientSystem.Action">
-								<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogEditUser" headerText="Edit user" />
-							</Target>
-						</Action>
-					</Step>
-				</Sequence>
-			</EventHandler>
-		</EventBinding>
-		
-		<!--OPENINIG REMOVE USER DIALOG-->
-		<EventBinding id="Users.ButtonRemoveUser.Click">
-			<Source contentRefId="Users" widgetRefId="ButtonRemoveUser" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Sequence>
-					<Step order="0">
-						<Action>
-							<Target xsi:type="opcUa.NodeAction" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Remove" >
-								<Method xsi:type="opcUa.NodeAction.SetValueBool" value="1" />
-							</Target>
-						</Action>
-					</Step>
-					<Step order="1">
-						<Action>
-							<Target xsi:type="clientSystem.Action">
-								<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogRemoveUser" headerText="Remove user" />
-							</Target>
-						</Action>
-					</Step>
-				</Sequence>
-			</EventHandler>
-		</EventBinding>
-
-		<EventBinding id="Users.Button3.Click">
-			<Source contentRefId="Users" widgetRefId="Button3" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>	
-				<Parallel>	
-					<Action>
-						<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.ErrorReset">
-							<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-						</Target>
-					</Action>
-					<Action>
-						<Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeUI_0.ErrorReset">
-							<Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-						</Target>
-					</Action>
-				</Parallel>
-			</EventHandler>
-		</EventBinding>
-		<EventBinding id="Users.Button1.Click">
-			<Source contentRefId="Users" widgetRefId="Button1" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="clientSystem.Action">
-						<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ShowGcode" headerText="G-code" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		<EventBinding id="Users.Button2.Click">
-			<Source contentRefId="Users" widgetRefId="Button2" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<ReadTarget xsi:type="widgets.brease.MotionPad.ReadAction" contentRefId="GraphicTextEditor"  widgetRefId="MotionPad" >
-						<Method xsi:type="widgets.brease.MotionPad.Action.GetCurrentFileOpened" />
-					</ReadTarget>
-					<!--</Operand>-->
-					<Result>
-						<ResultHandler>
-							<Parallel>
-								<Action>
-									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:CncName" >
-										<Method xsi:type="opcUa.NodeAction.SetValueString" value="=result" />
-									</Target>
-								</Action>
-								<Action>
-									<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MoveMachine" >
-										<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1"  />
-									</Target>
-								</Action>
-							</Parallel>
-						</ResultHandler>
-					</Result>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		<EventBinding id="Users.Button4.Click">
-			<Source contentRefId="Users" widgetRefId="Button4" xsi:type="widgets.brease.Button.Event" event="Click" />
-			<EventHandler>
-				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.MoveProgram">
-						<Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-		<EventBinding id="Users.FlyOut1.ToggleStateChanged">
-			<Source contentRefId="Users" widgetRefId="FlyOut1" xsi:type="widgets.brease.FlyOut.Event" event="ToggleStateChanged" />
-			<EventHandler condition="newValue=TRUE">
-				<Action>
-					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="Users" widgetRefId="FlyOut1">
-						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Down2.svg" />
-					</Target>
-				</Action>
-			</EventHandler>
-			<EventHandler condition="newValue=FALSE">
-				<Action>
-					<Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="Users" widgetRefId="FlyOut1">
-						<Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Up2.svg" />
-					</Target>
-				</Action>
-			</EventHandler>
-		</EventBinding>
-	</Bindings>
+  <Bindings>
+    <EventBinding id="Users.Error">
+      <Source xsi:type="opcUa.Event" refId="::UsrMgmtP:MpUserXLoginUIConnect0.MessageBox.LayerStatus" event="ValueChanged" />
+      <EventHandler condition="newValue &lt; 0.5 AND oldValue &gt; 0.5">
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserError" headerText="Error" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button3.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button3" event="Click" />
+      <EventHandler>
+        <Parallel>
+          <Action>
+            <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.ErrorReset">
+              <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+            </Target>
+          </Action>
+          <Action>
+            <Target xsi:type="opcUa.NodeAction" refId="::Recipe:MpRecipeUI_0.ErrorReset">
+              <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+            </Target>
+          </Action>
+        </Parallel>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button1.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button1" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ShowGcode" headerText="G-code" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button2.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button2" event="Click" />
+      <EventHandler>
+        <Action>
+          <ReadTarget xsi:type="widgets.brease.MotionPad.ReadAction" contentRefId="GraphicTextEditor" widgetRefId="MotionPad">
+            <Method xsi:type="widgets.brease.MotionPad.Action.GetCurrentFileOpened" />
+          </ReadTarget>
+          <Result>
+            <ResultHandler>
+              <Parallel>
+                <Action>
+                  <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:CncName">
+                    <Method xsi:type="opcUa.NodeAction.SetValueString" value="=result" />
+                  </Target>
+                </Action>
+                <Action>
+                  <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MoveMachine">
+                    <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="1" />
+                  </Target>
+                </Action>
+              </Parallel>
+            </ResultHandler>
+          </Result>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button4.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button4" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:MpCnc2Axis_0.MoveProgram">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.FlyOut1.ToggleStateChanged">
+      <Source xsi:type="widgets.brease.FlyOut.Event" contentRefId="Users" widgetRefId="FlyOut1" event="ToggleStateChanged" />
+      <EventHandler condition="newValue=TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="Users" widgetRefId="FlyOut1">
+            <Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Down2.svg" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue=FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="Users" widgetRefId="FlyOut1">
+            <Method xsi:type="widgets.brease.FlyOut.Action.SetImage" image="Media/SymbolLib/Arrow/Up2.svg" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button5.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button5" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="Users" widgetRefId="UserList1">
+            <Method xsi:type="widgets.brease.UserList.Action.OpenAddUserDialog" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button6.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button6" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="Users" widgetRefId="UserList1">
+            <Method xsi:type="widgets.brease.UserList.Action.OpenModifyUserDialog" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Users.Button7.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button7" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="Users" widgetRefId="UserList1">
+            <Method xsi:type="widgets.brease.UserList.Action.DeleteUser" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
 </EventBindingSet>

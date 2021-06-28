@@ -47,7 +47,7 @@ TYPE
 		mpUSERX_ERR_ROLENAME_TOO_LONG := -1064144865, (* Given role-name is to long (>20 characters) [Error: 28703, 0xc092701f] *)
 		mpUSERX_ERR_USERNAME_TOO_LONG := -1064144864, (* Given user-name is too long (>20 characters) [Error: 28704, 0xc0927020] *)
 		mpUSERX_ERR_PASSWORD_TOO_LONG := -1064144863, (* Given password is too long (>20 characters [Error: 28705, 0xc0927021] *)
-		mpUSERX_INF_WAIT_LOGIN_FB := 1083338786, (* Wating for login-FB to get active [Informational: 28706, 0x40927022] *)
+		mpUSERX_INF_WAIT_LOGIN_FB := 1083338786, (* Waiting for login-FB to get active [Informational: 28706, 0x40927022] *)
 		mpUSERX_ERR_USERNAME_TOO_SHORT := -1064144861, (* Given User-Name is too short [Error: 28707, 0xc0927023] *)
 		mpUSERX_ERR_ROLE_EXISTS := -1064144860, (* Role with same name already exists [Error: 28708, 0xc0927024] *)
 		mpUSERX_ERR_FAILED_SIGNATURES := -1064144858, (* Max. number of failed signatures exceeded (signature is aborted) [Error: 28710, 0xc0927026] *)

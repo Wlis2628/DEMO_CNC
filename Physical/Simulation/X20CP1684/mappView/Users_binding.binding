@@ -1,32 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="Users_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-  <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.List.SelectedIndex" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="TableUsers" attribute="selectedRow" />
-</Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:SelectedUser" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="TextOutputSelectedUser" attribute="value" />
-</Binding>
-
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Info.Creation" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="DateTimeOutputuserCreation" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.Info.LastLogin" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="DateTimeOutputLastLogin" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:SelectedUserGroup" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="TextOutputGroup" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::UsrMgmtP:MpUserXMgrUIConnect_0.User.List.UserNames" attribute="value" />
-<Target xsi:type="brease" contentRefId="Users" widgetRefId="TableItemUsers" attribute="stringValue" />
-</Binding>
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleButton1" attribute="value" />

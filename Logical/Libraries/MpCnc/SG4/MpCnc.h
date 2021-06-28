@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpCnc 5.13.2 */
+/* MpCnc 5.14.2 */
 
 #ifndef _MPCNC_
 #define _MPCNC_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpCnc_VERSION
-#define _MpCnc_VERSION 5.13.2
+#define _MpCnc_VERSION 5.14.2
 #endif
 
 #include <bur/plctypes.h>

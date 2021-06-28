@@ -45,7 +45,8 @@ TYPE
 		);
 	MpUserXServerEnum : 
 		(
-		mpUSERX_SERVER_ACTIVE_DIRECTORY := 0 (*Use active directory server*)
+		mpUSERX_SERVER_ACTIVE_DIRECTORY := 0, (*Use active directory server*)
+		mpUSERX_SERVER_389DS := 1 (*Use 389 directory server*)
 		);
 	MpUserXUIMessageBoxType : 	STRUCT 
 		LayerStatus : UINT; (*Visibility of the dialog box *)
@@ -198,7 +199,7 @@ TYPE
 	MpUserXMgrUIImportConfirmType : 	STRUCT 
 		LayerStatus : UINT; (*Visibility of the dialog box*)
 		Type : MpUserXMgrUIImportConfirmEnum; (*Confirmation type (user or group)*)
-		Name : WSTRING[20]; (*Name of user / group*)
+		Name : WSTRING[50]; (*Name of user / group*)
 		NumberOfConflicts : UINT; (*Number of remaining conflicts*)
 		ApplyForAll : BOOL; (*Apply selection for all remaining conflicts*)
 		Confirm : BOOL; (*Confirm overwrite of item*)
@@ -218,7 +219,7 @@ TYPE
 		Lock : BOOL; (*Blocks the selected user*)
 	END_STRUCT;
 	MpUserXMgrUIRoleSelectType : 	STRUCT 
-		Names : ARRAY[0..19]OF WSTRING[20]; (*List of all available user groups (not scrollable)*)
+		Names : ARRAY[0..19]OF WSTRING[50]; (*List of all available user groups (not scrollable)*)
 		MaxSelection : UINT; (*Index of the last entry in the list*)
 	END_STRUCT;
 	MpUserXMgrUIRoleType : 	STRUCT 
@@ -303,7 +304,8 @@ TYPE
 		Host : STRING[255]; (*DNS name or IPv4 address of the server the client will connect to*)
 		Port : UINT := 636; (*Port*)
 		Certificate : STRING[255]; (*Server certificate*)
-		BaseDN : STRING[255]; (*Base distinguished name*)
+		BaseDN : STRING[255]; (*Base distinguished name (Active Directory Server)*)
+		UserLocationDN : STRING[255]; (*User location distinguished name (389 Directory Server)*)
 	END_STRUCT;
 	MpUserXGroupToRoleMappingType : 	STRUCT 
 		TableName : STRING[50]; (*Name of the group to role mapping table*)
@@ -330,8 +332,8 @@ TYPE
 	END_STRUCT;
 	MpUserXSignatureUIDlgType : 	STRUCT 
 		LayerStatus : UINT; (*Visibility of the dialog box (status data point for the dialog box layer)*)
-		UserName : WSTRING[20]; (*Username*)
-		Password : WSTRING[20]; (*Password*)
+		UserName : WSTRING[50]; (*Username*)
+		Password : WSTRING[50]; (*Password*)
 		Comment : WSTRING[100]; (*Optional comment added by signing operator*)
 		Confirm : BOOL; (*Confirms the operation*)
 		Cancel : BOOL; (*Cancels the operation*)

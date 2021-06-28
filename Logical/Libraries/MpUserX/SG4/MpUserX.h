@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpUserX 5.13.1 */
+/* MpUserX 5.14.1 */
 
 #ifndef _MPUSERX_
 #define _MPUSERX_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpUserX_VERSION
-#define _MpUserX_VERSION 5.13.1
+#define _MpUserX_VERSION 5.14.1
 #endif
 
 #include <bur/plctypes.h>
@@ -76,7 +76,8 @@ typedef enum MpUserXUserMgmtEnum
 } MpUserXUserMgmtEnum;
 
 typedef enum MpUserXServerEnum
-{	mpUSERX_SERVER_ACTIVE_DIRECTORY = 0
+{	mpUSERX_SERVER_ACTIVE_DIRECTORY = 0,
+	mpUSERX_SERVER_389DS = 1
 } MpUserXServerEnum;
 
 typedef enum MpUserXUIPasswordCriteriaEnum
@@ -326,7 +327,7 @@ typedef struct MpUserXMgrUIImportDlgType
 typedef struct MpUserXMgrUIImportConfirmType
 {	unsigned short LayerStatus;
 	enum MpUserXMgrUIImportConfirmEnum Type;
-	plcwstring Name[21];
+	plcwstring Name[51];
 	unsigned short NumberOfConflicts;
 	plcbit ApplyForAll;
 	plcbit Confirm;
@@ -349,7 +350,7 @@ typedef struct MpUserXMgrUIUserType
 } MpUserXMgrUIUserType;
 
 typedef struct MpUserXMgrUIRoleSelectType
-{	plcwstring Names[20][21];
+{	plcwstring Names[20][51];
 	unsigned short MaxSelection;
 } MpUserXMgrUIRoleSelectType;
 
@@ -435,6 +436,7 @@ typedef struct MpUserXHostType
 	unsigned short Port;
 	plcstring Certificate[256];
 	plcstring BaseDN[256];
+	plcstring UserLocationDN[256];
 } MpUserXHostType;
 
 typedef struct MpUserXGroupToRoleMappingType
@@ -468,8 +470,8 @@ typedef struct MpUserXLoginConfigType
 
 typedef struct MpUserXSignatureUIDlgType
 {	unsigned short LayerStatus;
-	plcwstring UserName[21];
-	plcwstring Password[21];
+	plcwstring UserName[51];
+	plcwstring Password[51];
 	plcwstring Comment[101];
 	plcbit Confirm;
 	plcbit Cancel;
