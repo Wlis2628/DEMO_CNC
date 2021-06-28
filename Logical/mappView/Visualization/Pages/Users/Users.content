@@ -40,7 +40,7 @@
     <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBar1" top="130" left="987" width="100" height="203" zIndex="991" orientation="BottomToTop" permissionOperate="['Administrator', 'Operator']" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="47" left="957" width="160" height="42" zIndex="992" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="30px" permissionOperate="['Administrator', 'Operator']" />
     <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider1" top="25" left="1210" width="168" height="58" zIndex="993" permissionOperate="['Administrator', 'Operator']" />
-    <Widget xsi:type="widgets.brease.RadialSlider" id="RadialSlider1" top="100" left="1200" width="225" height="225" zIndex="994" value="0" permissionOperate="['Administrator', 'Operator']" />
+    <Widget xsi:type="widgets.brease.RadialSlider" id="RadialSlider1" top="100" left="1182" width="245" height="245" zIndex="994" value="0" permissionOperate="['Administrator', 'Operator']" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton2" top="37" left="700" width="160" height="60" zIndex="995" mouseDownText="Hide" text="$IAT/Show" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="22px" bold="false" permissionOperate="['Administrator', 'Operator']" style="MyStyle" />
     <Widget xsi:type="widgets.brease.Login" id="Login1" top="58" left="237" width="380" height="200" zIndex="996" buttonStyle="MyStyle" labelStyle="Title1" messageStyle="Title2" passwordInputStyle="InputCommand" passwordLabel="$IAT/Password" setUserSuccessMessage="$IAT/LoginSucc" userChangedMessage="$IAT/Userchanged" userInputStyle="InputCommand" userLabel="$IAT/Username" />
     <Widget xsi:type="widgets.brease.LogoutButton" id="LogoutButton1" top="180" left="513" zIndex="997" text="Logout" borderStyle="solid" borderWidth="5px 5px 2px 2px" cornerRadius="10px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" mouseDownBackColor="rgba(255, 128, 0, 1)" fontSize="20px" bold="false" />
@@ -53,8 +53,8 @@
         <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem5" width="350" zIndex="4" columnType="LastLogin" text="Last login" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="Button5" top="458" left="1220" width="180" height="50" zIndex="999" text="New user" fontSize="25px" permissionOperate="['Administrator', 'Operator']" style="MyStyle" />
-    <Widget xsi:type="widgets.brease.Button" id="Button6" top="538" left="1220" width="180" height="50" zIndex="1000" text="Edit user" fontSize="25px" permissionOperate="['Administrator', 'Operator']" style="MyStyle" />
-    <Widget xsi:type="widgets.brease.Button" id="Button7" top="620" left="1220" width="180" height="50" zIndex="1001" text="Delete user" fontSize="25px" permissionOperate="['Administrator', 'Operator']" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="Button5" top="458" left="1220" width="180" height="50" zIndex="999" text="New user" fontSize="25px" permissionOperate="['Administrator']" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="Button6" top="538" left="1220" width="180" height="50" zIndex="1000" text="Edit user" fontSize="25px" permissionOperate="['Administrator']" style="MyStyle" />
+    <Widget xsi:type="widgets.brease.Button" id="Button7" top="620" left="1220" width="180" height="50" zIndex="1001" text="Delete user" fontSize="25px" permissionOperate="['Administrator']" style="MyStyle" />
   </Widgets>
 </Content>

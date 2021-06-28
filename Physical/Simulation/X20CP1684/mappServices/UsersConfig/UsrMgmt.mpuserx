@@ -3,6 +3,7 @@
   <Element ID="UserMgmtX" Type="mpuserx">
     <Group ID="Mgr">
       <Property ID="PasswordLength" Value="4" />
+      <Property ID="EditSameLevel" Value="TRUE" />
     </Group>
     <Group ID="ServerSettings">
       <Selector ID="Server">
@@ -15,12 +16,15 @@
     <Group ID="Users">
       <Group ID="DefUser#1">
         <Property ID="id" Value="administrator" />
+        <Property ID="name" Value="Administrator1" />
       </Group>
       <Group ID="DefUser#2">
         <Property ID="id" Value="Anonymous" />
+        <Property ID="name" Value="Anonymous" />
       </Group>
       <Group ID="DefUser#3">
         <Property ID="id" Value="operator" />
+        <Property ID="name" Value="Operator1" />
       </Group>
     </Group>
     <Group ID="Groups">
@@ -42,7 +46,6 @@
       <Group ID="DefGroup#3">
         <Property ID="id" Value="Operator" />
         <Property ID="level" Value="100" />
-        <Property ID="admin" Value="TRUE" />
         <Group ID="rights">
           <Property ID="[0]" Value="FullAccess" />
         </Group>

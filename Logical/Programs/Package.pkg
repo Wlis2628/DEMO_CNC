@@ -6,6 +6,5 @@
     <Object Type="Package">live_drawing</Object>
     <Object Type="Program" Language="IEC">Recipe</Object>
     <Object Type="Program" Language="IEC">Alarm</Object>
-    <Object Type="Program" Language="IEC">UsrMgmtP</Object>
   </Objects>
 </Package>

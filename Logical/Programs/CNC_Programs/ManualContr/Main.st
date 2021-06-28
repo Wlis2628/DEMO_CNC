@@ -225,8 +225,11 @@ PROGRAM _CYCLIC
 		gCurrentY:=-MpAxisBasicY.Velocity*0.01+0.48;
 	ELSIF MpAxisBasicY.Velocity>0 THEN
 		gCurrentY:=MpAxisBasicY.Velocity*0.01+0.48;
-		END_IF;
-
+	END_IF;
+	
+	
+	
+VisuAction;
 	
 END_PROGRAM
 

@@ -3,11 +3,7 @@
 <Package SubType="DialogsPackage" PackageType="DialogsPackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
-    <Object Type="Package">NewUser</Object>
-    <Object Type="Package">EditUser</Object>
     <Object Type="Package">Dialog</Object>
-    <Object Type="Package">RemoveUser</Object>
-    <Object Type="Package">UserError</Object>
     <Object Type="Package">MoveError1</Object>
     <Object Type="Package">ShowGcode</Object>
   </Objects>

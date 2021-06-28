@@ -1,10 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.7.2.98?>
 <Package SubType="AreaContentsPackage" PackageType="AreaContentsPackage" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects>
-    <Object Type="File">NewUser.content</Object>
-    <Object Type="File">EditUser.content</Object>
-    <Object Type="File">RemoveUser.content</Object>
-    <Object Type="File">UserError.content</Object>
-  </Objects>
+  <Objects />
 </Package>

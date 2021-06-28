@@ -9,9 +9,7 @@
     <Task Name="PloterCfg" Source="MSpltrFmu.PloterCfg.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
-  <TaskClass Name="Cyclic#3">
-    <Task Name="UsrMgmtP" Source="Programs.UsrMgmtP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-  </TaskClass>
+  <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="svg_to_gco" Source="Programs.live_drawing.svg_to_gcode.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarm" Source="Programs.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
