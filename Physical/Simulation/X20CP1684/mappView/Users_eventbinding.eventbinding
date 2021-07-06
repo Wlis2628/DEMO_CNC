@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EventBindingSet id="Users_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-    <EventBinding id="Users.Error">
-      <Source xsi:type="opcUa.Event" refId="::UsrMgmtP:MpUserXLoginUIConnect0.MessageBox.LayerStatus" event="ValueChanged" />
-      <EventHandler condition="newValue &lt; 0.5 AND oldValue &gt; 0.5">
-        <Action>
-          <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogUserError" headerText="Error" />
-          </Target>
-        </Action>
-      </EventHandler>
-    </EventBinding>
     <EventBinding id="Users.Button3.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="Users" widgetRefId="Button3" event="Click" />
       <EventHandler>

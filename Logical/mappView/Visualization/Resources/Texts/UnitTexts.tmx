@@ -718,5 +718,77 @@
         <seg>Username: administrator, Password: admin; Username: operator, Password:1234;</seg>
       </tuv>
     </tu>
+    <tu tuid="ShapePos">
+      <tuv xml:lang="pl">
+        <seg>Kształt i pozycja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Shape and position</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HelpLines">
+      <tuv xml:lang="pl">
+        <seg>Linie pomocnicze</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Help lines</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NoHelpLines">
+      <tuv xml:lang="pl">
+        <seg>Brak lini pomocniczych</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No help lines</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Radius">
+      <tuv xml:lang="pl">
+        <seg>Promień</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Radius</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Width">
+      <tuv xml:lang="pl">
+        <seg>Szerokość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Width</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Height">
+      <tuv xml:lang="pl">
+        <seg>Wysokość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Height</seg>
+      </tuv>
+    </tu>
+    <tu tuid="RotAng">
+      <tuv xml:lang="pl">
+        <seg>Kąt obrotu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rotation angle</seg>
+      </tuv>
+    </tu>
+    <tu tuid="DeleteUser">
+      <tuv xml:lang="pl">
+        <seg>Usuń użytkownika</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Delete user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Hide">
+      <tuv xml:lang="pl">
+        <seg>Ukryj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hide</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

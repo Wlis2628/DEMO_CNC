@@ -22,10 +22,6 @@
 		<BindingsSet refId="Parameters_binding" />
 		<BindingsSet refId="Users_binding" />
 		<BindingsSet refId="Alarms_binding" />
-		<BindingsSet refId="DialogNewUser_binding" />
-		<BindingsSet refId="DialogEditUser_binding" />
-		<BindingsSet refId="DialogRemoveUser_binding" />
-		<BindingsSet refId="DialogUserError_binding" />
 		<BindingsSet refId="TopContent_binding" />
 		<BindingsSet refId="ChartsContent_binding" />
 		<BindingsSet refId="ShowGcodeContent_binding"/>
@@ -38,12 +34,8 @@
 		<EventBindingsSet refId="Parameters_eventbinding" />
 		<EventBindingsSet refId="Users_eventbinding" />
 		<EventBindingsSet refId="Alarms_eventbinding" />
-		<EventBindingsSet refId="DialogNewUser_eventbinding" />
-		<EventBindingsSet refId="DialogEditUser_eventbinding" />
 		<EventBindingsSet refId="NavigationContent_eventbinding" />		
 		<EventBindingsSet refId="MainPageContent_eventbinding" />
-		<EventBindingsSet refId="DialogRemoveUser_eventbinding" />
-		<EventBindingsSet refId="DialogUserError_eventbinding" />
 		<EventBindingsSet refId="MoveError1_eventbinding" />
 		<EventBindingsSet refId="TopContent_eventbinding" />
 		<EventBindingsSet refId="ShowGcodeContent_eventbinding" />
@@ -51,11 +43,7 @@
 				
   </EventBindingsSets>
   <Dialogs>
-		<Dialog refId="NewUser"/>
-		<Dialog refId="DialogEditUser"/>
 		<Dialog refId="DialogPioter" />
-		<Dialog refId="DialogRemoveUser"/>
-		<Dialog refId="DialogUserError"/>
 		<Dialog refId="MoveError1" />
 		<Dialog refId="ShowGcode" />
 		
@@ -71,10 +59,6 @@
 		<Content refId="Users" />
 		<Content refId="Alarms" />
 		<Content refId="ContentPioter" />
-		<Content refId="NewUser" />
-		<Content refId="DialogEditUser" />	
-		<Content refId="DialogRemoveUser" />	
-		<Content refId="DialogUserError" />	
 	</Contents>
   <SnippetsSets>
     <!--<SnippetsSet refId=""/>-->

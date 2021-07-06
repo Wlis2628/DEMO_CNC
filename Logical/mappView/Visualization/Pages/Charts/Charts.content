@@ -144,8 +144,8 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="480" width="140" height="31" zIndex="19" text="Axis X" textColor="rgba(255, 255, 255, 1)" fontSize="35px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label3" top="40" left="1200" width="140" height="31" zIndex="20" text="Axis Y" textColor="rgba(255, 255, 255, 1)" fontSize="35px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="480" width="140" height="31" zIndex="19" text="$IAT/AxX" textColor="rgba(0, 0, 0, 1)" fontSize="35px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="40" left="1200" width="140" height="31" zIndex="20" text="$IAT/AxisZ" textColor="rgba(0, 0, 0, 1)" fontSize="35px" />
     <Widget xsi:type="widgets.brease.Button" id="Button4" top="740" left="1220" width="200" height="50" zIndex="21" text="Stop" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="25px" fontName="Arial Unicode" bold="false" style="MyStyle" />
     <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput12" top="678" left="460" width="120" height="44" zIndex="22" multiLine="true" value="$IAT/AxX" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="25px" bold="false" />
     <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput13" top="620" left="419" width="200" height="63" zIndex="23" multiLine="true" value="$IAT/Set" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="25px" bold="false" />
