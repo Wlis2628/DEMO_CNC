@@ -4,7 +4,7 @@
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="10" left="-18" width="660" height="330" zIndex="1" backColor="rgba(224, 224, 224, 1)" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="340" left="-100" width="1640" height="438" zIndex="0" backColor="rgba(224, 224, 224, 1)" />
     <Widget xsi:type="widgets.brease.Image" id="Image2" top="36" left="80" width="128" height="120" zIndex="986" image="Media/SymbolLib/User/User.svg" imageColor="rgba(255, 255, 255, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="216" left="80" width="320" height="118" zIndex="987" multiLine="true" text="$IAT/UsersInfo" wordWrap="true" textColor="rgba(0, 0, 0, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="216" left="80" width="280" height="118" zIndex="987" multiLine="true" text="$IAT/UsersInfo" wordWrap="true" textColor="rgba(0, 0, 0, 1)" fontSize="20px" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle3" top="10" left="640" width="900" height="330" zIndex="988" backColor="rgba(224, 224, 224, 1)" />
     <Widget xsi:type="widgets.brease.FlyOut" id="FlyOut1" top="0" left="5" width="1450" zIndex="989" docking="bottom" image="Media/SymbolLib/Arrow/Up2.svg" buttonWidth="150" buttonCornerRadius="5px 5px 0px 0px" buttonBackColor="rgba(255, 140, 0, 1)" borderStyle="none" borderWidth="5px" backColor="rgba(224, 224, 224, 1)" textAlign="center" textRotation="horizontal" bold="false" shadow="10px 2px 5px 5px rgba(255, 136, 0, 1)">
       <Widgets>
