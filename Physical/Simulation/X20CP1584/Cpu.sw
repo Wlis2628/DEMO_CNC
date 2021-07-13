@@ -26,6 +26,9 @@
   <NcDataObjects>
     <NcDataObject Name="InitCncPro" Source="" Memory="UserROM" Language="Binary" />
   </NcDataObjects>
+  <VcDataObjects>
+    <VcDataObject Name="Visu1" Source="Visu1.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
+  </VcDataObjects>
   <Binaries>
     <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />

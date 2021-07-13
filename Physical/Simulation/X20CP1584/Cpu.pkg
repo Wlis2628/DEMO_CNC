@@ -15,8 +15,9 @@
     <Object Type="Package">mappServices</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="Package">mappCockpit</Object>
+    <Object Type="Package">VC</Object>
   </Objects>
-  <Configuration ModuleId="X20CP1684">
+  <Configuration ModuleId="X20CP1584">
     <AutomationRuntime Version="D4.73" />
     <Build GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
