@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <BR.AS.HardwareTopology Version="0.0.0.1">
   <TimeStamps>
-    <TimeStamp LogicalPath="Simulation.Hardware.hw" LastWriteTime="04/16/2021 08:50:42" />
+    <TimeStamp LogicalPath="Simulation.Hardware.hw" LastWriteTime="07/20/2021 13:30:20" />
   </TimeStamps>
   <Modules>
     <Module Name="8V1022.00-2" Type="8V1022.00-2" X="273" Y="249" />
@@ -10,7 +10,7 @@
     <Module Name="8V1022.00-2a" Type="8V1022.00-2" X="199" Y="249" />
     <Module Name="8AC120.60-1a" Type="8AC120.60-1" X="213" Y="455.5" />
     <Module Name="8AC114.60-2a" Type="8AC114.60-2" X="201.8" Y="455.5" />
-    <Module Name="X20CP1684" Type="X20CP1684" X="100" Y="100" />
+    <Module Name="X20CP1584" Type="X20CP1584" X="100" Y="100" />
   </Modules>
   <Links>
     <Link From="8AC114.60-2" To="8AC114.60-2a" FromPort="PLK2" ToPort="PLK2" IsRoutedByUser="False">
@@ -25,7 +25,7 @@
       <Point X="281.9" Y="493.1" />
       <Point X="281.9" Y="493.1" />
     </Link>
-    <Link From="8AC114.60-2a" To="X20CP1684" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+    <Link From="8AC114.60-2a" To="X20CP1584" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
       <Point X="207.900009" Y="483.3" />
       <Point X="207.900009" Y="483.3" />
       <Point X="198.900009" Y="483.3" />
