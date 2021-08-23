@@ -1,23 +1,16 @@
 VAR
-	ab : REAL;
 	angle : REAL;
-	bc : REAL;
 	cmdBack : BOOL;
 	cmdClear : BOOL;
 	cmdDraw : BOOL;
 	curShape : shape_enum;
-	distX : UDINT;
-	distY : UDINT;
 	i : UINT;
 	InfoString : STRING[300];
-	maks : REAL;
 END_VAR
 VAR CONSTANT
 	PI : REAL := 3.141592;
 END_VAR
 VAR
-	prevPrevReadX : UINT;
-	prevPrevReadY : UINT;
 	prevReadX : UINT;
 	prevReadY : UINT;
 	radius : REAL := 100;
@@ -39,9 +32,6 @@ VAR
 	svgStringArrayIndex : UINT := 3;
 	x : REAL;
 	y : REAL;
-	pointString : STRING[120];
-	pointStrX : STRING[80];
-	pointStrY : STRING[80];
 	inXlinePosYStr : STRING[80];
 	inXlinePosY : REAL;
 	inXlinePosXStr : STRING[80];

@@ -12,5 +12,4 @@ VAR
 	GetThere : BOOL;
 	gCurrentX : REAL;
 	gCurrentY : REAL;
-	a : INT;
 END_VAR

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.7.2.98?>
+<?AutomationStudio Version=4.7.5.60 SP?>
 <SwConfiguration CpuAddress="$root" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
     <Task Name="Initiation" Source="Programs.CNC_Programs.InitiationandHoming.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -26,9 +26,6 @@
   <NcDataObjects>
     <NcDataObject Name="InitCncPro" Source="" Memory="UserROM" Language="Binary" />
   </NcDataObjects>
-  <VcDataObjects>
-    <VcDataObject Name="Visu1" Source="Visu1.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
-  </VcDataObjects>
   <Binaries>
     <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />

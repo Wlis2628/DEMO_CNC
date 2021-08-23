@@ -11,8 +11,6 @@ VAR
 	CncPosY : INT;
 	gActiveTool : BOOL; (*TRUE-d³ugopis pisze; FALSE- d³ugopis nie pisze*)
 	gAlarmActive : BOOL;
-	gAxisMovement : BOOL; (*TRUE -ruch narzêdzia w dowolnej osi; FALSE- brak ruchu*)
-	gLiveDrawing : BOOL; (*TRUE- rysowanie na zywo; FALSE- inny tryb*)
 	gManualContr : BOOL; (*TRUE- sterowanie rêczne; FALSE-inny tryb*)
 	gMoveAbsoluteX : BOOL;
 	gMoveAbsoluteY : BOOL;
