@@ -122,5 +122,13 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ButtonEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="Users" widgetRefId="ToggleSwitch1" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="Users" widgetRefId="Password1" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="LoginButton1" attribute="password" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="brease" contentRefId="Users" widgetRefId="TextInput1" attribute="value" />
+<Target xsi:type="brease" contentRefId="Users" widgetRefId="LoginButton1" attribute="userName" />
+</Binding>
 </Bindings>
 </BindingsSet>

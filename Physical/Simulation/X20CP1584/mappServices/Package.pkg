@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.7.2.98?>
+<?AutomationStudio Version=4.7.5.60 SP?>
 <Package SubType="mappServices" PackageType="mappServices" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File">History.mpalarmxhistory</Object>
-    <Object Type="File">Config_6.mpfilemanager</Object>
     <Object Type="File">AlarmGlobl.mpalarmxcore</Object>
     <Object Type="File">GroupGlobl.mpcomgroup</Object>
     <Object Type="Package">AlarmGeneral</Object>
@@ -11,5 +10,6 @@
     <Object Type="Package">AlarmCnc</Object>
     <Object Type="File">Recipe_cfg.mprecipexml</Object>
     <Object Type="Package">UsersConfig</Object>
+    <Object Type="File">Config.mpfilemanager</Object>
   </Objects>
 </Package>

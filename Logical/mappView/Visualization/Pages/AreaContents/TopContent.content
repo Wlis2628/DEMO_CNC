@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="TopContent" height="100" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="0" left="-40" width="1700" zIndex="0" borderStyle="solid" borderWidth="5px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(169, 169, 169, 1)" />
-    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputDate" top="60" left="1420" width="160" zIndex="1" format="dd.MM.yyyy" textColor="rgba(255, 255, 255, 1)" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputTime" top="20" left="1420" width="160" height="40" zIndex="2" format="HH:mm" textColor="rgba(255, 255, 255, 1)" fontSize="50px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="940" width="160" zIndex="3" text="$IAT/LoogedAs" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)" textAlign="center" fontSize="20px" />
-    <Widget xsi:type="widgets.brease.Image" id="Image1" top="20" left="880" width="60" height="80" zIndex="4" image="Media/SymbolLib/User/User.svg" imageColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="-40" left="-40" width="1700" height="220" zIndex="0" borderStyle="solid" borderWidth="5px" lineColor="rgba(255, 255, 255, 1)" backColor="rgba(169, 169, 169, 1)" backGroundGradient="linear-gradient(to bottom, #B8B8B8  10%,#D1D1D1 30%,#D1D1D1 60%,#B8B8B8 100%)" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputDate" top="60" left="1420" width="160" zIndex="1" format="dd.MM.yyyy" textColor="rgba(0, 0, 0, 1)" fontSize="20px" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutputTime" top="20" left="1420" width="160" height="40" zIndex="2" format="HH:mm" textColor="rgba(0, 0, 0, 1)" fontSize="50px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="940" width="241" zIndex="3" text="$IAT/LoogedAs" backColor="rgba(255, 255, 255, 0)" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="30px" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="10" left="860" width="99" height="80" zIndex="4" image="Media/SymbolLib/User/User.svg" imageColor="rgba(255, 255, 255, 1)" />
     <Widget xsi:type="widgets.brease.Image" id="Image2" top="25" left="1320" width="90" height="50" zIndex="5" image="Media/800px-Flag_of_the_United_Kingdom.svg.png" sizeMode="fill" imageColor="rgba(255, 255, 255, 1)" />
-    <Widget xsi:type="widgets.brease.Image" id="Image3" top="25" left="1200" width="90" height="50" zIndex="6" image="Media/800px-Flag_of_Poland.svg.png" sizeMode="fill" imageColor="rgba(255, 255, 255, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image3" top="25" left="1201" width="89" height="50" zIndex="6" image="Media/800px-Flag_of_Poland.svg.png" sizeMode="fill" imageColor="rgba(255, 255, 255, 1)" />
     <Widget xsi:type="widgets.brease.Image" id="Image4" top="10" left="5" width="140" height="80" zIndex="7" image="Media/br_logo.png" />
     <Widget xsi:type="widgets.brease.Image" id="Image5" top="10" left="240" width="81" height="80" zIndex="8" image="Media/SymbolLib/Alarm/Alarm.svg" imageColor="rgba(255, 0, 0, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="Label2" top="0" left="320" width="160" height="100" zIndex="9" multiLine="true" text="$IAT/CheckAlarms" wordWrap="true" textColor="rgba(255, 0, 0, 1)" fontSize="25px" />
-    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="40" left="940" width="161" height="40" zIndex="10" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)" textAlign="center" fontSize="20px" bold="false" />
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="50" left="940" width="243" height="40" zIndex="10" backColor="rgba(255, 255, 255, 0)" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="30px" bold="false" />
   </Widgets>
 </Content>
