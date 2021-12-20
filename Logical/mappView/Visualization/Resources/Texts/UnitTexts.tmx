@@ -520,7 +520,7 @@
     </tu>
     <tu tuid="ResetErrors">
       <tuv xml:lang="pl">
-        <seg>Resetuj błędy</seg>
+        <seg>Resetuj</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Reset Errors</seg>
@@ -664,7 +664,7 @@
     </tu>
     <tu tuid="ErrorRes">
       <tuv xml:lang="pl">
-        <seg>Resetuj błędy</seg>
+        <seg>Resetuj</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Error reset</seg>

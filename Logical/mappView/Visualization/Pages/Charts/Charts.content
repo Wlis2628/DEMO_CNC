@@ -9,7 +9,7 @@
     <Widget xsi:type="widgets.brease.Button" id="Button3" top="700" left="19" width="180" height="51" zIndex="7" text="$IAT/ErrorRes" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="28px" fontName="Arial Unicode" bold="false" style="MyStyle" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput5" top="680" left="690" width="155" height="40" zIndex="8" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" borderWidth="0px 0px 0px 5px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontName="Arial Unicode" fontSize="28px" unitFontSize="20px" bold="false" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput6" top="740" left="690" width="155" height="40" zIndex="9" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'C16','imperial':'C16','imperial-us':'C16'}" unitAlign="right" borderWidth="0px 0px 0px 5px" backColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" fontName="Arial Unicode" fontSize="28px" unitFontSize="20px" bold="false" />
-    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="700" left="914" width="140" height="40" zIndex="10" cornerRadius="5px" borderColor="rgba(255, 128, 0, 1)" mouseDownBorderColor="rgba(255, 128, 0, 1)" rotation="180deg" foreColor="rgba(255, 128, 0, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="700" left="930" width="108" height="50" zIndex="10" sliderWidth="40" cornerRadius="5px" borderColor="rgba(255, 128, 0, 1)" mouseDownBorderColor="rgba(255, 128, 0, 1)" rotation="180deg" foreColor="rgba(255, 128, 0, 1)" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="640" left="19" width="180" height="50" zIndex="11" mouseDownText="$IAT/PowerOFF" text="$IAT/Power" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="28px" fontName="Arial Unicode" bold="false" style="MyStyle" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton5" top="680" left="1130" width="210" height="49" zIndex="12" mouseDownText="Stop" text="Start" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="28px" fontName="Arial Unicode" bold="false" style="MyStyle" />
     <Widget xsi:type="widgets.brease.Line" id="Line1" zIndex="13" x1="220" x2="220" y1="816" y2="600" lineColor="rgba(255, 255, 255, 1)" lineWidth="5px" />
@@ -18,9 +18,9 @@
     <Widget xsi:type="widgets.brease.Button" id="Button1" top="620" left="1130" width="210" height="50" zIndex="16" text="$IAT/ShowGCode" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="28px" fontName="Arial Unicode" bold="false" style="MyStyle" />
     <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="40" left="19" width="642" height="500" zIndex="17" headerBackColor="rgba(255, 255, 255, 0)" backColor="rgba(224, 224, 224, 1)" cornerRadius="0px 0px 10px 10px">
       <Widgets>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="150" height="40" zIndex="0" text="$IAT/Position" borderWidth="0px 6px 0px 0px" cornerRadius="5px" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" activeBorderWidth="0px 6px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="150" height="40" zIndex="0" text="$IAT/Position" borderWidth="0px 6px 0px 0px" cornerRadius="5px" backColor="rgba(255, 255, 255, 1)" backGroundGradient="" textColor="rgba(0, 0, 0, 1)" activeBorderWidth="0px 6px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeBackGroundGradient="linear-gradient(to right, #D3D3D3  10%,#DCDCDC 30%,#F2EFEF 60%,#D3D3D3 100%)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA1" top="29" left="1" width="658" height="452" zIndex="0" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA1" top="20" left="0" width="660" height="460" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="540" textColor="rgba(0, 0, 0, 1)" min="-10" />
@@ -38,9 +38,9 @@
             </Widget>
           </Widgets>
         </Widget>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="150" height="40" zIndex="1" text="$IAT/Velocity" borderWidth="0px 6px 0px 0px" cornerRadius="5px 5px 0px 0px" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" activeBorderWidth="0px 6px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="150" height="40" zIndex="1" text="$IAT/Velocity" borderWidth="0px 6px 0px 0px" cornerRadius="5px 5px 0px 0px" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" activeBorderWidth="0px 6px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeBackGroundGradient="linear-gradient(to right, #D3D3D3  10%,#DCDCDC 30%,#F2EFEF 60%,#D3D3D3 100%)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA3" top="29" left="1" width="658" height="452" zIndex="0" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA3" top="20" left="0" width="660" height="460" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="110" min="-110" textColor="rgba(0, 0, 0, 1)" />
@@ -58,9 +58,9 @@
             </Widget>
           </Widgets>
         </Widget>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem5" left="0" width="150" height="40" zIndex="2" text="$IAT/Current" borderWidth="0px 6px 0px 0px" cornerRadius="5px 5px 0px 0px" textColor="rgba(0, 0, 0, 1)" activeBorderWidth="0px 6px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem5" left="0" width="150" height="40" zIndex="2" text="$IAT/Current" borderWidth="0px 6px 0px 0px" cornerRadius="5px 5px 0px 0px" textColor="rgba(0, 0, 0, 1)" activeBorderWidth="0px 6px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeBackGroundGradient="linear-gradient(to right, #D3D3D3  10%,#DCDCDC 30%,#F2EFEF 60%,#D3D3D3 100%)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA5" top="25" left="0" width="658" height="453" zIndex="0" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA5" top="20" left="0" width="660" height="460" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="2.5" textColor="rgba(0, 0, 0, 1)" />
@@ -82,9 +82,9 @@
     </Widget>
     <Widget xsi:type="widgets.brease.TabControl" id="TabControl2" top="40" left="700" width="642" height="500" zIndex="18" backColor="rgba(224, 224, 224, 1)" cornerRadius="0px 0px 10px 10px">
       <Widgets>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="150" height="40" zIndex="0" text="$IAT/Position" cornerRadius="5px 5px 0px 0px" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="150" height="40" zIndex="0" text="$IAT/Position" cornerRadius="5px 5px 0px 0px" backColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeBackGroundGradient="linear-gradient(to right, #D3D3D3  10%,#DCDCDC 30%,#F2EFEF 60%,#D3D3D3 100%)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA2" top="29" left="0" width="660" height="452" zIndex="0" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA2" top="20" left="0" width="660" height="460" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="440" textColor="rgba(0, 0, 0, 1)" />
@@ -102,9 +102,9 @@
             </Widget>
           </Widgets>
         </Widget>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="0" width="150" height="40" zIndex="1" text="$IAT/Velocity" cornerRadius="5px 5px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem4" left="0" width="150" height="40" zIndex="1" text="$IAT/Velocity" cornerRadius="5px 5px 0px 0px" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeBackGroundGradient="linear-gradient(to right, #D3D3D3  10%,#DCDCDC 30%,#F2EFEF 60%,#D3D3D3 100%)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA4" top="29" left="0" width="660" height="452" zIndex="0" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA4" top="20" left="0" width="660" height="460" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="110" min="-110" textColor="rgba(0, 0, 0, 1)" />
@@ -122,9 +122,9 @@
             </Widget>
           </Widgets>
         </Widget>
-        <Widget xsi:type="widgets.brease.TabItem" id="TabItem6" left="0" width="150" height="40" zIndex="2" text="$IAT/Current" cornerRadius="5px 5px 0px 0px" borderColor="rgba(255, 128, 0, 1)" backColor="rgba(255, 255, 255, 1)" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem6" left="0" width="150" height="40" zIndex="2" text="$IAT/Current" cornerRadius="5px 5px 0px 0px" borderColor="rgba(255, 128, 0, 1)" backColor="rgba(255, 255, 255, 1)" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(255, 128, 0, 1)" activeBackColor="rgba(224, 224, 224, 1)" activeBackGroundGradient="linear-gradient(to right, #D3D3D3  10%,#DCDCDC 30%,#F2EFEF 60%,#D3D3D3 100%)" activeTextColor="rgba(0, 0, 0, 1)" fontSize="28px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA6" top="29" left="0" width="660" height="453" zIndex="0" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA6" top="20" left="0" width="660" height="460" zIndex="0" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="2.5" textColor="rgba(0, 0, 0, 1)" />
@@ -144,18 +144,17 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="520" width="140" height="31" zIndex="19" text="$IAT/AxX" textColor="rgba(0, 0, 0, 1)" fontSize="35px" />
-    <Widget xsi:type="widgets.brease.Label" id="Label3" top="40" left="1200" width="140" height="31" zIndex="20" text="$IAT/AxisZ" textColor="rgba(0, 0, 0, 1)" fontSize="35px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="50" left="520" width="140" height="31" zIndex="19" text="$IAT/AxX" textColor="rgba(0, 0, 0, 1)" fontSize="35px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="50" left="1200" width="140" height="31" zIndex="20" text="$IAT/AxisZ" textColor="rgba(0, 0, 0, 1)" fontSize="35px" />
     <Widget xsi:type="widgets.brease.Button" id="Button4" top="740" left="1130" width="210" height="50" zIndex="21" text="Stop" imageColor="rgba(0, 0, 0, 1)" borderWidth="5px 5px 2px 2px" borderColor="rgba(255, 128, 0, 1)" textColor="rgba(0, 0, 0, 1)" fontSize="28px" fontName="Arial Unicode" bold="false" style="MyStyle" />
     <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput12" top="677" left="418" width="120" height="44" zIndex="22" multiLine="true" value="$IAT/AxX" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput13" top="620" left="378" width="200" height="63" zIndex="23" multiLine="true" value="$IAT/Set" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
-    <Widget xsi:type="widgets.brease.Label" id="Label17" top="740" left="423" width="110" height="42" zIndex="24" text="$IAT/AxisZ" borderColor="rgba(255, 255, 255, 0)" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput15" top="640" left="855" width="260" height="40" zIndex="25" multiLine="true" value="Manual  /  Auto" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="32px" bold="false" />
+    <Widget xsi:type="widgets.brease.Label" id="Label17" top="740" left="423" width="110" height="42" zIndex="23" text="$IAT/AxisZ" borderColor="rgba(255, 255, 255, 0)" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput15" top="640" left="855" width="260" height="40" zIndex="24" multiLine="true" value="Manual / Auto" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="32px" bold="false" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle4" top="605" left="219" width="641" height="200" zIndex="2" borderStyle="solid" cornerRadius="0px" lineColor="rgba(255, 128, 0, 1)" backColor="rgba(255, 128, 0, 1)" opacity="0.4" />
     <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle5" top="605" left="1110" width="320" height="200" zIndex="1" borderStyle="solid" cornerRadius="0px 20px 0px 0px" lineColor="rgba(255, 128, 0, 1)" backColor="rgba(255, 128, 0, 1)" opacity="0.4" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput16" top="620" left="667" width="200" height="63" zIndex="26" multiLine="true" value="$IAT/Velocity" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput17" top="620" left="503" width="200" height="63" zIndex="27" multiLine="true" value="$IAT/Position" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput7" top="680" left="525" width="155" height="40" zIndex="28" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="520" unit="{'metric':'MMT','imperial':'C16','imperial-us':'C16'}" unitAlign="right" borderWidth="0px 0px 0px 5px" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" disabledBorderColor="rgba(255, 255, 255, 1) rgba(200, 200, 200, 1) rgba(200, 200, 200, 1) rgba(255, 255, 255, 1)" activeBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(192, 192, 192, 1)" fontSize="28px" unitFontSize="20px" bold="false" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput8" top="740" left="525" width="155" height="40" zIndex="29" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="420" unit="{'metric':'MMT','imperial':'C16','imperial-us':'C16'}" unitAlign="right" borderWidth="0px 0px 0px 5px" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" disabledBorderColor="rgba(255, 255, 255, 1) rgba(200, 200, 200, 1) rgba(200, 200, 200, 1) rgba(255, 255, 255, 1)" activeBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(192, 192, 192, 1)" fontSize="28px" unitFontSize="20px" bold="false" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput16" top="620" left="667" width="200" height="63" zIndex="25" multiLine="true" value="$IAT/Velocity" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput17" top="620" left="503" width="200" height="63" zIndex="26" multiLine="true" value="$IAT/Position" wordWrap="true" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontName="Arial Unicode" fontSize="28px" bold="false" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput7" top="680" left="525" width="155" height="40" zIndex="27" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="520" unit="{'metric':'MMT','imperial':'C16','imperial-us':'C16'}" unitAlign="right" borderWidth="0px 0px 0px 5px" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" disabledBorderColor="rgba(255, 255, 255, 1) rgba(200, 200, 200, 1) rgba(200, 200, 200, 1) rgba(255, 255, 255, 1)" activeBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(192, 192, 192, 1)" fontSize="28px" unitFontSize="20px" bold="false" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput8" top="740" left="525" width="155" height="40" zIndex="28" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="420" unit="{'metric':'MMT','imperial':'C16','imperial-us':'C16'}" unitAlign="right" borderWidth="0px 0px 0px 5px" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(255, 255, 255, 1)" borderColor="rgba(255, 128, 0, 1)" disabledBorderColor="rgba(255, 255, 255, 1) rgba(200, 200, 200, 1) rgba(200, 200, 200, 1) rgba(255, 255, 255, 1)" activeBackColor="rgba(255, 255, 255, 1)" activeTextColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(192, 192, 192, 1)" fontSize="28px" unitFontSize="20px" bold="false" />
   </Widgets>
 </Content>
